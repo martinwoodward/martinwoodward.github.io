@@ -39,7 +39,7 @@ Sadly, like my previously loved and then re-incarnated Nabaztag, online devices 
 
 ## Introduction
 
-When I was looking to hack my Furby, I stumbled upon an open source project called [bluefluff](https://github.com/Jeija/bluefluff). Back when we first got to hear Rihanna and Calvin Harris pumping out the banger "This is What You Came For", the incredibly talented Jeija and the bluefluff community had reverse-engineered the entire Bluetooth protocol that Furby Connect uses, and created a Node.js library to control it. However unsurprisingly considering it's a discontinued and unsupported toy, the bluefluff project hadn't seen much activity in recent years. It doesn't run on modern versions of Node and the bluetooth library it depends on is no longer maintained either. I thought I was stuck. And then I remembered I have GitHub Copilot.
+When I was looking to hack my Furby, I stumbled upon an open source project called [bluefluff](https://github.com/Jeija/bluefluff). Back when we first got to hear Rihanna and Calvin Harris pumping out the banger "This is What You Came For", the incredibly talented Florian Euchner and the bluefluff community had reverse-engineered the entire Bluetooth protocol that Furby Connect uses, and created a Node.js library to control it. However unsurprisingly considering it's a discontinued and unsupported toy, the bluefluff project hadn't seen much activity in recent years. It doesn't run on modern versions of Node and the bluetooth library it depends on is no longer maintained either. I thought I was stuck. And then I remembered I have GitHub Copilot.
 
 Turns out the incredible and detailed Bluetooth protocol documentation and the legacy Node implementation in the bluefluff project were the perfect context for Copilot to work its magic. I fired up Agent mode in VS Code, selected Claude Sonnet 4.5 as my model and asked it to create a modern Python implementation of the bluetooth LE connection protocol. I went with Python because it's my go-to language for hardware projects, and I wanted something that would run easily on a Raspberry Pi but also give me an easy option if I decided to integrate this with another hobby project of mine, [Home Assistant](https://www.home-assistant.io/).
 
@@ -88,4 +88,4 @@ I'm going to be actively maintaining the project for a little while at least and
 
 Now if you'll excuse me, I have a Furby to program with some very questionable vocabulary.
 
-I'll conclude with a _special thanks to [Jeija](https://github.com/Jeija) and the entire [bluefluff](https://github.com/Jeija/bluefluff) community for their incredible reverse engineering work that made this project possible._
+I'll conclude with a _special thanks to [Florian](https://github.com/Jeija) and the entire [bluefluff](https://github.com/Jeija/bluefluff) community for their incredible reverse engineering work that made this project possible._
