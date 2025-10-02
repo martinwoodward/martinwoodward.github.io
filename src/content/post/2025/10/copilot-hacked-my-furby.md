@@ -2,7 +2,7 @@
 title: "Copilot Hacked my Furby"
 date: 2025-10-02T10:00:00.000Z
 # post thumb
-# TODO: Replace placeholder image with actual Furby/Copilot themed image
+# TODO: Replace placeholder with 1200x630px image showing Furby Connect with GitHub Copilot branding
 images:
   - "/images/post/2025/10/copilot-furby-hero.jpg"
 #author
