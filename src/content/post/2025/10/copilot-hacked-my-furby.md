@@ -2,6 +2,7 @@
 title: "Copilot Hacked my Furby"
 date: 2025-10-02T10:00:00.000Z
 # post thumb
+# TODO: Replace placeholder image with actual Furby/Copilot themed image
 images:
   - "/images/post/2025/10/copilot-furby-hero.jpg"
 #author
@@ -41,7 +42,7 @@ The project leverages a fascinating mix of old and new tech:
 - **Bluetooth Low Energy** - The communication protocol that makes it all possible
 
 ### Software Stack
-- **Python 3.11+** - Modern Python with async/await and type hints
+- **Python 3.11+** - Leveraging modern features like improved async performance and better type hints
 - **Bleak** - A well-maintained, cross-platform BLE library
 - **FastAPI** - For the web server with automatic OpenAPI documentation
 - **WebSocket** - Real-time sensor data streaming
@@ -114,7 +115,7 @@ The final [pyfluff library](https://github.com/martinwoodward/pyfluff) is a full
 ✅ **CLI Tools** - Command-line utilities for quick testing  
 ✅ **API Server** - Full RESTful API with automatic OpenAPI documentation  
 
-The project includes comprehensive examples, from basic control scripts to advanced mood monitoring. It works on Raspberry Pi, macOS, and Linux - anywhere you have Python 3.11+ and Bluetooth support.
+The project includes comprehensive examples, from basic control scripts to advanced mood monitoring. It works on Raspberry Pi, macOS, Linux, and Windows - anywhere you have Python 3.11+ and Bluetooth support.
 
 One of my favorite features is the web interface. You can pull up a browser on your phone, connect to your Raspberry Pi running pyfluff, and control Furby wirelessly. It's like having the original app back, but better - because now you have complete control over what Furby can do.
 
