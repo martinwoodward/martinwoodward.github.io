@@ -7,33 +7,51 @@ author: "Martin Woodward"
 description: "How GitHub Copilot helped me resurrect my Furby Connect by porting the legacy bluefluff library to modern Python"
 # Taxonomies
 categories: ["maker", "ai", "technology", "github"]
-tags: ["furby", "bluetooth", "python", "github-copilot", "maker", "hardware-hacking", "ai", "open-source"]
+tags:
+  [
+    "furby",
+    "bluetooth",
+    "python",
+    "github-copilot",
+    "maker",
+    "hardware-hacking",
+    "ai",
+    "open-source",
+  ]
 type: "regular"
 draft: false
 ---
 
 import Notice from "@/shortcodes/Notice";
 
-Yoo-hoo!  My 9 year old Furby Connect is resurrected, thanks to some open source magic and a lot of help from GitHub Copilot.
+Yoo-hoo! My 9 year old Furby Connect is resurrected, thanks to some open source magic and a lot of help from GitHub Copilot.
 
-Remember Furbies? Those adorable, slightly creepy electronic pets from the  90s? I always wanted one as a kid, but they were a little too pricey for my pocket money budget.  However, I've got grown up money now, so I treated myself to (IMHO) the pinnacle of Furbish goodness. A Furby Connect - the 2016 Bluetooth-enabled version with LCD eyes.  These adorable suckers cost nearly $100 back in the day, but I found one on eBay for a fraction of that.
+Remember Furbies? Those adorable, slightly creepy electronic pets from the 90s? I always wanted one as a kid, but they were a little too pricey for my pocket money budget. However, I've got grown up money now, so I treated myself to (IMHO) the pinnacle of Furbish goodness. A Furby Connect - the 2016 Bluetooth-enabled version with LCD eyes. These adorable suckers cost nearly $100 back in the day, but I found one on eBay for a fraction of that.
 
 These toys represent a sweet spot where 90s charm briefly met 2010s IoT technology and succeeded to be simultaneously cute and creepy. Plus, the idea of making a Furby say and do things it was never meant to do is just too entertaining to pass up. It's hardware hacking meets cuddly toy - what's not to love?
 
 Sadly, like my previously loved and then re-incarnated Nabaztag, online devices don't live forever and unfortunately, Hasbro discontinued support the Furby Connect long ago and the companion app is no longer available in the official Android and iOS app stores, leaving these charming creatures unable to reach their full potential. That's where GitHub Copilot, some open source magic, and a healthy dose of hacking come in.
 
-<Notice type="warning">Despite the click-bait headline. Copilot didn't hack my Furby.  I was the one that hacked my Furby. Copilot was merely my accomplice.</Notice>
+<Notice type="warning">
+  Despite the click-bait headline. Copilot didn't hack my Furby. I was the one
+  that hacked my Furby. Copilot was merely my accomplice.
+</Notice>
 
 ## Introduction
-When I was looking to hack my Furby, I stumbled upon an open source project called [bluefluff](https://github.com/Jeija/bluefluff). Back when we first got to hear Rihanna and Calvin Harris pumping out the banger "This is What You Came For", the incredibly talented Jeija and the bluefluff community had reverse-engineered the entire Bluetooth protocol that Furby Connect uses, and created a Node.js library to control it.  However unsurprisingly considering it's a discontinued and unsupported toy, the bluefluff project hadn't seen much activity in recent years. It doesn't run on modern versions of Node and the bluetooth library it depends on is no longer maintained either.  I thought I was stuck. And then I remembered I have GitHub Copilot.
 
-Turns out the incredible and detailed Bluetooth protocol documentation and the legacy Node implementation in the bluefluff project were the perfect context for Copilot to work its magic.  I fired up Agent mode in VS Code, selected Claude Sonnet 4.5 as my model and asked it to create a modern Python implementation of the bluetooth LE connection protocol. I went with Python because it's my go-to language for hardware projects, and I wanted something that would run easily on a Raspberry Pi but also give me an easy option if I decided to integrate this with another hobby project of mine, [Home Assistant](https://www.home-assistant.io/).
+When I was looking to hack my Furby, I stumbled upon an open source project called [bluefluff](https://github.com/Jeija/bluefluff). Back when we first got to hear Rihanna and Calvin Harris pumping out the banger "This is What You Came For", the incredibly talented Jeija and the bluefluff community had reverse-engineered the entire Bluetooth protocol that Furby Connect uses, and created a Node.js library to control it. However unsurprisingly considering it's a discontinued and unsupported toy, the bluefluff project hadn't seen much activity in recent years. It doesn't run on modern versions of Node and the bluetooth library it depends on is no longer maintained either. I thought I was stuck. And then I remembered I have GitHub Copilot.
 
-Copilot is particularly good at converting code from one language to another, which makes it great for porting legacy codebases, and it didn't disappoint.  I was on a train at the time but Copilot had the entire port done in under 5 minutes. 
+Turns out the incredible and detailed Bluetooth protocol documentation and the legacy Node implementation in the bluefluff project were the perfect context for Copilot to work its magic. I fired up Agent mode in VS Code, selected Claude Sonnet 4.5 as my model and asked it to create a modern Python implementation of the bluetooth LE connection protocol. I went with Python because it's my go-to language for hardware projects, and I wanted something that would run easily on a Raspberry Pi but also give me an easy option if I decided to integrate this with another hobby project of mine, [Home Assistant](https://www.home-assistant.io/).
 
-<img src="/images/post/2025/10/port-complete.png" alt="Screenshot of VS Code showing the completed port of bluefluff to pyfluff" />
+Copilot is particularly good at converting code from one language to another, which makes it great for porting legacy codebases, and it didn't disappoint. I was on a train at the time but Copilot had the entire port done in under 5 minutes.
+
+<img
+  src="/images/post/2025/10/port-complete.png"
+  alt="Screenshot of VS Code showing the completed port of bluefluff to pyfluff"
+/>
 
 ## PyFluff
+
 [Pyfluff](https://github.com/martinwoodward/pyfluff) is a modern Python 3 library that allows you to control your Furby Connect toy using Bluetooth Low Energy (BLE). It provides a clean, async/await-based API for interacting with Furby, making it easy to integrate into your own projects or use as a standalone tool.
 
 The library supports a wide range of features, including:
@@ -46,13 +64,13 @@ The library supports a wide range of features, including:
 ✅ **Debug Features** - Access internal debug menus on the LCD eyes  
 ✅ **Web Interface** - Control everything through a browser  
 ✅ **CLI Tools** - Command-line utilities for quick testing  
-✅ **API Server** - Full RESTful API with automatic OpenAPI documentation  
+✅ **API Server** - Full RESTful API with automatic OpenAPI documentation
 
 The project includes comprehensive examples, from basic control scripts to advanced mood monitoring. It works on Raspberry Pi, macOS, Linux, and Windows - hopefully anywhere you have Python 3 and Bluetooth support.
 
 ## Reflections
 
-I've been using GitHub Copilot since the very beginning.  But even I have to remember from time to time to use it. I was talking with my friend [Ashley Willis](https://ashley.dev/) and lamenting that I couldn't get bluefluff to work out for me.  Then as an afterthought, I mentioned "I wonder if Copilot could fix it?". 5 minutes later I had a working port and a new open source project.
+I've been using GitHub Copilot since the very beginning. But even I have to remember from time to time to use it. I was talking with my friend [Ashley Willis](https://ashley.dev/) and lamenting that I couldn't get bluefluff to work out for me. Then as an afterthought, I mentioned "I wonder if Copilot could fix it?". 5 minutes later I had a working port and a new open source project.
 
 The experience reminded me why I love open source too. The bluefluff community spent countless hours reverse engineering this protocol, documenting everything meticulously, and sharing it freely. I was able to build on their work, using modern AI tools to make it accessible to Python developers. And now, by open sourcing [PyFluff](https://github.com/martinwoodward/pyfluff) under the same MIT License, others can build on their work too.
 
@@ -64,10 +82,10 @@ Want to hack your own Furby? Here's how to get started:
 
 1. **Get the Code**: Check out the [pyfluff repository](https://github.com/martinwoodward/pyfluff) on GitHub
 2. **Find a Furby Connect**: You'll need the 2016 Bluetooth edition (the one with LCD eyes and a sleeping mask)
-3. **Set Up Your Environment**: Python 3 on Raspberry Pi OS, Linux, or macOS. Windows support is experimental but possible.  Should work with the latest version of Python 3.11 or later. 
+3. **Set Up Your Environment**: Python 3 on Raspberry Pi OS, Linux, or macOS. Windows support is experimental but possible. Should work with the latest version of Python 3.11 or later.
 
 I'm going to be actively maintaining the project for a little while at least and would love to see what you build with it. Have ideas for features? Found a bug? Want to contribute? Open an issue or submit a pull request.
 
 Now if you'll excuse me, I have a Furby to program with some very questionable vocabulary.
 
-I'll conclude with a *special thanks to [Jeija](https://github.com/Jeija) and the entire [bluefluff](https://github.com/Jeija/bluefluff) community for their incredible reverse engineering work that made this project possible.*
+I'll conclude with a _special thanks to [Jeija](https://github.com/Jeija) and the entire [bluefluff](https://github.com/Jeija/bluefluff) community for their incredible reverse engineering work that made this project possible._
