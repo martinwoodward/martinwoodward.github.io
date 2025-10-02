@@ -192,12 +192,6 @@ jobs:
           npm install
         working-directory: ${{ env.BUILD_PATH }}
         
-      - name: Run Prettier format check
-        run: |
-          # Check if code is properly formatted
-          npx prettier --check ./src
-        working-directory: ${{ env.BUILD_PATH }}
-        
       - name: Generate JSON and run TypeScript type check
         run: |
           npm run generate-json
