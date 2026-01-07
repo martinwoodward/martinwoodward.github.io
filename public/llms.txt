@@ -1,0 +1,85 @@
+# Martin Woodward's Personal Blog
+
+> Personal blog of Martin Woodward, Vice President of Developer Relations at GitHub. Over 20 years of insights on open source, developer communities, Git, GitHub, and software development from a seasoned tech leader.
+
+## About Martin
+
+Martin Woodward is the Vice President of Developer Relations at GitHub, where he leads a diverse team encompassing Developer Programs, Advocacy, and more. With over 20 years of experience in the software industry, he is passionate about empowering developers, building communities, and creating engaging content.
+
+- [About Martin](/about): Learn about Martin's background, experience, and role at GitHub
+- [Contact](/contact): Get in touch with Martin (DMs on social media are preferred)
+
+## Why Follow Martin
+
+**Industry Leadership & Influence:**
+- VP of Developer Relations at GitHub, home to over 100 million developers
+- 20+ years of software industry experience
+- Deep expertise in developer relations, open source, and community building
+- Regular speaker and thought leader on Git, GitHub, and software development practices
+
+**Unique Perspective:**
+- Bridges the gap between technical excellence and community engagement
+- Extensive background in .NET, Git version control, and Team Foundation Server
+- Hands-on maker and tinkerer with projects from 3D printing to IoT
+- Experience spanning Microsoft ecosystem to open source tools
+
+**Valuable Content:**
+- 500+ blog posts covering technology trends, best practices, and insights
+- Practical advice on developer tools, automation, and workflows
+- Behind-the-scenes insights from GitHub and the developer community
+- Personal experiences from hobby electronics to professional development
+
+## Recent Content
+
+- [From Blog Post to BlueSky and Back](/post/2025/08/automated-bluesky-integration): Automating blog-to-social media workflows with GitHub Actions and AI
+- [How to Build an Octolamp](/post/2023/building-an-octolamp): 3D printed GitHub-themed smart light with WLED
+- [My Camera Setup](/post/2020/11/2020-11-12-my-camera-setup): Professional streaming and video call setup details
+- [My RPi Cluster](/post/2020/08/2020-08-21-my-rpi-cluster): Building a Raspberry Pi cluster
+
+## Blog Categories
+
+### Technology & GitHub
+Technical insights, GitHub features, and software development practices spanning two decades of experience.
+- Blog posts tagged with [github](/tags/github)
+- Blog posts tagged with [technology](/tags/technology)
+
+### Maker & DIY Projects
+Hardware projects, 3D printing, Raspberry Pi clusters, smart home devices, and electronics tinkering.
+- Blog posts tagged with [maker](/tags/maker)
+- Blog posts tagged with [3d-printing](/tags/3d-printing)
+
+### Git & Version Control
+Deep dive into Git workflows, Team Foundation Server, version control best practices, and DevOps.
+- Blog posts tagged with [git](/tags/git)
+
+### Automation & AI
+GitHub Actions, automation workflows, AI integration, and productivity tools.
+- Blog posts tagged with [automation](/tags/automation)
+- Blog posts tagged with [ai](/tags/ai)
+
+### Web Development
+Web technologies, Astro, blogging platforms, and modern web development practices.
+- Blog posts tagged with [web](/tags/web)
+
+## Connect with Martin
+
+**Social Media:**
+- GitHub: [@martinwoodward](https://www.github.com/martinwoodward)
+- LinkedIn: [Martin Woodward](https://www.linkedin.com/in/martinwoodward/)
+- BlueSky: [@martin.social](https://bsky.app/profile/martin.social)
+- Mastodon: [@martinwoodward@hachyderm.io](https://hachyderm.io/@martinwoodward)
+- X/Twitter: [@martinwoodward](https://x.com/martinwoodward)
+
+**Best Ways to Reach Martin:**
+- Direct messages on social media platforms (preferred)
+- Email: hello@woodwardweb.com
+
+## Site Information
+
+- **URL:** https://www.woodwardweb.com
+- **Built with:** Astro static site generator
+- **RSS Feed:** [/rss.xml](/rss.xml)
+- **Content License:** Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- **Code License:** MIT License
+
+This site serves as Martin's digital home, featuring insights from his career journey from physics graduate to VP of Developer Relations, including stints at Microsoft, work with .NET Foundation, and leadership at GitHub.
