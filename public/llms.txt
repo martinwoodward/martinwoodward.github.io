@@ -76,7 +76,7 @@ Web technologies, Astro, blogging platforms, and modern web development practice
 
 ## Site Information
 
-- **URL:** https://www.woodwardweb.com
+- **URL:** https://woodwardweb.com
 - **Built with:** Astro static site generator
 - **RSS Feed:** [/rss.xml](/rss.xml)
 - **Content License:** Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
