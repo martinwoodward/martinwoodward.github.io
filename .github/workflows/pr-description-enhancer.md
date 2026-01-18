@@ -8,7 +8,7 @@ description: |
 on:
   pull_request:
     types: [opened]
-  stop-after: +6mo
+stop-after: +6mo
 
 permissions: read-all
 

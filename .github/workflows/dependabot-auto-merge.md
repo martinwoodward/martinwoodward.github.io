@@ -8,6 +8,7 @@ description: |
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  stop-after: +6mo # workflow will no longer trigger after 6 months
 
 # Check if the PR was opened by Dependabot
 if: ${{ github.actor == 'dependabot[bot]' }}

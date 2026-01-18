@@ -10,7 +10,7 @@ on:
     workflows: ["Deploy Blog", "PR Verification"]
     types: [completed]
     branches: [main]
-  stop-after: +6mo
+stop-after: +6mo
 
 # Only trigger for failures
 if: ${{ github.event.workflow_run.conclusion == 'failure' }}

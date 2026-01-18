@@ -17,8 +17,3 @@ updates:
         dependency-type: "development"
       prod:
         dependency-type: "production"
-    # Ignore agentic workflow .lock.yml files - they are auto-generated
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-        # Let the agentic auto-merge workflow handle these
