@@ -73,6 +73,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 
 /**
  * Call Ideogram.ai API to generate an image
+ * Uses native https module for better compatibility and no additional dependencies
  * @param {string} prompt - The text prompt for image generation
  * @returns {Promise<string>} - URL of the generated image
  */
@@ -223,12 +224,30 @@ async function main() {
     }
     
     try {
+      // Validate post data
+      if (!post.imagePrompt) {
+        console.error(`   ❌ Error: No image prompt found for post`);
+        errorCount++;
+        continue;
+      }
+      
       // Generate image with Ideogram
       console.log(`   🎨 Generating image...`);
-      console.log(`   Prompt: ${post.imagePrompt.substring(0, 100)}...`);
+      const promptPreview = post.imagePrompt.length > 100 
+        ? post.imagePrompt.substring(0, 100) + '...' 
+        : post.imagePrompt;
+      console.log(`   Prompt: ${promptPreview}`);
       
       const imageUrl = await generateImageWithIdeogram(post.imagePrompt);
-      console.log(`   ✓ Image generated: ${imageUrl.substring(0, 60)}...`);
+      
+      if (!imageUrl) {
+        throw new Error('No image URL returned from API');
+      }
+      
+      const urlPreview = imageUrl.length > 60 
+        ? imageUrl.substring(0, 60) + '...' 
+        : imageUrl;
+      console.log(`   ✓ Image generated: ${urlPreview}`);
       
       // Download image
       console.log(`   ⬇️  Downloading image...`);

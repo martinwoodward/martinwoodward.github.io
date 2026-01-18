@@ -12,6 +12,7 @@ This directory contains prompts and configuration for generating custom images f
 ✅ **Frontmatter Updated**: All 521 blog posts now have their frontmatter updated to reference unique, contextual images
 ✅ **Image Prompts Generated**: AI-optimized prompts created for each post based on content and era
 ✅ **Directory Structure**: Created `public/images/post/` directory for storing generated images
+✅ **Ideogram.ai Integration**: Added automated image generation script using Ideogram.ai API
 
 ## Image Generation Strategy
 
@@ -28,7 +29,37 @@ This directory contains prompts and configuration for generating custom images f
 
 ## How to Generate Images
 
-### Option 1: AI Image Generation Services
+### Option 1: Automated with Ideogram.ai API (Recommended)
+
+**New!** Use the automated script with Ideogram.ai API:
+
+1. **Set up your API key** (see [IDEOGRAM_API_SETUP.md](../IDEOGRAM_API_SETUP.md))
+2. **Run the generation script**:
+   ```bash
+   export IDEOGRAM_API_KEY="your_api_key_here"
+   npm run generate-blog-images -- --limit 5 --skip-existing
+   ```
+
+**Command options:**
+- `--limit N` - Generate only N images (great for testing)
+- `--year YYYY` - Generate only for posts from a specific year
+- `--skip-existing` - Skip posts that already have images
+
+**Examples:**
+```bash
+# Test with 5 images
+npm run generate-blog-images -- --limit 5
+
+# Generate all 2024 posts
+npm run generate-blog-images -- --year 2024 --skip-existing
+
+# Generate next 10 missing images
+npm run generate-blog-images -- --limit 10 --skip-existing
+```
+
+See [IDEOGRAM_API_SETUP.md](../IDEOGRAM_API_SETUP.md) for complete documentation.
+
+### Option 2: Other AI Image Generation Services
 1. Use services like:
    - **DALL-E 3** (OpenAI)
    - **Midjourney** 
