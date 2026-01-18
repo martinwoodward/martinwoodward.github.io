@@ -1,0 +1,152 @@
+---
+title: "TodoHub: Your Todos, Backed by GitHub"
+date: 2026-01-18T10:00:00.000Z
+images:
+  - "/images/post/2026/01/todohub-header.jpg"
+author: "Martin Woodward"
+description: "Introducing TodoHub - a native iOS app that uses GitHub Issues as your personal todo list backend"
+# Taxonomies
+categories: ["maker", "ios", "github", "productivity"]
+tags:
+  [
+    "ios",
+    "swift",
+    "github",
+    "github-copilot",
+    "swiftui",
+    "productivity",
+    "github-api",
+    "github-projects",
+    "open-source",
+  ]
+type: "regular"
+draft: false
+---
+
+import Notice from "@/shortcodes/Notice";
+
+The GitHub Copilot CLI is fantastic fun to use. I've been having a great time recently playing around with all the agents you can now invoke. I kept finding myself getting ideas for side projects I wanted to work on and jotting them down as GitHub Issues in my personal repository. Then I thought - why not use GitHub Issues as my actual todo list?
+
+That's when TodoHub was born.
+
+## What is TodoHub?
+
+**TodoHub** is a native iOS application that uses GitHub Issues as the storage backend for your personal todo items. Authenticate with GitHub, select a repository, and manage your tasks with an elegant, minimal interface.
+
+The idea is simple: if you're already using GitHub every day, why not leverage its powerful issue tracking system for your personal todos? GitHub Issues give you:
+
+- **Version control** for your todos (every change is tracked)
+- **Collaboration** (share your todo repo with others if you want)
+- **Cross-platform access** (GitHub's web interface, CLI, or TodoHub)
+- **Powerful organization** with labels, milestones, and projects
+- **Search and filtering** capabilities built-in
+- **API access** for automation and integrations
+
+## Features
+
+TodoHub isn't just a basic issue viewer - it's a fully-featured todo app that happens to use GitHub as its backend:
+
+- 🔐 **Secure GitHub OAuth** - Sign in with your GitHub account
+- 📋 **Issue-backed todos** - Every todo is a GitHub Issue
+- 📊 **Project integration** - Uses GitHub Projects for ordering and custom fields
+- 📅 **Due dates** - Set and track deadlines
+- 🚦 **Priorities** - High, Medium, Low priority levels
+- ✅ **Quick complete** - Swipe to mark tasks done
+- 🌐 **All issues view** - See all issues assigned to you across GitHub
+- 🌙 **Dark mode** - Full support for light and dark themes
+- 📱 **Native iOS** - Built with SwiftUI for iOS 17+
+
+## Why I Built This
+
+Like many developers, I have a complex relationship with todo apps. I've tried them all - from simple note-taking apps to complex project management systems. They all had the same problems:
+
+1. **Yet another system to check** - I'm already on GitHub daily
+2. **Vendor lock-in** - What happens when the service shuts down?
+3. **Limited automation** - Hard to integrate with my existing workflows
+4. **Data portability** - Getting my data out is always painful
+
+Using GitHub Issues as my todo backend solves all of these problems. Plus, it's kind of fun to see my personal todos mixed in with actual project issues when I'm working on open source projects.
+
+## The GitHub Copilot Connection
+
+I built TodoHub using GitHub Copilot, and it was an absolute joy. The combination of Swift, SwiftUI, and Copilot's code suggestions made development incredibly productive. Copilot was particularly helpful with:
+
+- **GraphQL queries** - GitHub's API uses GraphQL, and Copilot helped me write efficient queries
+- **SwiftUI views** - Generating boilerplate view code and common patterns
+- **OAuth flow** - Implementing the GitHub OAuth 2.0 with PKCE flow securely
+- **Data models** - Creating Swift structs that match GitHub's API responses
+
+The GitHub Copilot CLI agents were also invaluable during development. I could use natural language to ask questions about the GitHub API, get help debugging issues, and even generate test data.
+
+<Notice type="tip">
+  If you're building an iOS app, GitHub Copilot is a game-changer. The SwiftUI
+  suggestions are excellent, and it really understands Apple's design patterns.
+</Notice>
+
+## Architecture
+
+TodoHub follows the **MVVM (Model-View-ViewModel)** architecture pattern, which is the recommended approach for SwiftUI apps:
+
+- **Models** - Data structures for todos, users, repositories
+- **Views** - SwiftUI views for the UI
+- **ViewModels** - Business logic and state management
+- **Services** - API communication, authentication, storage
+
+The app uses:
+
+- **OAuth 2.0 with PKCE** for secure authentication
+- **GraphQL API** for efficient data fetching
+- **Keychain** for secure token storage
+- **SwiftUI** for the user interface
+
+All the todo data lives in GitHub Issues, so the app is essentially a beautiful, native iOS frontend for your GitHub Issues.
+
+## Getting Started
+
+If you want to try TodoHub yourself, it's open source! Here's how to get started:
+
+1. **Clone the repository**: `git clone https://github.com/martinwoodward/todohub.git`
+2. **Set up a GitHub OAuth App** - You'll need your own OAuth credentials
+3. **Configure the app** with your OAuth Client ID and Secret
+4. **Build and run** in Xcode (requires Xcode 15.2+ and iOS 17+)
+
+The [README](https://github.com/martinwoodward/todohub) has detailed setup instructions, including how to create your OAuth app and configure the project.
+
+## Use Cases
+
+While I built this primarily for my personal use, I've found it works great for:
+
+- **Personal task management** - Keep your todos in a personal GitHub repo
+- **Project-specific todos** - Use it with your project's issue tracker
+- **Team coordination** - Share a repo with your team for shared todos
+- **Cross-platform workflow** - Add todos from iOS, manage them on desktop
+- **Developer productivity** - Integrate with GitHub Actions, workflows, and automations
+
+## What's Next?
+
+TodoHub is a living project. Some features I'm considering adding:
+
+- **Offline support** - Cache issues for offline access
+- **Rich text editing** - Better markdown editing experience
+- **Notifications** - Push notifications for issue updates
+- **Multiple accounts** - Switch between different GitHub accounts
+- **iPad optimization** - Take advantage of the larger screen
+- **Widgets** - Home screen widgets for quick access to todos
+
+## Try It Yourself
+
+The beauty of building on GitHub's platform is that TodoHub is just one way to interact with your todos. You can:
+
+- Use TodoHub on your iPhone
+- Manage issues on GitHub.com
+- Use the GitHub CLI (`gh issue list`)
+- Build your own tools using the GitHub API
+- Automate with GitHub Actions
+
+It's all just GitHub Issues, so you're never locked into a single interface.
+
+Want to see the code or try building it yourself? Check out the [TodoHub repository](https://github.com/martinwoodward/todohub) on GitHub. It's open source under the MIT License, so feel free to fork it, modify it, or use it as inspiration for your own projects.
+
+And if you're interested in building iOS apps with GitHub integration, this is a great example project to learn from. The combination of SwiftUI, GitHub's GraphQL API, and GitHub Copilot makes for a really productive development experience.
+
+Now if you'll excuse me, I have some todos to mark as complete in my new app!
