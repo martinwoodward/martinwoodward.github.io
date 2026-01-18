@@ -2,6 +2,8 @@
 
 This guide explains how to set up your Ideogram.ai API key as a GitHub repository secret and use it to generate images for your blog posts.
 
+> 📝 **Quick Start Available**: If you just want to get started quickly, see [QUICKSTART_IDEOGRAM.md](QUICKSTART_IDEOGRAM.md) for a condensed version of this guide.
+
 ## Table of Contents
 
 - [Getting an Ideogram.ai API Key](#getting-an-ideogramai-api-key)
