@@ -3,6 +3,9 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
+# Note: This repository includes an optional agentic workflow for auto-merging
+# safe Dependabot updates. See .github/workflows/AGENTIC_WORKFLOWS.md for details.
+
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
@@ -14,3 +17,8 @@ updates:
         dependency-type: "development"
       prod:
         dependency-type: "production"
+    # Ignore agentic workflow .lock.yml files - they are auto-generated
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+        # Let the agentic auto-merge workflow handle these
