@@ -13,7 +13,8 @@
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
     "og-preview": "echo 'Open http://localhost:4321/og-preview in your browser to preview OG images (make sure dev server is running)'",
-    "generate-og-images": "node scripts/generate-og-images.js"
+    "generate-og-images": "node scripts/generate-og-images.js",
+    "generate-blog-images": "node scripts/generate-images-with-ideogram.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
