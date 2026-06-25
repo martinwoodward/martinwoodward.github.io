@@ -31,11 +31,11 @@ There are cheaper ways to achieve some of the same results, but this combo is pr
 
 | Item | US | UK |
 |---|---|---|
-| Raspberry Pi 5 (8GB recommended) | [Amazon US](https://www.amazon.com/dp/PLACEHOLDER_PI5?tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/dp/PLACEHOLDER_PI5?tag=woodweb03-20) |
-| Raspberry Pi AI HAT+ 2 (Hailo-10H) | [Amazon US](https://www.amazon.com/dp/PLACEHOLDER_AIHAT2?tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/dp/PLACEHOLDER_AIHAT2?tag=woodweb03-20) |
-| Official Pi Power Supply | [Amazon US](https://www.amazon.com/dp/PLACEHOLDER_PSU?tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/dp/PLACEHOLDER_PSU?tag=woodweb03-20) |
-| Active Cooler / Case | [Amazon US](https://www.amazon.com/dp/PLACEHOLDER_COOLING?tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/dp/PLACEHOLDER_COOLING?tag=woodweb03-20) |
-| NVMe HAT or fast SD storage | [Amazon US](https://www.amazon.com/dp/PLACEHOLDER_STORAGE?tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/dp/PLACEHOLDER_STORAGE?tag=woodweb03-20) |
+| Raspberry Pi 5 (8GB recommended) | [Amazon US](https://www.amazon.com/s?k=Raspberry+Pi+5+8GB&tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/s?k=Raspberry+Pi+5+8GB&tag=woodweb03-20) |
+| Raspberry Pi AI HAT+ 2 (Hailo-10H) | [Amazon US](https://www.amazon.com/s?k=Raspberry+Pi+AI+HAT%2B+2+Hailo-10H&tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/s?k=Raspberry+Pi+AI+HAT%2B+2+Hailo-10H&tag=woodweb03-20) |
+| Official Pi 27W USB-C Power Supply | [Amazon US](https://www.amazon.com/s?k=Raspberry+Pi+27W+USB-C+Power+Supply&tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/s?k=Raspberry+Pi+27W+USB-C+Power+Supply&tag=woodweb03-20) |
+| Active Cooler / Case | [Amazon US](https://www.amazon.com/s?k=Raspberry+Pi+5+active+cooler+case&tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/s?k=Raspberry+Pi+5+active+cooler+case&tag=woodweb03-20) |
+| Fast microSD card (U3/A2, e.g. SanDisk Extreme Pro) | [Amazon US](https://www.amazon.com/s?k=SanDisk+Extreme+Pro+microSD+U3+A2&tag=woodweb03-20) | [Amazon UK](https://www.amazon.co.uk/s?k=SanDisk+Extreme+Pro+microSD+U3+A2&tag=woodweb03-20) |
 
 ## Step 1: Install Hailo runtime and drivers
 
@@ -46,6 +46,13 @@ hailortcli scan
 ```
 
 You should see your Hailo device listed.
+
+Expected output:
+
+```text
+Hailo Devices:
+[-] Device: 0001:01:00.0
+```
 
 ## Step 2: Install Hailo Model Zoo GenAI (`hailo-ollama`)
 
@@ -107,7 +114,7 @@ curl --silent http://localhost:8000/api/chat \
 
 ## Step 4: Use LiteLLM as the OpenAI-compatible bridge (recommended)
 
-I originally built a tiny custom bridge, but LiteLLM is a better option in practice. It is simpler to maintain, handles more OpenAI compatibility edge-cases, and is quite good for this sort of local setup.
+The bridge is needed because Copilot BYOK expects an OpenAI-compatible API shape, while Hailo gives us an Ollama-compatible endpoint. LiteLLM sits in the middle and does the translation cleanly.
 
 ```bash
 mkdir -p ~/litellm-hailo
@@ -137,6 +144,22 @@ Quick check:
 
 ```bash
 curl --silent http://127.0.0.1:4000/v1/models | jq
+```
+
+Example output:
+
+```json
+{
+  "data": [
+    {
+      "id": "qwen2.5-coder:1.5b",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    }
+  ],
+  "object": "list"
+}
 ```
 
 ## Step 5: Point Copilot CLI at LiteLLM
@@ -209,7 +232,23 @@ systemctl --user enable --now hailo-ollama.service litellm-hailo.service
 systemctl --user status hailo-ollama.service litellm-hailo.service
 ```
 
-Now after reboot, both services come up automatically and you can launch Copilot immediately.
+Also pre-set your Copilot BYOK variables in your shell profile so every new terminal is ready:
+
+```bash
+cat >> ~/.bashrc <<'EOF'
+export COPILOT_PROVIDER_BASE_URL=http://127.0.0.1:4000/v1
+export COPILOT_PROVIDER_TYPE=openai
+export COPILOT_PROVIDER_MODEL_ID=gpt-4o-mini
+export COPILOT_PROVIDER_WIRE_MODEL=qwen2.5-coder:1.5b
+export COPILOT_MODEL=gpt-4o-mini
+export COPILOT_PROVIDER_MAX_PROMPT_TOKENS=3072
+export COPILOT_PROVIDER_MAX_OUTPUT_TOKENS=1024
+EOF
+
+source ~/.bashrc
+```
+
+Now after reboot, both services come up automatically and your terminal environment is pre-configured, so you can launch Copilot immediately.
 
 ## Why this is fun
 
@@ -223,6 +262,16 @@ One of the best parts of this setup is that you don't always need the biggest mo
 
 Running Copilot CLI on Raspberry Pi makes this workflow rather satisfying, because you can move between local and frontier models from one familiar Copilot experience.
 
+## AI HAT+ 2 stats and power context
+
+Some of the numbers here are pretty compelling:
+
+- Raspberry Pi AI HAT+ 2 uses a Hailo-10H accelerator with **40 TOPS (INT4)** and **8GB dedicated on-board RAM** ([Raspberry Pi product page](https://www.raspberrypi.com/products/ai-hat-plus-2/)).
+- The official Raspberry Pi 5 PSU is **27W max**, with **5.1V at 5A (25.5W output)** ([Raspberry Pi 27W PSU specs](https://www.raspberrypi.com/products/27w-power-supply/)).
+- Apple lists Mac mini (M4) at **4W idle** and **65W max**, and Mac mini (M4 Pro) at **5W idle** and **140W max** ([Apple power data](https://support.apple.com/en-in/103253)).
+
+It is not a like-for-like performance comparison, but the power envelope is a big plus: this Pi + AI HAT stack can deliver useful local AI workflows in a very low-power setup.
+
 ## Useful documentation
 
 - [GitHub Copilot CLI: Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
@@ -230,6 +279,9 @@ Running Copilot CLI on Raspberry Pi makes this workflow rather satisfying, becau
 - [LiteLLM](https://docs.litellm.ai/docs/)
 - [HailoRT runtime](https://github.com/hailo-ai/hailort)
 - [Raspberry Pi AI HAT+ 2 (Hailo-10H)](https://www.raspberrypi.com/news/introducing-the-raspberry-pi-ai-hat-plus-2-generative-ai-on-raspberry-pi-5/)
+- [Raspberry Pi AI HAT+ 2 product page](https://www.raspberrypi.com/products/ai-hat-plus-2/)
+- [Raspberry Pi 27W power supply](https://www.raspberrypi.com/products/27w-power-supply/)
+- [Mac mini power consumption by model](https://support.apple.com/en-in/103253)
 - [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
 
 If you build one of these, I'd love to hear how you get on. Happy making!
