@@ -55,7 +55,7 @@
     "autoprefixer": "^10.4.23",
     "eslint": "^9.39.2",
     "playwright": "^1.57.0",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.10",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
