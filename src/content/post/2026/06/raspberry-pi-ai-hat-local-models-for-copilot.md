@@ -187,6 +187,12 @@ The real magic is that everything runs on-device: Pi + Hailo acceleration + nati
 
 At 1.5B parameters, `qwen2.5-coder:1.5b` is brilliant for a local setup, but for trickier prompts you may need to be a little more explicit than with larger cloud models.
 
+## Pick the right model for the job
+
+One of the best parts of this setup is that you don't always need the biggest model in existence for every prompt. I use local models on the Pi for the quick and simple stuff like summarisation, planning, and first-pass drafts, then switch to the most powerful cloud coding models when I need deeper reasoning or heavier lifting.
+
+Running Copilot CLI on Raspberry Pi makes this workflow rather satisfying, because you can move between local and frontier models from one familiar Copilot experience.
+
 ## Useful documentation
 
 - [GitHub Copilot CLI: Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
