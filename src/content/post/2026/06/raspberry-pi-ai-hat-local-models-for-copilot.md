@@ -1,5 +1,5 @@
 ---
-title: "Running a Local Coding Model on Raspberry Pi AI HAT+ 2 with GitHub Copilot CLI"
+title: "Unlimited Copilot Running with Local Models on a Raspberry Pi (Yes, really)"
 date: 2026-06-25T16:40:00.000Z
 images:
   - "/images/image-placeholder.png"
