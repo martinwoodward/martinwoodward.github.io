@@ -72,6 +72,21 @@ In another terminal, list models:
 curl --silent http://localhost:8000/hailo/v1/list | jq
 ```
 
+On my Pi, this currently returns:
+
+```json
+{
+  "models": [
+    "deepseek_r1:1.5b",
+    "llama3.2:1b",
+    "manifests:qwen3",
+    "qwen2.5-coder:1.5b",
+    "qwen2.5:1.5b",
+    "qwen2:1.5b"
+  ]
+}
+```
+
 ## Step 3: Pull the coding model we want
 
 We're using **`qwen2.5-coder:1.5b`** for this setup.
