@@ -29,6 +29,9 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     outputs:
       page-url: ${{ steps.deployment.outputs.page_url }}
       new-posts: ${{ steps.detect.outputs.new-posts }}
@@ -273,6 +276,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: bluesky-social
     if: always() && needs.bluesky-social.result == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout updated code
         uses: actions/checkout@v4
