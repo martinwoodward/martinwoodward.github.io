@@ -174,6 +174,21 @@ To customize the site's appearance, modify the values in `theme.json`:
 └── package.json     # Project dependencies
 ```
 
+## Automation & Agentic Workflows
+
+This repository includes experimental **Agentic Workflows** - AI-powered automation workflows that help with repository maintenance:
+
+- 🔄 **Dependabot Auto-Merge**: Automatically approves and merges safe dependency updates
+- 🏷️ **Issue Triage**: Categorizes and analyzes new issues with helpful context
+- 🏥 **CI Doctor**: Investigates and diagnoses CI/CD failures automatically
+- ✍️ **PR Description Enhancer**: Adds helpful context to pull request descriptions
+
+These workflows are defined in natural language (Markdown) and compiled to GitHub Actions using the [gh-aw](https://github.com/githubnext/gh-aw) tool.
+
+**To enable these workflows**, see [.github/workflows/AGENTIC_WORKFLOWS.md](.github/workflows/AGENTIC_WORKFLOWS.md) for complete setup instructions.
+
+**Note**: These are optional experimental features. The site works perfectly without them, but they can help reduce maintenance burden if you choose to use them.
+
 ## Deployment
 Build the site for production with:
 ```bash

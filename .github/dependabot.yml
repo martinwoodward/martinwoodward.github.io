@@ -3,6 +3,9 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
+# Note: This repository includes an optional agentic workflow for auto-merging
+# safe Dependabot updates. See .github/workflows/AGENTIC_WORKFLOWS.md for details.
+
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
