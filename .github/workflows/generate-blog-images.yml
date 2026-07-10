@@ -1,0 +1,112 @@
+name: Generate Blog Images with Ideogram.ai
+
+# This workflow can be manually triggered to generate blog post images
+# using the Ideogram.ai API. It's disabled by default to control API costs.
+# 
+# To use this workflow:
+# 1. Set up IDEOGRAM_API_KEY as a repository secret (see IDEOGRAM_API_SETUP.md)
+# 2. Enable this workflow in the Actions tab
+# 3. Run it manually with your desired options
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Year to generate images for (optional, e.g., 2024)'
+        required: false
+        type: string
+        default: ''
+      limit:
+        description: 'Maximum number of images to generate (optional, e.g., 10)'
+        required: false
+        type: number
+        default: 5
+      skip_existing:
+        description: 'Skip posts that already have images'
+        required: false
+        type: boolean
+        default: true
+
+# Limit permissions for security
+permissions:
+  contents: write  # Required to commit and push generated images
+
+jobs:
+  generate-images:
+    name: Generate Blog Post Images
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Setup Yarn
+        run: corepack enable
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Generate images with Ideogram.ai
+        env:
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
+        run: |
+          ARGS=""
+          
+          # Add year filter if specified
+          if [ -n "${{ inputs.year }}" ]; then
+            ARGS="$ARGS --year ${{ inputs.year }}"
+          fi
+          
+          # Add limit if specified
+          if [ -n "${{ inputs.limit }}" ] && [ "${{ inputs.limit }}" != "0" ]; then
+            ARGS="$ARGS --limit ${{ inputs.limit }}"
+          fi
+          
+          # Add skip-existing flag if enabled
+          if [ "${{ inputs.skip_existing }}" = "true" ]; then
+            ARGS="$ARGS --skip-existing"
+          fi
+          
+          echo "Running: node scripts/generate-images-with-ideogram.js $ARGS"
+          node scripts/generate-images-with-ideogram.js $ARGS
+      
+      - name: Check for generated images
+        id: check-images
+        run: |
+          if [ -n "$(git status --porcelain public/images/post/)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Generated new images:"
+            git status --porcelain public/images/post/
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No new images were generated"
+          fi
+      
+      - name: Commit and push generated images
+        if: steps.check-images.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/images/post/
+          git commit -m "Add AI-generated blog post images via Ideogram.ai"
+          git push
+      
+      - name: Summary
+        run: |
+          echo "### Image Generation Complete! 🎨" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check-images.outputs.has_changes }}" = "true" ]; then
+            echo "✅ New images were generated and committed to the repository." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No new images were generated (all requested images may already exist)." >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Options used:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Year filter: ${{ inputs.year || 'None' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Limit: ${{ inputs.limit || 'Unlimited' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Skip existing: ${{ inputs.skip_existing }}" >> $GITHUB_STEP_SUMMARY

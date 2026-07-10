@@ -68,6 +68,7 @@ See [.devcontainer/README.md](.devcontainer/README.md) for detailed information.
 - `npm run preview` - Preview the production build locally
 - `npm run astro` - Run Astro CLI commands
 - `npm run generate-og-images` - Generate PNG files from OG image templates (automatically run during build)
+- `npm run generate-blog-images` - Generate blog post images using Ideogram.ai API (requires `IDEOGRAM_API_KEY` environment variable)
 
 ### Development Workflow
 
@@ -110,6 +111,45 @@ To modify the OG image template:
 
 1. **Edit the template**: Modify `src/pages/api/og/[...slug].png.ts`
 2. **Update styles**: Customize the CSS within the `generateOGImageHTML()` function
+
+## Blog Post Image Generation
+
+This site can automatically generate unique header images for blog posts using the [Ideogram.ai](https://ideogram.ai) API. Each post can have a custom AI-generated image based on its content and era.
+
+**Key files:**
+- `scripts/generate-images-with-ideogram.js` - Image generation script
+- `scripts/image-prompts.json` - Pre-generated prompts for all blog posts
+- `IDEOGRAM_API_SETUP.md` - Complete setup guide
+
+### Quick Start
+
+1. **Get an Ideogram.ai API key** (see [IDEOGRAM_API_SETUP.md](IDEOGRAM_API_SETUP.md))
+2. **Set the environment variable**:
+   ```bash
+   export IDEOGRAM_API_KEY="your_api_key_here"
+   ```
+3. **Generate images**:
+   ```bash
+   npm run generate-blog-images -- --limit 5 --skip-existing
+   ```
+
+### Usage Examples
+
+```bash
+# Generate only 5 images (for testing)
+npm run generate-blog-images -- --limit 5
+
+# Generate images for posts from 2024
+npm run generate-blog-images -- --year 2024
+
+# Skip posts that already have images
+npm run generate-blog-images -- --skip-existing
+
+# Combine options
+npm run generate-blog-images -- --year 2024 --limit 10 --skip-existing
+```
+
+For complete setup instructions including GitHub Actions integration, see [IDEOGRAM_API_SETUP.md](IDEOGRAM_API_SETUP.md).
 
 ### Configuration
 
