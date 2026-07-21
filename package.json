@@ -20,7 +20,7 @@
     "@astrojs/markdown-satteri": "0.3.2",
     "@astrojs/mdx": "7.0.0",
     "@astrojs/react": "^6.0.0",
-    "@astrojs/rss": "4.0.18",
+    "@astrojs/rss": "4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@primer/react-brand": "^0.69.0",
     "astro": "7.0.3",
