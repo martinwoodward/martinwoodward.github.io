@@ -213,7 +213,7 @@ jobs:
             # Create enhanced prompt with post context
             PROMPT="Write a short, engaging social media post (under 250 characters) for a new blog post. Use UK english, never use emdash and only use hashtags sparingly and if they fit into the body of the text in a way that reads like a sentence. Title: $POST_TITLE. Description: $POST_DESCRIPTION. Categories: $POST_CATEGORIES. Content preview: $POST_CONTENT. Make it conversational and include relevant hashtags. Don't include the URL."
             
-            AI_RESPONSE=$(curl -s "https://models.github.ai/inference/chat/completions" \
+            AI_RESPONSE=$(curl -fsS "https://models.github.ai/inference/chat/completions" \
               -H "Content-Type: application/json" \
               -H "Authorization: Bearer $GITHUB_TOKEN" \
               -d "{
@@ -227,7 +227,11 @@ jobs:
               }")
             
             # Extract the message from the response
-            AI_MESSAGE=$(echo "$AI_RESPONSE" | jq -r '.choices[0].message.content')
+            AI_MESSAGE=$(echo "$AI_RESPONSE" | jq -er '.choices[0].message.content | strings | select(length > 0)' 2>/dev/null || true)
+            if [ -z "$AI_MESSAGE" ]; then
+              echo "::warning::GitHub Models did not return a message; using the post description instead."
+              AI_MESSAGE="$POST_DESCRIPTION"
+            fi
             BLUESKY_TEXT="${AI_MESSAGE} ${POST_URL}"
             POST_FILE="$post_file"
             
