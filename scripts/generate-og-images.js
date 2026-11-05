@@ -1,10 +1,67 @@
 const { chromium } = require('playwright');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
+// Rendered PNGs are cached by a hash of their source HTML so unchanged images are reused across builds
+const cacheDir = process.env.OG_CACHE_DIR || path.join(__dirname, '..', '.og-cache');
+const RENDER_VERSION = 'v1';
+
+function prepareHtml(htmlContent) {
+  // Replace Google Fonts with system fonts to avoid network requests
+  return htmlContent
+    .replace(/@import url\('https:\/\/fonts\.googleapis\.com\/[^']+'\);/g, '')
+    .replace(
+      /font-family: 'Inter'[^;]+;/g,
+      "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;"
+    );
+}
+
+function cachePathFor(htmlContent) {
+  const hash = crypto.createHash('sha256').update(RENDER_VERSION).update(htmlContent).digest('hex');
+  return path.join(cacheDir, `${hash}.png`);
+}
+
 async function generateOGImages() {
   console.log('🎨 Starting OG image generation...');
-  
+
+  const distPath = path.join(__dirname, '..', 'dist');
+  const ogApiPath = path.join(distPath, 'api', 'og');
+
+  if (!fs.existsSync(ogApiPath)) {
+    console.log('❌ No OG API directory found in dist. Make sure to run astro build first.');
+    return;
+  }
+
+  fs.mkdirSync(cacheDir, { recursive: true });
+  const usedCacheFiles = new Set();
+  const pending = [];
+  let cached = 0;
+
+  for (const htmlFile of findHtmlFiles(ogApiPath)) {
+    const htmlContent = prepareHtml(fs.readFileSync(htmlFile, 'utf8'));
+    const cacheFile = cachePathFor(htmlContent);
+    usedCacheFiles.add(path.basename(cacheFile));
+    if (fs.existsSync(cacheFile)) {
+      fs.copyFileSync(cacheFile, htmlFile);
+      cached++;
+    } else {
+      pending.push({ htmlFile, htmlContent, cacheFile });
+    }
+  }
+
+  console.log(`♻️  Reused ${cached} cached OG images, ${pending.length} to render`);
+
+  // Drop cache entries no longer referenced so the cache doesn't grow forever
+  for (const file of fs.readdirSync(cacheDir)) {
+    if (!usedCacheFiles.has(file)) fs.rmSync(path.join(cacheDir, file), { force: true });
+  }
+
+  if (pending.length === 0) {
+    console.log('✅ All OG images up to date');
+    return;
+  }
+
   let browser;
   try {
     // Try to use system browser first if available
@@ -28,40 +85,15 @@ async function generateOGImages() {
   }
 
   try {
-    const distPath = path.join(__dirname, '..', 'dist');
-    const ogApiPath = path.join(distPath, 'api', 'og');
-    
-    if (!fs.existsSync(ogApiPath)) {
-      console.log('❌ No OG API directory found in dist. Make sure to run astro build first.');
-      return;
-    }
-
-    // Find all HTML files with .png extensions
-    const htmlFiles = findHtmlFiles(ogApiPath);
-    console.log(`📁 Found ${htmlFiles.length} OG image files to convert`);
-
     const page = await browser.newPage();
     await page.setViewportSize({ width: 1200, height: 630 });
 
     let converted = 0;
     let failed = 0;
     
-    for (const htmlFile of htmlFiles) {
+    for (const { htmlFile, htmlContent, cacheFile } of pending) {
       try {
         console.log(`🖼️  Converting: ${path.relative(distPath, htmlFile)}`);
-        
-        // Read the HTML content
-        let htmlContent = fs.readFileSync(htmlFile, 'utf8');
-        
-        // Replace Google Fonts with system fonts to avoid network requests
-        htmlContent = htmlContent.replace(
-          /@import url\('https:\/\/fonts\.googleapis\.com\/[^']+'\);/g,
-          ''
-        );
-        htmlContent = htmlContent.replace(
-          /font-family: 'Inter'[^;]+;/g,
-          "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;"
-        );
         
         // Set the content with a shorter timeout
         await page.setContent(htmlContent, { 
@@ -81,6 +113,7 @@ async function generateOGImages() {
         
         // Write the PNG file
         fs.writeFileSync(htmlFile, screenshot);
+        fs.writeFileSync(cacheFile, screenshot);
         converted++;
         
       } catch (error) {

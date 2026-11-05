@@ -66,6 +66,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
+      # Restored after the dependency cache so it overlays node_modules/.astro.
+      # Keyed per run so it is re-saved every build; restore-keys picks up the most recent.
+      - name: Cache build outputs (Astro images, OG images)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.BUILD_PATH }}/node_modules/.astro
+            ${{ env.BUILD_PATH }}/.og-cache
+          key: ${{ runner.os }}-build-cache-${{ hashFiles('**/yarn.lock') }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-build-cache-${{ hashFiles('**/yarn.lock') }}-
+
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
@@ -94,3 +106,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages-initial
+          reporting_interval: 1000

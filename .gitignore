@@ -10,6 +10,7 @@ dist/
 build/
 .astro/
 .json/
+.og-cache/
 
 # Environment variables
 .env
