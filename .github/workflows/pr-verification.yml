@@ -38,11 +38,9 @@ jobs:
           
       - name: Install dependencies
         run: |
-          # Clear npm cache to avoid platform-specific binary issues
-          npm cache clean --force
-          # Remove package-lock.json and node_modules to fix Rollup optional dependency issue
-          rm -rf package-lock.json node_modules
-          npm install
+          # Install exactly what yarn.lock pins (same as the deploy workflow) so
+          # Dependabot lockfile bumps are actually tested.
+          yarn install --frozen-lockfile
           npx playwright install-deps chromium
         working-directory: ${{ env.BUILD_PATH }}
         
@@ -57,6 +55,12 @@ jobs:
           npx astro build \
             --site "https://martinwoodward.github.io" \
             --base ""
+        working-directory: ${{ env.BUILD_PATH }}
+
+      - name: Smoke test build output
+        run: yarn smoke-test
+        env:
+          SMOKE_SKIP_OG: "1"
         working-directory: ${{ env.BUILD_PATH }}
         
       - name: Setup Chrome for screenshot
@@ -184,12 +188,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          # Clear npm cache to avoid platform-specific binary issues
-          npm cache clean --force
-          # Remove package-lock.json and node_modules to fix Rollup optional dependency issue
-          rm -rf package-lock.json node_modules
-          # Fresh install
-          npm install
+          yarn install --frozen-lockfile
         working-directory: ${{ env.BUILD_PATH }}
         
       - name: Generate JSON and run TypeScript type check

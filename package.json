@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "yarn generate-json && astro dev",
     "build": "yarn generate-json && astro build && node scripts/generate-og-images.js",
-    "ci": "yarn generate-json && astro check && astro build && node scripts/generate-og-images.js",
+    "ci": "yarn generate-json && astro check && astro build && node scripts/generate-og-images.js && node scripts/smoke-test.js",
+    "smoke-test": "node scripts/smoke-test.js",
     "preview": "astro preview",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
