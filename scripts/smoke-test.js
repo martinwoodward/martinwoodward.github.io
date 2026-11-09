@@ -98,6 +98,11 @@ check('React components render (YouTube embed)', () => {
   assert(/yt-lite|lite-youtube/.test(html), 'YouTube embed component not rendered');
 });
 
+check('MDX shortcodes render (Notice)', () => {
+  const html = read(SAMPLE_POST);
+  assert(/class="notice [a-z]+"/.test(html) && /class="notice-body"/.test(html), 'Notice shortcode not rendered');
+});
+
 check('og:image meta tag present', () => {
   const html = read(SAMPLE_POST);
   assert(/<meta[^>]+property="og:image"[^>]+content="https?:\/\/[^"]+\.png"/.test(html), 'og:image meta missing');
