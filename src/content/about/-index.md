@@ -24,7 +24,7 @@ social:
     link: https://x.com/martinwoodward
 ---
 
-With over 20 years of experience in the software industry, I am passionate about empowering developers, building communities, and creating engaging content. As the Vice President of Developer Relations at GitHub, I lead a large and diverse team that encompasses Developer Programs, Advocacy and more at the company that is loved as the home for developers.
+With over 20 years of experience in the software industry, I am passionate about empowering developers, building communities, and creating engaging content. As the Vice President of Developer Relations at GitHub, I lead a large and diverse team that encompasses Developer Programs, Advocacy and more at the company that created the developer tools business and is loved as the home for developers.
 
 > Never waste a good crisis. <cite>- Martin Woodward<cite>
 
@@ -32,13 +32,8 @@ With over 20 years of experience in the software industry, I am passionate about
 
 #### About Me
 
-I've spent my career at the place where developer tools and developer communities meet. I started out building tools for developers, co-founding Teamprise to bring Team Foundation Server to Eclipse and Java developers. When Microsoft acquired Teamprise, I joined the Visual Studio team and helped move Microsoft towards open source. I set up the company's GitHub presence, helped it adopt Git internally and was Executive Director of the .NET Foundation, where I brought companies like Google, Amazon, Samsung and Red Hat together around an open source .NET.
+I've spent my career at the place where developer tools and developer communities meet. After working in various consulting roles as a user and the advisor of developer tool products, I started out building tools for developers with Teamprise to bring Team Foundation Server to Eclipse and Java developers. When Microsoft acquired Teamprise, I joined the Microsoft DevDiv team and helped move Microsoft towards open source. I set up the company's GitHub presence, helped it adopt Git internally and was Executive Director of the .NET Foundation, where I brought companies like Google, Amazon, Samsung and Red Hat together around an open source .NET.  I then went on to build the Developer Relations presence at GitHub building their advocacy, outreach, Education and Stars programs as well as how we communicate and work with developer communities around the world. I was a founding member of the GitHub Copilot team as we launched into market in 2021 which kicked off todays AI based developer tools ecosystem. I'm also a key part of helping the most senior executives at GitHub and Microsoft tell the story of our developer products and how they are leading the world in this pivotal moment of change for developers that has been brought about by AI.
 
-Today at GitHub, I spend most of my time thinking about how AI is changing what it means to be a developer, and about the open source maintainers keeping the software supply chain running. Recently that has meant:
+Today at Microsoft, I lead the Developer Relations team for all developer related products including GitHub, .NET, Visual Studio Code, Visual Studio and Azure Foundry.
 
-- Closing out [GitHub Universe 2026](https://www.youtube.com/watch?v=Gh-hg7lwA0o) with ducks, plushies and a reminder that [AI doesn't write the story, you do](/post/2026/11/building-with-heart-in-the-age-of-ai/).
-- Writing about [ambient intelligence](https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/) as the next developer interface, where agents take care of the mechanics and developers bring intent and judgement.
-- Talking about how open source maintainers can cope with a flood of AI-generated pull requests, on podcasts and in the press.
-- Hacking on hardware, from the [Octolamp](https://github.com/martinwoodward/octolamp) to [a Furby](/post/2025/10/copilot-hacked-my-furby/) and conference badges.
-
-Outside GitHub, I chair the board of [OpenUK](https://openuk.uk/), the not-for-profit that represents open technology in the UK, and I'm proud to have received an OpenUK Blue Plaque in 2025. For nine years I was Chair of Governors at my local integrated primary school. I live in rural Northern Ireland.
+Outside GitHub, I am on the board of [OpenUK](https://openuk.uk/), the not-for-profit that represents open technology in the UK. For nine years I was the Chair of Governors at my local integrated primary school which I helped to build. I live in rural Northern Ireland with my wife.nine years I was Chair of Governors at my local integrated primary school. I live in rural Northern Ireland.
