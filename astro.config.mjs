@@ -3,14 +3,13 @@ import react from '@astrojs/react';
 import mdx from '@astrojs/mdx';
 import AutoImport from 'astro-auto-import';
 import tailwindcss from '@tailwindcss/vite';
-import remarkGfm from 'remark-gfm';
-import remarkEmoji from 'remark-emoji';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://woodwardweb.com',
+  // Sätteri (Astro's default Markdown processor) has GFM built in and can't
+  // run unified/remark plugins, so none are configured here.
   markdown: {
-    remarkPlugins: [remarkGfm, remarkEmoji],
     syntaxHighlight: 'shiki',
     shikiConfig: {
       theme: 'github-dark',
@@ -33,7 +32,6 @@ export default defineConfig({
     }),
     react(),
     mdx({
-      remarkPlugins: [remarkGfm, remarkEmoji],
       syntaxHighlight: 'shiki',
       shikiConfig: {
         theme: 'github-dark',
