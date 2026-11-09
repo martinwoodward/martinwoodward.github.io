@@ -83,6 +83,11 @@ check('markdown renders headings with ids', () => {
   assert(!/^#{1,6} /m.test(html.replace(/<pre[\s\S]*?<\/pre>/g, '')), 'raw markdown heading syntax found in HTML');
 });
 
+check('markdown lists and links render', () => {
+  const html = read('post/2020/08/2020-08-21-my-rpi-cluster/index.html');
+  assert(/<li>[^<]*<a href="https:\/\/amzn\.to\/[^"]+"[^>]*>🇬🇧<\/a>/.test(html), 'list item links not rendered');
+});
+
 check('code blocks are syntax highlighted (shiki)', () => {
   const html = read('post/2013/05/2013-05-11-getting-started-with-libgit2sharp/index.html');
   assert(/<pre[^>]*class="astro-code/.test(html), 'no shiki-highlighted <pre class="astro-code"> found');
