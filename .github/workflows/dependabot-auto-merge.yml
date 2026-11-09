@@ -1,8 +1,8 @@
 name: Dependabot Auto-Merge
 
-# Approves and enables auto-merge for Dependabot PRs. The merge only happens
-# once required status checks (e.g. PR Verification) pass, thanks to GitHub's
-# auto-merge feature combined with branch protection rules.
+# Enables auto-merge for non-major Dependabot PRs. The merge only happens once
+# the required status checks on the Main ruleset pass. No approval step: the
+# ruleset doesn't require reviews, and Actions isn't allowed to approve PRs.
 
 on:
   pull_request:
@@ -26,13 +26,11 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Approve the pull request
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Enable auto-merge
+      # Majors (e.g. TypeScript 7, ESLint 10) often need code/config changes,
+      # so leave them for a human. Auto-merge waits for the required status
+      # checks on the Main ruleset (Verify Astro Build, Code Quality Checks).
+      - name: Enable auto-merge for patch and minor updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
         run: gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
