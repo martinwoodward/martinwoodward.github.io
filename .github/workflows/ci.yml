@@ -95,6 +95,10 @@ jobs:
           yarn generate-og-images
         working-directory: ${{ env.BUILD_PATH }}
 
+      - name: Smoke test build output
+        run: yarn smoke-test
+        working-directory: ${{ env.BUILD_PATH }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
