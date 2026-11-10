@@ -103,6 +103,17 @@ check('MDX shortcodes render (Notice)', () => {
   assert(/class="notice [a-z]+"/.test(html) && /class="notice-body"/.test(html), 'Notice shortcode not rendered');
 });
 
+check('search index matches built posts', () => {
+  const file = path.resolve('.json/search.json');
+  assert(fs.existsSync(file), '.json/search.json missing (run yarn generate-json)');
+  const entries = JSON.parse(fs.readFileSync(file, 'utf8'));
+  assert(entries.length >= 400, `only ${entries.length} search entries`);
+  const bad = entries.filter((e) => !e.slug || !e.frontmatter?.title || !e.content);
+  assert(bad.length === 0, `${bad.length} entries missing slug/title/content, e.g. ${bad[0]?.slug}`);
+  const missing = entries.filter((e) => !fs.existsSync(path.join(dist, e.slug, 'index.html')));
+  assert(missing.length === 0, `${missing.length} search entries have no built page, e.g. ${missing[0]?.slug}`);
+});
+
 check('og:image meta tag present', () => {
   const html = read(SAMPLE_POST);
   assert(/<meta[^>]+property="og:image"[^>]+content="https?:\/\/[^"]+\.png"/.test(html), 'og:image meta missing');
