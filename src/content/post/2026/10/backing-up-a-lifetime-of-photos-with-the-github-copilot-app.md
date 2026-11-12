@@ -163,8 +163,6 @@ After every call it `fstat`s the file to check the exact nanosecond values stuck
 
 **Folders only go backwards.** Each folder takes the date of its earliest matched child, but only if that's older than the date it already has. Creation and modification are compared separately so nothing gets accidentally pushed forward.
 
-The matching found 123,478 files with a usable date, with 8 conflicts left untouched. By that point I'd had enough of edge cases, so I told Copilot to stop trying to match the rest and just apply what it had (`--matched-only`). TODO(Martin): final count of dates applied, and whether it finished with zero errors – it was at ~20,700 with no errors when the logs end.
-
 ## Where I've got to
 
 All 190 parts are downloaded, extracted and verified. The receipts hold 274,625 records, but that includes the JSON sidecars and the same photo appearing in several albums, so it's definitely not 274,625 unique photos.
