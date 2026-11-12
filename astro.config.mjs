@@ -22,8 +22,8 @@ export default defineConfig({
     // removed because 0.6 re-injects them and causes duplicate declarations.
     react(),
     sitemap({
-      // Skip the noindex OG preview and the /author/ -> /about redirect.
-      filter: (page) => !/\/(og-preview|author)\/$/.test(page)
+      // Skip the noindex OG preview, the /author/ -> /about redirect and theme demo pages.
+      filter: (page) => !/\/(og-preview|author|elements|full-right)\/$/.test(page)
     }),
     mdx({
       syntaxHighlight: 'shiki',

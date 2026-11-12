@@ -123,7 +123,7 @@ check('sitemap generated and includes posts', () => {
   assert(posts.length >= 400, `only ${posts.length} post URLs in sitemap`);
   const sample = SAMPLE_POST.replace(/index\.html$/, '');
   assert(urls.some((u) => u.endsWith('/' + sample)), `sitemap missing ${sample}`);
-  const excluded = urls.filter((u) => /\/(og-preview|author)\/$/.test(u));
+  const excluded = urls.filter((u) => /\/(og-preview|author|elements|full-right)\/$/.test(u));
   assert(excluded.length === 0, `sitemap includes excluded pages: ${excluded.join(', ')}`);
   assert(/^Sitemap: \S+\/sitemap-index\.xml$/m.test(read('robots.txt')), 'robots.txt does not reference sitemap');
 });
