@@ -7,14 +7,15 @@ description: "190 Google Takeout parts, a Mac with no free space and an ExFAT SS
 categories: ["personal", "technology", "ai", "github"]
 tags: ["github-copilot", "google-photos", "backup", "python", "macos", "playwright"]
 type: "regular"
-draft: true
 ---
+
+I have a legacy plan with Google Workspace for my personal domain back when they were free. However, it does come with some storage limits - but super generous so I've been running this setup for decades with no issues.
+
+But lately, I've been running low on Google Photos storage, and that made me ask a more awkward question: where was my copy of all those originals? I wanted something I could hold in my hand and read without signing into anything, so I bought an [external SSD](https://link.amazon/B07kuibwP), formatted it as ExFAT so it works on both my Mac and Windows machines, and sat down with the [GitHub Copilot App](https://github.com/features/copilot) to get roughly 379 GB of photos onto it.
 
 Google Takeout gave me 190 download links, each one a ZIP of about 2.15 GB. My Mac had nowhere near enough free space for even a handful of them.
 
-I'd been running low on Google Photos storage, and that made me ask a more awkward question: where was my copy of all those originals? I wanted something I could hold in my hand and read without signing into anything, so I bought an [external SSD](https://link.amazon/B07kuibwP), formatted it as ExFAT so it works on both my Mac and Windows machines, and sat down with the [GitHub Copilot App](https://github.com/features/copilot) to get roughly 379 GB of photos onto it.
-
-That took four days, two Python scripts, a chunk of JavaScript running inside a browser, and quite a lot of me typing my Google password. Here's what we built and the bits I'd steal if you're doing the same thing.
+What followed took four days, two Python scripts, a chunk of JavaScript running inside a browser, and quite a lot of me typing my Google password. Here's what we built and the bits I'd steal if you're doing the same thing.
 
 ## The shape of it
 
