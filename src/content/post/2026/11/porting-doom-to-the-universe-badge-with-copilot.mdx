@@ -30,10 +30,6 @@ There was just one small problem. Charlie's image didn't work on the new badge a
 
 This is the story of how GitHub Copilot and I got it working in about 47 minutes late one evening while I was also working on my GitHub Universe keynote.
 
-<Notice type="tip">
-  **Try it yourself:** you can [play Doom running in the badge simulator](https://gh.io/doom) right in your browser.
-</Notice>
-
 But it's really a story about something bigger. The most interesting part wasn't the code Copilot wrote. It was the way it kept building itself new ways to _check its own work_.
 
 > **Creating a self-verification loop is what gives your agents super powers**
@@ -155,13 +151,13 @@ Frozen on the title screen. With USB gone, that webcam was the agent's only wind
 
 ## Step 6: Giving the agent a voice
 
-The badge was propped up at an angle where I couldn't easily see my laptop screen and the badge at the same time, so I asked:
+The badge was propped up at an angle where I couldn't easily see my laptop screen and the badge at the same time. Also - I was busy working on my keynote demo on another laptop.  I needed a way to help Copilot make me a better meat proxy. So I asked:
 
 > speak when you need me to do something as the screen is at an angle that is hard to see
 
 From then on, Copilot used the macOS `say` command to call out to me whenever it needed a pair of hands. "Please hold the Home button and tap reset" to get into the BOOTSEL bootloader. "Please hold the badge up to the camera." It also wrote itself a little `flashwait.sh` script that waited for the RP2350's boot drive to appear, copied the new UF2 over and then announced out loud that it was done.
 
-Later on it worked out how to stop needing me at all for flashing. The pico-sdk has a "magic baud rate" trick: open the USB serial port at 1200 baud and the board reboots into the bootloader. So as long as the firmware was alive enough to have a serial port, Copilot could flash it on its own.
+Later on Copilot got bored of waiting on me and actually worked out how to stop needing me at all for flashing. Turns out the pico-sdk has a "magic baud rate" trick: open the USB serial port at 1200 baud and the board reboots into the bootloader. So as long as the firmware was alive enough to have a serial port, Copilot could flash it on its own.
 
 It's a small thing, but it felt like a genuine collaboration. I was the hands. The agent was the brain (and, thanks to the webcam, also the eyes).
 
@@ -245,11 +241,7 @@ In [martinwoodward/rp2040-doom](https://github.com/martinwoodward/rp2040-doom/tr
 
 Next up, I'll be reaching out to the original authors to see if they'd like the patches upstream. That MSC overflow fix in particular is one that anybody building a 32blit-pico device with a longer product name will want.
 
-<Notice type="info">
-  TODO (Martin): Add a photo or video of Doom running on the badge, and
-  confirm the hands-on testing of the button mappings, screen flip and touch
-  controls before publishing.
-</Notice>
+But if you want to try [Doom in the badge virtually, you can try it here](https://gh.io/doom).
 
 ## What I'd do differently to spend fewer credits
 
