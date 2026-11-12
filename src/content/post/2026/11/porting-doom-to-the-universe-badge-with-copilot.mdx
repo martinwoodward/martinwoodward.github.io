@@ -215,7 +215,25 @@ The `product_id` field is only 16 bytes. Our new product name made that `"Univer
 
 Here's the best bit. The original Tufty name, `"Tufty 2350 Storage"`, overflows too. But only by 2 bytes, which happened to land somewhere harmless. It was a latent bug in upstream code that had been sitting there quietly, waiting for somebody to give their badge a longer name.
 
-The fix was simply to clamp the copy and space-pad the fields like the SCSI spec expects. Reflash, and:
+The fix was simply to clamp the copy and space-pad the fields like the SCSI spec expects. Here's the [change to `32blit-pico/usb/device.cpp`](https://github.com/martinwoodward/32blit-sdk/commit/3ae451ba2c):
+
+```diff
+-  memcpy(vendor_id  , vid, strlen(vid));
+-  memcpy(product_id , pid, strlen(pid));
+-  memcpy(product_rev, rev, strlen(rev));
++  // fixed-size, space padded fields, don't overflow if the strings are too long
++  auto copy_field = [](uint8_t *out, const char *str, size_t len) {
++    size_t str_len = std::min(strlen(str), len);
++    memcpy(out, str, str_len);
++    memset(out + str_len, ' ', len - str_len);
++  };
++
++  copy_field(vendor_id, vid, 8);
++  copy_field(product_id, pid, 16);
++  copy_field(product_rev, rev, 4);
+```
+
+Reflash, and:
 
 > Seems to be running!
 
