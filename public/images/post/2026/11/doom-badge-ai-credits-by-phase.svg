@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="512" viewBox="0 0 900 512" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+<rect width="900" height="512" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<text x="30" y="46" font-size="24" font-weight="600" fill="#1f2328">One boot hang ate 40% of the AI credits</text>
+<text x="30" y="76" font-size="15" fill="#59636e">AI credits by project phase, Claude Opus 5.5 in GitHub Copilot (1,087 credits, 217 model calls, ~47 minutes)</text>
+<text x="316" y="132.0" font-size="15" text-anchor="end" fill="#1f2328">Analyse the UF2 &amp; plan</text>
+<text x="316" y="149.0" font-size="12" text-anchor="end" fill="#59636e">10 min</text>
+<rect x="330" y="110" width="201.1" height="34" rx="6" fill="#8250df"/>
+<text x="541.1" y="132.0" font-size="15" font-weight="600" fill="#1f2328">134<tspan font-weight="400" fill="#59636e"> (12%)</tspan></text>
+<text x="316" y="184.0" font-size="15" text-anchor="end" fill="#1f2328">Forks &amp; hardware discovery via REPL</text>
+<text x="316" y="201.0" font-size="12" text-anchor="end" fill="#59636e">3 min</text>
+<rect x="330" y="162" width="236.8" height="34" rx="6" fill="#0969da"/>
+<text x="576.8" y="184.0" font-size="15" font-weight="600" fill="#1f2328">158<tspan font-weight="400" fill="#59636e"> (14%)</tspan></text>
+<text x="316" y="236.0" font-size="15" text-anchor="end" fill="#1f2328">Fix build &amp; implement buttons, flip, touch</text>
+<text x="316" y="253.0" font-size="12" text-anchor="end" fill="#59636e">10 min</text>
+<rect x="330" y="214" width="428.1" height="34" rx="6" fill="#1a7f37"/>
+<text x="768.1" y="236.0" font-size="15" font-weight="600" fill="#1f2328">285<tspan font-weight="400" fill="#59636e"> (26%)</tspan></text>
+<text x="316" y="288.0" font-size="15" text-anchor="end" fill="#1f2328">Hang: webcam triage</text>
+<text x="316" y="305.0" font-size="12" text-anchor="end" fill="#59636e">4 min</text>
+<rect x="330" y="266" width="200.1" height="34" rx="6" fill="#bf8700"/>
+<text x="540.1" y="288.0" font-size="15" font-weight="600" fill="#1f2328">133<tspan font-weight="400" fill="#59636e"> (12%)</tspan></text>
+<text x="316" y="340.0" font-size="15" text-anchor="end" fill="#1f2328">Hang: on-device crash catcher &amp; root cause</text>
+<text x="316" y="357.0" font-size="12" text-anchor="end" fill="#59636e">17 min</text>
+<rect x="330" y="318" width="460.0" height="34" rx="6" fill="#cf222e"/>
+<text x="800.0" y="340.0" font-size="15" font-weight="600" fill="#1f2328">306<tspan font-weight="400" fill="#59636e"> (28%)</tspan></text>
+<text x="316" y="392.0" font-size="15" text-anchor="end" fill="#1f2328">Verify, commit &amp; push</text>
+<text x="316" y="409.0" font-size="12" text-anchor="end" fill="#59636e">3 min</text>
+<rect x="330" y="370" width="107.9" height="34" rx="6" fill="#57606a"/>
+<text x="447.9" y="392.0" font-size="15" font-weight="600" fill="#1f2328">72<tspan font-weight="400" fill="#59636e"> (7%)</tspan></text>
+<text x="30" y="482" font-size="12" fill="#59636e">Writing this post is not included.</text>
+</svg>
