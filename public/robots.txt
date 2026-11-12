@@ -1,4 +1,9 @@
-User-agent: *
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: LinkedInBot
 Allow: /
 
-Disallow: /api/*
+User-agent: *
+Allow: /
+Allow: /api/og/
+Disallow: /api/
