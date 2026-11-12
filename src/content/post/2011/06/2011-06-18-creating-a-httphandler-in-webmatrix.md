@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This weekend I thought I would get round to a project that I’ve been meaning to do for a long time – a new website for the Radio TFS podcast that I do with Mickey and Paul. I haven’t had the chance to play with WebMatrix before so thought that I would give it a try when building the new Radio TFS site. I’m also behind in my learning's around ASP.NET MVC, WebDeploy and IIS 7 so it’s going to be a good weekend!

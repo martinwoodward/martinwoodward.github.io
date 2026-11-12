@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Jet Brains](http://www.jetbrains.com) have just announced the opening of the EAP for their new [.NET Profiler](http://www.jetbrains.net/confluence/display/NetProf/Home), available for [download](http://www.jetbrains.net/confluence/display/NetProf/Download). [Resharper](http://www.jetbrains.com/resharper) by Jet Brains and of course [IntelliJ](http://www.jetbrains.com/idea) are excellent tools, however the future of Resharper and now the [.NET Profiler](http://www.jetbrains.net/confluence/display/NetProf/Home) are by no means certain, with Microsoft adopting many of Jetbrain's excellent features in [Visual Studio 2005](http://lab.msdn.microsoft.com/vs2005/).

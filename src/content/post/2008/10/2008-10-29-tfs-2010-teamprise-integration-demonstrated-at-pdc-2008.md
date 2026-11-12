@@ -12,7 +12,6 @@ description: "Discover how Brian Harry showcased Teamprise integration with TFS 
 categories: ["tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 During [Brian Harry](http://blogs.msdn.com/bharry/)'s "[Team Foundation Server 2010 Cool New Features](http://channel9.msdn.com/pdc2008/TL52/)" presentation at PDC, he demonstrated Teamprise working with TFS 2010 (codenamed "Rosario"). Not often you get one of the most senior technical people in Microsoft using Eclipse on stage at the premiere Microsoft conference! Not only did Brian show some of the work we have been doing in talking with TFS 2010 but he also demonstrated the latest version of the [Teamprise Build Extensions](http://www.teamprise.com/products/build/) that make it very easy to run Ant based builds from Team Foundation Build, but also now publish the results of the JUnit tests into the TFS Data-warehouse for inclusion in reports etc. [Take a look at his session](http://channel9.msdn.com/pdc2008/TL52/) if you would like to see more - available from [Channel 9](http://channel9.msdn.com/pdc2008/TL52/).

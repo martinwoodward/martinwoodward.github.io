@@ -12,7 +12,6 @@ description: "Create your own compact year planner in Excel to easily track impo
 categories: ["technology", "dotnet", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://cid-c7a08ae2600d197a.office.live.com/self.aspx/Public/YearPlanner)As [I’ve mentioned in the past](http://www.woodwardweb.com/dotnet/the_year_planne.html), I like to have a compact year planner on the wall next to my desk so that I can quickly reference stuff. What day of the week a date would be, when I’m supposed to be on vacation, when the major conferences are and product milestones etc.

@@ -12,7 +12,6 @@ description: "Join my insightful conversation with Carl Franklin and Richard Cam
 categories: ["tfs", "technology", "dotnet", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Recently I had the pleasure of chatting with Carl Franklin and Richard Campbell about [Source Control and Continuous Integration](http://www.dotnetrocks.com/default.aspx?showNum=238) - this was recorded for [DotNetRocks](http://www.dotnetrocks.com/) and the show is [now available for you to enjoy](http://www.dotnetrocks.com/default.aspx?showNum=238).

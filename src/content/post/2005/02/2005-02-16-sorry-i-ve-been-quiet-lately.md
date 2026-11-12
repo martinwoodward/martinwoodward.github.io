@@ -12,7 +12,6 @@ description: "Apologies for the recent silence; here's a peek at my favourite po
 categories: ["dotnet", "web", "programming", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Sorry about the lack of posts lately. Had lots on at work and then lots on at home when I eventually get there so been too busy to play and find things of interest.

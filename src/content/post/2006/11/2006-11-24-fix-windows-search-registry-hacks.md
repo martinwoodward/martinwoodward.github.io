@@ -12,7 +12,6 @@ description: "On the off chance that you read my blog and not Scott Hanselman's 
 categories: ["technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 On the off chance that you read my blog and not [Scott Hanselman's](http://www.hanselman.com/blog/) (shame on you) then I wanted to draw your attention to some invaluable [registry tweaks he just posted](http://feeds.feedburner.com/~r/ScottHanselman/~3/53369771/HowToDisableWindowsDesktopSearchExplorerIntegrationAfterInstallingOffice2007.aspx) - especially if you've been forced into installing Windows Desktop Search 3.0 to enable Outlook Instant Search - but also if you are a developer.

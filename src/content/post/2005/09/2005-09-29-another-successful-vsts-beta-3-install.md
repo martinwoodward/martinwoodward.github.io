@@ -12,7 +12,6 @@ description: "Excited to report a successful first-time install of VSTS Beta 3, 
 categories: ["tfs", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I know I probably shouldn't be this excited, but I've just installed VSTS B3 into a single VPC image, and it worked first time!!

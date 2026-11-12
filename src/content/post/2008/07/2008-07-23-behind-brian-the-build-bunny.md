@@ -12,7 +12,6 @@ description: "Discover how Brian the Build Bunny transforms Team Foundation Serv
 categories: ["tfs", "technology", "gadgets", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.youtube.com/watch?v=Is32fWJJA-I) Since posting about [Brian the Build Bunny](http://www.woodwardweb.com/gadgets/000434.html), I have been getting a steady stream of emails from people who would like to know more about how it works.

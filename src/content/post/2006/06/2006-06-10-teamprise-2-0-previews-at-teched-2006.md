@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "books", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/blog/teamprise2.png)[](http://www.woodwardweb.com/blog/teamprise2.png)In a few hours, I’ll be getting on a flight to TechEd 2006 in Boston. If you are coming along then make sure to stop by the [Teamprise](http://www.teamprise.com/) booth and get a preview of Teamprise 2.0. As it is just about to get it’s public unveiling I can finally talk about what has been keeping us so busy for the past couple of months. Things are coming along so well, I just had to share some of the cool stuff we’ve been working on. Take a look at the screen-shot or watch a [quick run-through](http://www.woodwardweb.com/teamprise/QuickTeampriseTour.html) I recorded while I was practising for the show and let us know what you think. The [demo shows the key features of the plug-in in just over 5 minutes](http://www.woodwardweb.com/teamprise/QuickTeampriseTour.html). It is pretty big (about 15Mb) so you’ll have to be patient while it loads.

@@ -12,7 +12,6 @@ description: "Discover how I tackled the challenges of using Windows Live Writer
 categories: ["technology", "books", "dotnet", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've been an avid [Windows Live Writer](http://windowslivewriter.spaces.live.com/) user since the early days, and for many years I've used [Moveable Type](http://www.movabletype.org/) for my personal blog. The reason I went with Moveable Type was initially because that was what some of the other blogs that I read where using. The other thing I liked about it is that files are published as HTML onto the server making the serving of blog pages a very easy task for the web server to do - meaning that my site typically copes well when a post get's a lot of traffic (talk about tempting fate...). While it doesn't have the wide community support that Wordpress has - it works well for me and I'm still very happy with it despite trying lots of others (Wordpress, DasBlog, Community Server etc)

@@ -12,7 +12,6 @@ description: "I've launched the VSTSPlugins website, showcasing open source VSTS
 categories: ["tfs", "dotnet", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Over the weekend, I put up a website for my [VSTSPlugins](http://vstsplugins.sourceforge.net) project - a home for [open source VSTS Plugins](http://vstsplugins.sourceforge.net). So far I've put up a CruiseControl.NET source control plugin. I have a nAnt plugin in the pipeline but I need to convert them to VSTS Beta 3 as the API's have changed names a lot between betas (to get rid of codenames etc).

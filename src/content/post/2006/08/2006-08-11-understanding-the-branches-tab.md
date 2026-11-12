@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Showing branch history in a visual way is not something that the current version 1.0 of the Microsoft Team Foundation Server client is great at. In fairness to the team, showing the branch history of files in an graphical way is pretty complicated and would involve many lines of code – especially when you build a version control system as flexible and powerful as Team Foundation Server.

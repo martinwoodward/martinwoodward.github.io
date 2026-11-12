@@ -12,7 +12,6 @@ description: "Beware when disabling inherited security settings in Visual Studio
 categories: ["git", "tfs", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/images/blog/tfs_properties_full.png)The source control system within Visual Studio Team System has a very powerful security model. One of the nice things is that if a user does not have read permissions on one of the objects in a tree, then that object is totally hidden from view - the server never even tells the client about it's existence.

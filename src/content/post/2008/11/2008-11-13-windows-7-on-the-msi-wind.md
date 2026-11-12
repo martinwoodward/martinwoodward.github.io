@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/Windows7onMSIWind_9736/windwin7m3_2.jpg)

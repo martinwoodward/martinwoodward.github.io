@@ -12,7 +12,6 @@ description: "Ensure your Team System Web Access is secure by upgrading to the l
 categories: ["tfs", "technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 We get so used to the words “Important Security Update” that it is easy to let messages like this one pass you by. However if you have [Team System Web Access](http://go.microsoft.com/fwlink/?LinkID=136577) ([TSWA](http://go.microsoft.com/fwlink/?LinkID=136577)) installed – particularly if you have it on a machine that can be accessed over the internet - then you _really want_ to upgrade it to the latest version available here:

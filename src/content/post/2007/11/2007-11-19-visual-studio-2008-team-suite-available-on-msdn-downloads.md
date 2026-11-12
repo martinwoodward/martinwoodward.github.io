@@ -12,7 +12,6 @@ description: "Visual Studio 2008 Team Suite is now available for download on MSD
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I got an IM message from fellow Team System MVP [Grant Holliday](http://ozgrant.com/) this morning prompting me to log-in to [MSDN Subscription Downloads](http://msdn2.microsoft.com/en-gb/vstudio/aa718656.aspx) and see what was new - lo and behold I'm downloading VSTS 2008 as we speak ;-)

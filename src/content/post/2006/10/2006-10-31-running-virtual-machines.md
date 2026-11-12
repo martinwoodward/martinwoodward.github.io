@@ -21,7 +21,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I use VMWare a lot. Not only do I use it for demonstrations of Teamprise, I also use it for day-to-day development and testing (one of the joys of developing a cross platform product that talks to a Microsoft server product).

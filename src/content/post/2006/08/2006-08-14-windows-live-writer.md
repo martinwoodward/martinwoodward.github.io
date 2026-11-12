@@ -12,7 +12,6 @@ description: "Discover how Windows Live Writer's features, plug-in support, and 
 categories: ["technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/WindowsLiveWriter_A58B/live_writer.png) On [Rob's](http://blogs.msdn.com/robcaron) [recommendation](http://blogs.msdn.com/robcaron/archive/2006/08/14/699196.aspx), I've installed [Windows Live Writer](http://windowslivewriter.spaces.live.com/) today. Up until now I've written most of my blog posts in [BlogJet](http://blogjet.com/) - however so far I'm liking Windows Live Writer and may well stick to it. The thing that I like the most is all the features I use from BlogJet are here (Moveable Type support, image upload, spell checking etc) - but Windows Live Writer also picks up the stylesheets from your blog template and applies them while you are editing - very nice.

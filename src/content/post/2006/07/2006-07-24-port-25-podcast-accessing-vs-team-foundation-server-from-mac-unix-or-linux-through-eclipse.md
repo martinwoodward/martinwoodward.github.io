@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "maker", "teamprise", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I recently did an interview for [Port 25](http://port25.technet.com/default.aspx) (the website for Microsoft’s Open Source Lab). If you would like to listen to the podcast then it is now available [here](http://port25.technet.com/archive/2006/07/21/Podcast_3A00_-Accessing-VS-Team-Foundation-Server-from-Mac_2C00_-UNIX-or-Linux-through-Eclipse.aspx).

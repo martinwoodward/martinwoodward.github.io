@@ -12,7 +12,6 @@ description: "Explore the concept of detestable code—software that's untestabl
 categories: ["technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 From [Martin Fowler](http://martinfowler.com/bliki/Detestable.html)'s site:

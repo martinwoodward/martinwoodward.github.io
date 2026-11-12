@@ -12,7 +12,6 @@ description: "Join us as we chat with Jonathan Wanagel about CodePlex's TFS upgr
 categories: ["git", "tfs", "technology", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In the [latest episode of Radio TFS](http://www.radiotfs.com/2010/09/14/TFSAtCodePlex.aspx) Mickey and I sat down for a chat with Jonathan Wanagel who is the Principal Development Manager over at [CodePlex](http://www.codeplex.com/), Microsoft's open source project hosting site. We talk about what CodePlex is, how it uses Team Foundation Server under the hood, their recent upgrade from TFS 2008 to TFS 2010 and cover some of the agile practises that the CodePlex team uses to push out a new release of the site every three weeks.

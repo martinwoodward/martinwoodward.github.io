@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As a follow up to my [post back in August](http://www.woodwardweb.com/teamprise/000376.html) when we put [TFS Beta 2 onto our production box](http://www.woodwardweb.com/teamprise/000376.html), I just thought I'd mention that here at [Teamprise](http://www.teamprise.com) we have now been running Visual Studio Team Foundation Server 2008 for over 6 months now. We recently upgraded our production TFS instance to the RTM release of TFS 2008 and everything is going very well.

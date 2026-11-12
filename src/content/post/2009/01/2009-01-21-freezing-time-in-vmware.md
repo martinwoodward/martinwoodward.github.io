@@ -12,7 +12,6 @@ description: "Learn how to freeze time in VMware to bypass the January 2009 time
 categories: ["tfs", "technology", "maker", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/BacktotheFuturewithVMWare_1104/tfs2010_on_mac_2.jpg) One of the many pains of working with the [October 2008 CTP of VS2010 (aka Rosario)](http://www.microsoft.com/downloads/details.aspx?FamilyId=922B4655-93D0-4476-BDA4-94CF5F8D4814&displaylang=en) is that on top of everything else, it actually timebombed on January 1st 2009. This means that you have to run the virtual machine disconnected from the clock. Unsurprisingly all of the virtualization packages on the market try their hardest to do you doing crazy things like that. For a start, both [VMWare](http://www.vmware.com/) and [Virtual PC](http://www.microsoft.com/downloads/details.aspx?FamilyID=04d26402-3199-48a3-afa2-2dc0b40a73b6&displaylang=en) will set the CMOS clock date/time to be the time that you created / converted the machine. This means you have to be lightening fast on your F2 button to get into the BIOS setup screen to set the clock back.

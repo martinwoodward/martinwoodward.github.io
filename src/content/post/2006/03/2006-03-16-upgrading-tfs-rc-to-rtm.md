@@ -12,7 +12,6 @@ description: "Learn how to upgrade from TFS RC to RTM while safeguarding custom 
 categories: ["tfs", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Well, the impending release of Team Foundation Server looks to be days away. The User Education team have posted the [upgrade instructions](http://blogs.msdn.com/vstsue/archive/2006/03/15/552130.aspx). I'll post back to let folks know how we get on when we do the upgrade.

@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 That is the question that I am frequently asked by folks looking at the impact of Team Foundation Build moving to Windows Workflow 4.0 from MSBuild as the master build orchestration language in the TFS 2010 release.

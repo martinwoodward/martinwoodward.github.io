@@ -12,7 +12,6 @@ description: "Frustrated by iTunes 7.6 freezing on close? Discover how disabling
 categories: ["technology", "gadgets", "maker", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I swear, one day I'll learn. Despite having [promised myself to steer clear](http://www.woodwardweb.com/podcasting/000371.html) of the initial release of any Windows version of iTunes because they are consistently broke in some pretty severe ways - I read [this report on Engadget](http://www.engadget.com/2008/01/15/apples-itunes-7-6-plays-nice-with-64-bit-vista/) and decided to upgrade thinking that they may finally haved solved the issues I have been having. (My main one being that I could consistently crash iTunes on any PC by downloading a podcast and pressing the "pause" button during the download).

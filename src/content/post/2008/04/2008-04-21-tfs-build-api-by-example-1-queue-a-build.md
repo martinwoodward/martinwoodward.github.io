@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/TFSBuildAPIbyExample1Queueabuild_C1CE/BuildAPI_2.gif) As we all know by now - the build system in TFS2008 was substantially improved. Along with the many improvements came an official API for talking to the build system. This is the same API that the Team Foundation Build UI in Visual Studio uses, however there are many additional methods that were added that were not for the UI at all but for potential consumers of the Build API.

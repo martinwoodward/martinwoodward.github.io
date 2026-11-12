@@ -12,7 +12,6 @@ description: "Discover the new TFS Power Toys from Microsoft, featuring seamless
 categories: ["tfs", "technology", "gadgets", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Brian Harry](http://blogs.msdn.com/bharry/) has been on a blogging spree this week!. Last night he [announced some new Team Foundation Server Power Toys](http://blogs.msdn.com/bharry/archive/2006/09/07/744993.aspx). This also shows a new and very welcome trend from Microsoft's DevDiv - the Power Toys are available as a [separate download](http://go.microsoft.com/?linkid=5431080), but more interestingly many of them also integrate seamlessly into the IDE. This is a great way of providing new features to customers in a much more Agile fashion. It is fantastic to see a large company like Microsoft being able to move in a more nimble way and not have to wait for that big release train to come along.

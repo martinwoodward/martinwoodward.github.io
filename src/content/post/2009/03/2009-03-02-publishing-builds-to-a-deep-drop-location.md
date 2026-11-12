@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Nasty things start to happen on Windows systems when you start having paths that are longer than 254 characters. When NTFS is the underlying filesystem you can have up to 32767 unicode characters in the path, however in parts of Windows (and therefore .NET), a local file path (i.e. "C:\MyDir\MyFile.txt") is limited to 260 characters. Some older applications use 255 bytes for the path, while .NET's wrappers over the native file system API's seem to make the issue worse rather than better.

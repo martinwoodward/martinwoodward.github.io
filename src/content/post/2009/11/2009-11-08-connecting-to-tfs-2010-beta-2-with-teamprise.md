@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 One of the features in [Teamprise 3.3](http://www.teamprise.com) is the ability to connect to a Team Foundation Server 2010 Beta 2 project collection. The support for TFS 2010 Beta 2 in Teamprise is very similar to the support you will find in a [patched Visual Studio 2008 instance](http://www.microsoft.com/downloads/details.aspx?FamilyID=CF13EA45-D17B-4EDC-8E6C-6C5B208EC54D) – you can connect and work correctly, however some of the new TFS 2010 features will not be available.

@@ -12,7 +12,6 @@ description: "Discover how to restore Bluetooth functionality on your Dell Preci
 categories: ["technology", "books", "gadgets", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today, I received a fancy new [Microsoft Wireless Notebook Presenter 8000](http://www.microsoft.com/hardware/mouseandkeyboard/productdetails.aspx?pid=085) mouse courtesy of Microsoft. This is a Bluetooth enabled mouse with some useful extra buttons for slide advance and a built in laser pointer when presenting. It is a nice mobile mouse that, while not without flaws, I would still recommend. Anyway, I wanted to use my Dell's built-in Bluetooth model (the [Dell Wireless 350 Bluetooth Module](http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R142181&SystemID=LATITUDE%20PRECISION%20M65&os=WLH&osl=en&deviceid=7388&devlib=0&typecnt=1&vercnt=1&formatcnt=1&libid=5&fileid=189724)) rather than the supplied Microsoft Bluetooth USB dongle. It was then that I noticed my Bluetooth wasn't working properly under Vista - when I searched for new devices, it just wasn't finding any.

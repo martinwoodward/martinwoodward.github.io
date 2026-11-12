@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today the team released a brand new version of the Team Foundation Server Power Tools. You can download the latest versions from here: [TFS Power Tools](http://visualstudiogallery.msdn.microsoft.com/en-us/c255a1e4-04ba-4f68-8f4e-cd473d6b971f) [Team Foundation Build Extensions](http://visualstudiogallery.msdn.microsoft.com/en-us/2d7c8577-54b8-47ce-82a5-8649f579dcb6) [MSSCCI Provider](http://visualstudiogallery.msdn.microsoft.com/en-us/bce06506-be38-47a1-9f29-d3937d3d88d6) (no updates this release)

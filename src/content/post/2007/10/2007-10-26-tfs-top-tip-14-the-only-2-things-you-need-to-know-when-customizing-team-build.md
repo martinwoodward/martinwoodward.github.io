@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you are customizing a team build, then there are only two things you need to know to get you started. The rest you can (mostly) figure out from there. Your build is defined in a file called TFSBuild.proj for your particular Team Build Type. You probably figured that bit out already. The first thing you need to know is that the TFSBuild.proj file inherits most of its logic from a file called Microsoft.TeamFoundation.Build.targets which lives in

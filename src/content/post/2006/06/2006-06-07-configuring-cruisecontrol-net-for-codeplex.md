@@ -12,7 +12,6 @@ description: "Learn how to configure CruiseControl.NET to integrate smoothly wit
 categories: ["tfs", "technology", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Apologies for being quiet on the blogging front lately, we’ve been busy getting ready for TechEd in Boston next week. I’ll soon be able to share some exciting news so stay tuned. One of the areas I have been playing with in my spare time recently is with [CodePlex](http://www.codeplex.com/) – the new developer community site from Microsoft that uses Team Foundation Server for Version Control and Work Item Tracking. I noticed that the Turtle project had a work item to configure CruiseControl.NET to talk to their project tree so I thought I’d quickly describe how to do it here in case anyone else is interested.

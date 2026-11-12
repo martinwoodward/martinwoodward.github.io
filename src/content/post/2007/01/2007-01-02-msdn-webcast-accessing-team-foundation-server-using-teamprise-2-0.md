@@ -12,7 +12,6 @@ description: "Join the January 9th MSDN webcast to discover Teamprise 2.0, featu
 categories: ["tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 On Tuesday January 9th, I'll be doing a short MSDN webcast to demonstrate Teamprise 2.0 in action. If you haven't yet seen a demo of Teamprise or have some questions that you've been wanting answered then please [sign up](http://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032320652&Culture=en-US). I'll be concentrating on our Eclipse plug-in but I will also show a little of Teamprise Explorer 2.0 and the command line tools.

@@ -12,7 +12,6 @@ description: "Discover how to enrich your RSS feeds with comment details using e
 categories: ["web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just found out about the various extensions to RSS 2 that allow information about comments to be included in the RSS feeds.

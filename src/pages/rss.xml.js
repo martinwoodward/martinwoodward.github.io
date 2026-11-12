@@ -1,12 +1,11 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import config from "@/config/config.json";
+import { isPublished } from "@/lib/utils/isPublished";
 
 export async function GET(context) {
   // Get all published posts
-  const posts = await getCollection("post", ({ data }) => {
-    return data.draft !== true;
-  });
+  const posts = await getCollection("post", ({ data }) => isPublished(data));
 
   // Sort posts by date (newest first)
   const sortedPosts = posts.sort(

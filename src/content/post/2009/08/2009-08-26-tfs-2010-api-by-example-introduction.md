@@ -12,7 +12,6 @@ description: "Explore essential TFS 2010 programming insights through practical 
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As I am exploring programming against TFS 2010, I usually build myself up a collection of code snippets that show me how to do various discrete operations. I thought it would be useful for me to post some of these to my blog so that others might benefit later. Note that this code was written against TFS 2010 Beta 1 so may well change by the time you read this – but hopefully it will give you some idea where to get started.

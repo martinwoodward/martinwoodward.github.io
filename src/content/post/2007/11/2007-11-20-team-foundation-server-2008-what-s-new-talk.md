@@ -12,7 +12,6 @@ description: "Explore the highlights of Team Foundation Server 2008, focusing on
 categories: ["tfs", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/talks/TFS2008_Whats_New.pdf) Last night I had the pleasure of [presenting](http://nimtug.org/events/45/default.aspx) to my local .NET User Group ([NIMTUG](http://nimtug.org/default.aspx)) on what is new in Team Foundation Server 2008. Interestingly, most of the audience where new to TFS completely so I also covered a bit of ground on what Team Foundation Server did and why - however most of the talk concentrated on the Team Build stuff new in TFS 2008 and I ran through the wallboard demo that I wrote for TechEd.

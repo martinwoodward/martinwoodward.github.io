@@ -12,7 +12,6 @@ description: "Discover Microsoft Max, a visually stunning photo-organising app t
 categories: ["technology", "dotnet", "gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I just discovered [Microsoft Max](http://www.microsoft.com/max/index.html). While the application still seems to be in the early stages, it has to be the prettiest application I have ever used - just take a look at the semi-transparent splash screen with it's lovely wobbly progress bar.

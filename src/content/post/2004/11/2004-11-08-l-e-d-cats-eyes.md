@@ -12,7 +12,6 @@ description: "Discover the innovative LED Cats Eyes lighting up unlit roads, enh
 categories: ["technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As I may have mentioned to anyone that will listen to me - I am currently getting up at a daft time of the morning to beat the traffic into work. On my journeys I have noticed a completely new invention that I have never noticed before but one that is such a good idea.

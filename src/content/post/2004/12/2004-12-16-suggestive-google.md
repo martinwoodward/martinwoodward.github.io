@@ -12,7 +12,6 @@ description: "Explore Google's impressive autocomplete feature, Google Suggest, 
 categories: ["technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In case you haven't seen this yet, take a look at [Google Suggest](http://www.google.com/webhp?complete=1&hl=en). I hadn't seen it until one of my colleagues pointed me to it this morning - very cool autocomplete feature.

@@ -12,7 +12,6 @@ description: "VMware's Fusion 3 and Workstation 7 enhance virtual Windows 7 expe
 categories: ["technology", "books", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/VirtualizedAeroGoodness_C4A5/fusion3_2.png)

@@ -12,7 +12,6 @@ description: "Learn how to manipulate clipboard data in Internet Explorer using 
 categories: ["technology", "books", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just a quick sample to see if I can put stuff into IE's clipboard. Click [here](<javascript:void(0);>) to copy "Hello World!" into the clipboard. Obviously, if I can put stuff in the clipboard, I can see what you happend to leave in it as well...

@@ -12,7 +12,6 @@ description: "Discover the exciting new ASP.NET MVC Framework unveiled at the Al
 categories: ["technology", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Some interesting news seems to be coming out of the [Alt.NET Conference in Austin](http://www.altnetconf.com/). I'd got a few IM's from folks at the conference talking about Scott Guthrie's talk. According to [Jeff Palermo](http://codebetter.com/blogs/jeffrey.palermo/default.aspx)'s blog, [Scott Guthrie](http://weblogs.asp.net/scottgu/) [showed off a new ASP.NET MVC Framework](http://codebetter.com/blogs/jeffrey.palermo/archive/2007/10/05/altnetconf-scott-guthrie-announces-asp-net-mvc-framework-at-alt-net-conf.aspx). This looks very interesting and might well tempt me back into ASP.NET development. I really like parts of ASP.NET but that whole postback / viewstate thing just confused me. I was used to doing web applications the hard way and having this abstracted away from me into a semi-winform like representation of a web page just got in my way when building sites. It also made them pretty hard to unit test.

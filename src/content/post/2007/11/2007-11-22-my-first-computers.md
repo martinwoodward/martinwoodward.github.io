@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 So, at the risk of starting one of those annoying meme's, I've kinda had this conversation with a few folks before and people of my age always seem to enjoy it so here goes. My first computers. #### My First Computer

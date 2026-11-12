@@ -12,7 +12,6 @@ description: "Alan Irwin, the only person I know with passports from three count
 categories: ["web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Alan Irwin](http://www.palmerlake.com) has started blogging. The only person I know with valid passports from 3 countries.

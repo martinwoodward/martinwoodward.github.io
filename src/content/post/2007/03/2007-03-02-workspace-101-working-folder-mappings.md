@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 So in my [previous post](http://www.woodwardweb.com/teamprise/000333.html), I introduced the concept of a TFS workspace. If you only have one TFS workspace then you might have so far been blissfully unaware that you had one. This is because one is created for you automatically when you first use the Visual Studio Team Explorer UI – you’ll see it in a little drop down at the top of your pending changes window and at the top of your source control explorer view. By default, a workspace is created with the same name as your machine name (in my case, Vista-M70 for my lovely [Dell Precision M70 running Vista](http://www.woodwardweb.com/vista/000322.html)).

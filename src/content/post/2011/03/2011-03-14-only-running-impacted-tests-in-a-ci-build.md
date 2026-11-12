@@ -12,7 +12,6 @@ description: "Discover how customising your CI build to run only impacted tests 
 categories: ["tfs", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 One of the key things about your CI build is to ensure that is runs fast so that you have a very quick feedback loop to see if you have a good build or not. [Rob Maher](http://scrumdod.blogspot.com/) has an [interesting blog post up](http://scrumdod.blogspot.com/2011/03/tfs-2010-build-only-run-impacted-tests.html) describing how he customized the build process to make use of the test impact analysis feature so that only the impacted tests are run as part of the CI build and then the full test suite run later.

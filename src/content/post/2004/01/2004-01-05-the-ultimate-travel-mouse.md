@@ -12,7 +12,6 @@ description: "Discover the Labtec Mini Optical Mouse, a compact, cordless travel
 categories: ["gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just seen this mouse - the [Labtec Mini Optical Mouse](http://www.pcworld.co.uk/product.php?sku=930715) - in action and it really looks like a fantastic mouse for the road warrior.

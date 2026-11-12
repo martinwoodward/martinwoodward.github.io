@@ -12,7 +12,6 @@ description: "Over the holidays we sat down for the last time of 2008 and had a 
 categories: ["tfs", "technology", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.radiotfs.com/) Over the holidays we sat down for the last time of 2008 and had a relaxed chat with [Jeff Beehler](http://blogs.msdn.com/JeffBe/), Team System Chief of Staff. We talked about the history of Team System, how the teams in Microsoft go about shipping the Team System product and Jeff throws in some teasers about what will be coming along in the near future.

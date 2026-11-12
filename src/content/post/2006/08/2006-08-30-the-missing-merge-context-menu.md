@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "books", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/TheMissingMergeContextMenu_13EDC/merge_options3.png) I'm currently busy with the merge functionality in Teamprise Version 2. At the same time I've been working off in a bridging branch while some major refactoring / performance improvement work was happening in the main development trunk so it turns out that the pains and pitfalls of merging are fresh in my mind as I work on the functionality.

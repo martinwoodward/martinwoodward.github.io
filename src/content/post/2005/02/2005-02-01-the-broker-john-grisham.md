@@ -12,7 +12,6 @@ description: "Discover the thrill of listening to John Grisham's 'The Broker,' a
 categories: ["technology", "books", "gadgets", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Broker - John Grisham"
@@ -35,7 +34,6 @@ description: "temp_placeholder"
 categories: ["technology", "books", "gadgets", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 
 ---
 

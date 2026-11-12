@@ -12,7 +12,6 @@ description: "Join me in the Annual Year Planner Shuffle as I organise key dates
 categories: ["tfs", "technology", "books", "gadgets", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://url.ie/11q9) Today is the first day of the new year in the office and so it is time for me to do the dance that I always do after [Auld Lang Syne](http://en.wikipedia.org/wiki/Auld_Lang_Syne), and that is the Annual Year Planner Shuffle. This morning I threw away the 2008 year planner, moved the 2009 one up and printed out a new 2010 sheer.

@@ -12,7 +12,6 @@ description: "I am now back on the first page of Google when you search for Mart
 categories: ["technology", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I am now back on the first page of [Google](http://www.google.co.uk/) when you [search for Martin Woodward](http://www.google.co.uk/search?hl=en&q=Martin+Woodward). Not sure what's changed as I still have the same number of links to my site. I think perhaps it is because the [discussion](http://en.wikipedia.org/wiki/Talk:Podcasting) of the Wikipedia definition for "[Podcasting](http://en.wikipedia.org/wiki/Podcasting)" very kindly links to me, and this definition is now linked to in many places - including news.bbc.co.uk (which seems to have near infinite page rank). However, I am still "below the fold" on Google, i.e. you have to scroll down to find me.

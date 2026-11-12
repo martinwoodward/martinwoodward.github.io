@@ -12,7 +12,6 @@ description: "I don’t know about you, but I love associating my check-ins with
 categories: ["tfs", "technology"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I don’t know about you, but I love associating my check-ins with work items using the Pending Changes view, it makes it so easy to maintain requirements traceability and helps me feel less guilty as I’m doing one more thing that I should have been doing for years.

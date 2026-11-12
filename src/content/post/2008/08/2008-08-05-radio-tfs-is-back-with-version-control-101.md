@@ -12,7 +12,6 @@ description: "In this first episode back from the summer break we talk about the
 categories: ["tfs", "technology", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.radiotfs.com/) In this [first episode back from the summer break](http://www.radiotfs.com/2008/08/05/RadioTFS08BasicsOfTFSVersionControl.aspx) we talk about the features available in TFS Version Control and talk about some of the fundamental concepts that you should understand to make your life easier. Don't forget to stay tuned all the way to the end when I offer up a brainteaser for everyone and Paul goes crazy and offers a FULL copy of Microsoft Visual Studio 2008 Team Suite to a lucky listener drawn at random who provides a correct answer to [radiotfs@gmail.com](mailto:radiotfs@gmail.com) before the end of August 2008.

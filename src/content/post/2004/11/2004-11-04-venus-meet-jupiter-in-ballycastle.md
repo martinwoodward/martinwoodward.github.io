@@ -12,7 +12,6 @@ description: "Witness the stunning close encounter of Venus and Jupiter during a
 categories: ["technology", "gadgets", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 What a fantastic morning it was today. I currently have the rather sad misfortune of getting up at 6 o'clock in the morning to drive to work, however it was an absolute pleasure today. Walked out the house to see this view (looked better than this rather poor picture taken on my phone shows). Anyway, Jupiter and Venus are really close to each other in the sky at the moment and it is stunning to see. There were no clouds in the sky and the sunrise this morning was just fantastic. Almost a pleasure to be up so early.

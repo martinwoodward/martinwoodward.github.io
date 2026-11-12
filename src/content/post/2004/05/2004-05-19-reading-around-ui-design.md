@@ -12,7 +12,6 @@ description: "Discover insightful books on UI design, from Zeldman's standards t
 categories: ["technology", "books", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Doing a big peice of UI design again at the moment. While avoiding writing documentation, found a couple of books that are pretty good, however the titles will certainly not help improve my wife's opinion of my job.

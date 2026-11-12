@@ -12,7 +12,6 @@ description: "Explore a 1954 vision of the 2004 home computer, featuring a telet
 categories: ["git", "technology", "gadgets", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/images/blog/1954Popularmechanics.html)Got forwarded this today, apparently from a 1954 Popular Mechanics magazine.

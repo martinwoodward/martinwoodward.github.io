@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Thanks to the folks that dropped by the webcast early today. Hopefully it was ok – I found it very weird talking to the sheep in the field outside my house while all you folks were “out there”. Anyway, here are some links that I promised to people during the Q&A Session. I’ll post a link to the session recording as soon as I have it.

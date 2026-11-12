@@ -12,7 +12,6 @@ description: "Discover an unconventional fix for the chaotic mouse behaviour cau
 categories: ["technology", "gadgets", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I always end up getting a KVM switch at work. It doesn't matter which company I work for - I'm never satisfied with just one machine under my desk. I used to just have multiple monitors on my desk but I need room for all that crap that I don't throw in the bin. At the moment I have a fairly cheap (as KVM's go) Belkin 2 port one, but I used to have a fancy (and expensive) 8 port one from Black Box that was perfect for sitting my phone on top of. Both of these KVM's had a rather irritating flaw.

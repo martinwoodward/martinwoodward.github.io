@@ -13,7 +13,6 @@ categories:
   ["git", "technology", "dotnet", "gadgets", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 **Problem:**

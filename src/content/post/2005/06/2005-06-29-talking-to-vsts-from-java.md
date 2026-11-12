@@ -12,7 +12,6 @@ description: "Learn how to connect a Java client to VSTS for project retrieval, 
 categories: ["tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 **Update (Jan 2006):** If you would like to use some of the features of VSTS from Eclipse then you might want to take a look at my new employer, [Teamprise](http://www.teamprise.com). They provide an eclipse plugin to access Team Foundation Source Control from Eclipse running on multiple platforms including Windows, Linux and Mac OS X.

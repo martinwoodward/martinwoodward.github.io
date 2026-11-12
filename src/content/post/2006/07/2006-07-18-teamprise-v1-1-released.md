@@ -12,7 +12,6 @@ description: "Teamprise V1.1 is now available, featuring NTLMv2 support, improve
 categories: ["tfs", "technology", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today we released [Teamprise](http://www.teamprise.com/) V1.1 to the general public (available [here](http://www.teamprise.com/download/index.html)). Version 1.1 is a maintenance release to address several issues that our customers have reported. Most notably, Version 1.1 now fully supports NTLM authentication (including NTLMv2). If you were previously unable to connect to your Team Foundation Server then we urge you to try this release. Version 2.0 will be available later this year and will include work item editing features along with additional source control functionality (users purchasing Version 1 will get a free upgrade to Version 2.0 when it becomes available).

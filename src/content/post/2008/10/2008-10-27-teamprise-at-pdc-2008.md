@@ -12,7 +12,6 @@ description: "Join the Teamprise team at PDC 2008 for exciting new offerings, in
 categories: ["tfs", "technology", "gadgets", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.microsoftpdc.com) In case you hadn't heard, this week is [Microsoft PDC 2008](http://microsoftpdc.com/) in LA. Sadly I'm not able to make it over this time due to some health issues, however the [Teamprise](http://www.teamprise.com) team will be out in full force. We have quite a few new things to show people this week including: Integration with TFS 2010 Publishing JUnit test results into TFS (2005, 2008 and 2010) A brand new product!!

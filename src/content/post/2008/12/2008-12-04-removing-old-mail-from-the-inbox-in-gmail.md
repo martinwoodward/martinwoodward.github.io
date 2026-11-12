@@ -12,7 +12,6 @@ description: "I recently moved my domain email over to Google Apps for Domains."
 categories: ["technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I recently moved my domain email over to Google Apps for Domains. So far I have been very happy with it and all my family have been set up with accounts, and all is working well for them to. I decided to move my old mail archive into GMail so that I have the messages available for searching from whatever machine I happen to be on.

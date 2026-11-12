@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just wanted to let folks know that [Preview 2](http://www.teamprise.com/preview/preview-register.py) is now available for download to our preview program customers. If you want to take a look at [Preview 2](http://www.teamprise.com/preview/preview-register.py), then you can sign up [here](http://www.teamprise.com/preview/preview-register.py). This preview release builds on the code we released last month in [Preview 1](http://www.woodwardweb.com/vsts/000265.html), including some new features, lots of performance improvements and also suggestions from our [existing Preview Program community](http://support.teamprise.com/index.php). #### What is new in Preview 2?

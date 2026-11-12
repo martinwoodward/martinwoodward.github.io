@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "gadgets", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Mickey Gousset](http://teamsystemrocks.com/blogs/mickey_gousset/) has [posted details](http://teamsystemrocks.com/blogs/mickey_gousset/archive/2007/04/27/1611.aspx) of the new [Team System training courses](http://www.notionsolutions.com/Training/eTraining/eTrainingdescription/tabid/92/Default.aspx) from [Notion Solutions](http://www.notionsolutions.com/). What I think is very excited about this offering is that it is a proper "remote learning" initiative. It has all the self-paced benefits of computer based training initiatives, but the critical difference is the involvement of Mickey himself as a tutor available over live meeting when you need him.

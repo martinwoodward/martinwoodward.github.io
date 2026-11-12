@@ -12,7 +12,6 @@ description: "In Seattle for the MVP Summit 2009, I was honoured to win the inau
 categories: ["tfs", "technology", "dotnet", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://channel9.msdn.com/shows/This+Week+On+Channel+9/This-Week-Martin-Woodward-MVP-Summit-Web-Perf-Show-Off-and-a-VSTS-Pep-Talk/)

@@ -12,7 +12,6 @@ description: "Skype experienced significant login issues today, linked to a serv
 categories: ["technology", "dotnet", "gadgets", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Skype seems to have been having trouble this morning. At first I thought it was a set of Windows Vista Updates I'd applied - but when the problem started affecting my hardware based Skype phone as well my suspicions went to my ISP. I was thinking that they were doing some traffic shaping or something to Skype traffic. Finally, after talking with a fellow Skype user (over an old fashioned POTS line) who was also having login problems I figured it must be Skype itself - and turns out [it is](http://heartbeat.skype.com/2007/08/problems_with_skype_login.html). The fault is apparently "[software related](http://heartbeat.skype.com/2007/08/problems_with_skype_login.html)" and they did some [planned maintenance yesterday](http://heartbeat.skype.com/2007/08/planned_maintenance_on_15th_of.html) - coincidence?

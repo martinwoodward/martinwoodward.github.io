@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 At [EclipseCon 2008](http://www.eclipsecon.org/) this morning, we just announced that [Teamprise 3.0](http://www.teamprise.com/) has been released! If you've been wondering why I have been quiet on the blog lately - but also why anything I have been talking about is Team Foundation Build related, then you are about to find out why :-) First of all, I'd encourage you to go visit the shiny new website at [http://www.teamprise.com](http://www.teamprise.com). Our marketing team had too much fun putting that together, including getting a real, live, massive Teamprise power button made up and shipped in a huge crate from New York to be photographed and used as the new site/icon image.

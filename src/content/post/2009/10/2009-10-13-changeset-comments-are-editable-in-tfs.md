@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A feature of changeset metadata in Team Foundation Server 2008 is that it is actually editable. If you look at the changeset details for a historical check-in in Visual Studio you will notice that the comment and check-in notes fields are enabled and there is a “Save” button. This is by design, but I have known customers that find this fact very surprising.

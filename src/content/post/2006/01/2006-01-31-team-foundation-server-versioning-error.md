@@ -12,7 +12,6 @@ description: "Discover how to resolve the TFS versioning error caused by using a
 categories: ["tfs", "technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [John Lawrence](http://blogs.msdn.com/johnlawr/default.aspx) has posted an interesting [tip](http://blogs.msdn.com/johnlawr/archive/2006/01/31/520872.aspx) about the error "Server did not recognize the value of the HTTP Header SOAPAction: http://schemas.microsoft.com/TeamFoundation/2005/06/Services/ServerStatus/02/CheckAuthentication". Basically, if you see this error you are trying to use a beta client to connect to an RC version of Team Foundation Server. The solution is to upgrade your client to the latest version.

@@ -12,7 +12,6 @@ description: "Discover how a new Syntax Highlighter plug-in for Windows Live Wri
 categories: ["technology", "dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.codeplex.com/Wiki/View.aspx?ProjectName=Highlight4Writer)Well, the benefits of the Live Writer SDK are already coming true for me. One of my bug-bears with BlogJet was to copy/paste in code samples was pretty tricky. I ended up evolving a manual process of visiting the excellent [CodeHTMLer](http://puzzleware.net/codeHTMLer/) site to convert into HTML and then pasting the source into BlogJet source view (when pasting Java code I just to tell that CodeHTMLer it was C# and it usually looks great.

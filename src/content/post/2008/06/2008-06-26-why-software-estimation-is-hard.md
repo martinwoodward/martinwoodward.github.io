@@ -12,7 +12,6 @@ description: "Software estimation is challenging due to unpredictable complexiti
 categories: ["technology", "gadgets", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Over the years, I have tried many different approaches to software estimation. From the Ceiling and Weller method (look up to the ceiling, scratch your chin and say "Well-errr"), FITA analysis (Finger In The Air) through various variations (both formal and informal) of metric based estimation techniques to things like IFPUG etc.

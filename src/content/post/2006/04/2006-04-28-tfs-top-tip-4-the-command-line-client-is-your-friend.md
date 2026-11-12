@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you are going to be doing more than the basic check-in / check-out options then it pays to get to know the command line client – tf. The command line client is actually the most flexible and powerful client to Team Foundation Version Control.

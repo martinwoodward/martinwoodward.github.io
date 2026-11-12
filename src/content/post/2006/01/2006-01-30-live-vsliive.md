@@ -12,7 +12,6 @@ description: "At the VSTS for Everyone conference, I'm observing mixed reactions
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I am in the pre-workshop conference [VSTS for Everyone: Best Practices for the Whole Team](http://www.ftponline.com/conferences/vslive/2006/sf/vsts.aspx). It is really interesting watching other people learning VSTS and also what common questions that they ask. [Rob Caron](http://blogs.msdn.com/robcaron/default.aspx) is here as well, he is doing a better job than me of not interrupting the speakers but it is funny to watch him squirm at some of the things the speakers say.

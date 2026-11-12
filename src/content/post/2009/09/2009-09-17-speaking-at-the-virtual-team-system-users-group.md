@@ -12,7 +12,6 @@ description: "Join Team System MVP Martin Woodward as he explores the enhanced T
 categories: ["tfs", "technology", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Tonight I have the pleasure of speaking with the [Team System Users Group Virtual Edition](http://www.tsug-ve.com/). We are going to be talking about Team Build 2010 based on the Beta 1 bits.

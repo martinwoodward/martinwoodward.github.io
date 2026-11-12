@@ -24,7 +24,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.thomsonreuters.com/) I am proud to announce that Microsoft have just published a joint case study with us on the success Thomson Reuters have had using Team Foundation Server in a mixed development shop. This customer is particularly interesting, not just because they keep giving us great feedback on our product that we have been incorporating into Teamprise, or because they are a large, well know and well respected brand. From the case study;

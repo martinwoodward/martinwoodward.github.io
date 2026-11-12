@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In case you missed it, as part of [Bob Muglia’s keynote](http://www.microsoft.com/presspass/exec/bobmuglia/apr10/04-12visualstudio2010.mspx) announcing the launch of Visual Studio 2010 last week he also announced the launch of Microsoft® Visual Studio® Team Explorer Everywhere 2010. This is the initial release of the bits that Microsoft acquired from Teamprise back in November and this release is the result of what my team has been working very hard on since that acquisition.

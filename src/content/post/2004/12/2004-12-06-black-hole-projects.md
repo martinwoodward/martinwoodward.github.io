@@ -12,7 +12,6 @@ description: "Discover the defining traits of Black Hole projects at M$, from va
 categories: ["dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Good post on [Paul Vick](http://www.panopticoncentral.net/)'s blog about the characteristics of [Black Hole projects](http://www.panopticoncentral.net/archive/2004/12/01/2598.aspx) at M$. This got me thinking about some traits I recognise:-The goal of the system cannot be summed up in a sentanceThey involve more people than you can fit on a busThey must have completely unrealistic deadlines.

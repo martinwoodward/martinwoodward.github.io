@@ -12,7 +12,6 @@ description: "Over the weekend we published a new Radio TFS episode."
 categories: ["tfs", "technology", "books", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Over the weekend [we published](http://www.radiotfs.com/2009/02/22/GettingAgileWithTeamFoundationServer.aspx) a new [Radio TFS](http://www.radiotfs.com) episode. This month we chatted with [Tommy Norman](http://tommynorman.blogspot.com/) about his real world experiences using using Team Foundation Server in agile software development projects.

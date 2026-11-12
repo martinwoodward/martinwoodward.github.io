@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 When you create a new build definition in Team Foundation Server, you get to define how the workspace looks for the build. By default this includes the ENTIRE team project. While this **usually always works**, it is nearly always **not what you want**. #### **Build Definition = What, How and When**

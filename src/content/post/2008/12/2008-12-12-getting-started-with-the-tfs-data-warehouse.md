@@ -12,7 +12,6 @@ description: "Learn how to leverage Excel for insightful data analysis of your T
 categories: ["tfs", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Whenever I talk about TFS, one of the things I always mention is the fact that because all the data about the software project is now being tracked in a SQL Server database, Microsoft were able to stick a Data Warehouse over the top of all that raw data to give you a really good view on reporting. This is where the real benefits of standardizing on a single ALM solution can really reap rewards and Microsoft in their wisdom give us these reporting features in all versions of TFS including the 5-user limited TFS Workgroup edition that is included with most peoples MSDN subscription.

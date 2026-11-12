@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today, I am pleased to [announce](http://www.teamprise.com/news/2007/03/teamprise_enables_crossplatfor.html) that Teamprise are offering complimentary licenses of the Teamprise client suite for anyone wanting to use Teamprise to connect to an open source project on CodePlex. If you want to take advantage of this offer, see [the sign up page](http://www.teamprise.com/partners/codeplex.py).

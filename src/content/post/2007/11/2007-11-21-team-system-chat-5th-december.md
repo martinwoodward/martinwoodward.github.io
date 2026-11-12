@@ -12,7 +12,6 @@ description: "Join the Visual Studio Team System group chat on December 5th for 
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The Team System group are holding a couple of their popular group chats again on Wednesday, December 5th. If you haven't been to one before it is a great opportunity to get to talk live with the very people that work on team system, give them your feedback and get your questions answered direct by the folks that made it. I'm expecting lots of discussion around the recent 2008 release, upgrade questions and licensing etc.

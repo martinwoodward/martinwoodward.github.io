@@ -12,7 +12,6 @@ description: "Discover essential UML 2.0 stencils and templates for Visio by Pav
 categories: ["technology", "books", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Recently discovered these excellent [UML 2.0 Stencils and Templates](http://www.phruby.com/stencildownload.html) for Visio by Pavel Hruby.

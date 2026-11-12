@@ -24,7 +24,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.amazon.com/gp/product/0470943327/ref=as_li_ss_tl?ie=UTF8&tag=woodweb03-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0470943327)I’ve always wanted to write a technical book and when I started getting involved in Team Foundation Server I thought that this technology area might be my chance. I was lucky enough to get involved with the [Professional Application Lifecycle Management with Visual Studio 2010](http://www.amazon.com/gp/product/0470484268/ref=as_li_ss_tl?ie=UTF8&tag=woodweb03-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0470484268) book and contributed to the TFS chapters in that one – but I knew I had one more book in me.

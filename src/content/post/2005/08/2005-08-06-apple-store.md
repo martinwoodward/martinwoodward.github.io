@@ -12,7 +12,6 @@ description: "Experience the excitement of the Apple Store in Chicago, where inn
 categories: ["technology"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Now I'm in the Apple Store in Chicago - sweet!!

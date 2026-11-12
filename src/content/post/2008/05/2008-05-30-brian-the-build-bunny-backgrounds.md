@@ -12,7 +12,6 @@ description: "Discover the charm of Brian the Build Bunny with free desktop back
 categories: ["technology", "gadgets", "maker", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/brian/wallpaper/) It turns out that the [little video I posted yesterday](http://www.woodwardweb.com/gadgets/000434.html) has taken on a bit of a life of it's own. Last time I checked, it was in the top 10 Science and Technology posts for YouTube in Ireland. It's funny how it is always the posts that you do more for your own entertainment that take off.

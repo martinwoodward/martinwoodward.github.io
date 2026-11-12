@@ -12,7 +12,6 @@ description: "Exploring the Eurdora web browser on my palm m125 reveals effectiv
 categories: ["web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just had a look at this page on the [Eurdora web browser](http://www.eudora.com/internetsuite/eudoraweb.html) (on the palm) and it works really well. It seems to use the stylesheets but igore the _display:none_ bit.

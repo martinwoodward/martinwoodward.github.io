@@ -12,7 +12,6 @@ description: "Excited to be in Barcelona for TechEd Developers, showcasing Teamp
 categories: ["tfs", "technology", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This morning I took the sort and pleasurable flight over from Belfast to Barcelona to join the [Teamprise](http://www.teamprise.com/) / [SourceGear](http://www.sourcegear.com) advance party ready to set up at the [TechEd Developers](http://www.mseventseurope.com/Teched/06/Pre/defaultDev.aspx) conference in Barcelona. As usual, the Teamprise marketing manager has done us proud and we're into a Hotel directly opposite the conference centre. After the long bus rides of TechEd 2006 in Boston - the trip to work this week is going to be a breeze. The mini-bar in the hotel is actually complimentary and they restock it if you leave your room - how cool is that ??

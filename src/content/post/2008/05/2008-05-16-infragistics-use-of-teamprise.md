@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.infragistics.com/Default.aspx)Infragistics is the world's largest publisher of reusable presentation layer development tools for Windows Forms, ASP.NET, WPF, Tablet PC and Java (JSF) environments. I think they can count most of the Fortune 2000 as customers of theirs. They also happen to be a customer of ours.

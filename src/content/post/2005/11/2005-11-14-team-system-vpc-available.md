@@ -12,7 +12,6 @@ description: "Discover the new Team System VPC available for download, perfect f
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Via [Joe](http://msmvps.com/joesango/), the new Team System VPC is now available for download at the MSDN Download Center. Installing Team System is an education in itself and one of the best ways to learn how all the moving parts hang together. However it does take a while to install (especially into a VPC). My record so far is a whole working day for the installation into a shiny new Virtual PC (including Windows 2003 Standard Edition).

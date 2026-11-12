@@ -12,7 +12,6 @@ description: "Discover Clark Sell's new blog featuring stories, intriguing TDD t
 categories: ["dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 You know, this internet thing might just take off one day. One of my good buddies, [Clark Sell](http://www.csell.net), has just fired up Wordpress and started blogging. His first post is a good story that Kevin Rice sent him about how a [company policy begins](http://csell.net/?p=6). This piece is very true, sadly the original source of this gem is unknown.

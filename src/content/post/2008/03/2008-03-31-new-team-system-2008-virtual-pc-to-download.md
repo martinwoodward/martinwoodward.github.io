@@ -12,7 +12,6 @@ description: "Download the new Team System 2008 Virtual PC, featuring pre-instal
 categories: ["tfs", "technology", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 **UPDATE**: Just heard from [Brian Randell](http://www.pluralsight.com/blogs/brian/archive/2008/04/01/50626.aspx) that the VPC is now ready to download. Updated links are below.

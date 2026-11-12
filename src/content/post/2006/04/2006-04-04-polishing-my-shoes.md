@@ -12,7 +12,6 @@ description: "Polishing my shoes connects me to my father and grandfather amid a
 categories: ["books", "gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I am giving a [talk tonight](http://www.developers.ie/session.aspx?s=44). As usual, I'm busy avoiding preparing for it. It is a rare day now-a-days that I put on a shirt and smart trousers but as I'm meeting folks I've never met before in a city I've never been to, I thought I'd better make an effort.

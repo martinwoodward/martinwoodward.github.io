@@ -4,6 +4,7 @@ import {
   type CollectionEntry,
   type CollectionKey,
 } from "astro:content";
+import { isPublished } from "@/lib/utils/isPublished";
 
 export const getSinglePage = async <C extends CollectionKey>(
   collectionName: C
@@ -12,11 +13,6 @@ export const getSinglePage = async <C extends CollectionKey>(
 
   const removeIndex = allPages.filter((data) => data.id.match(/^(?!-)/));
 
-  const removeDrafts = removeIndex.filter((data) => {
-    const pageData = data.data as any;
-    return pageData.draft !== true;
-  });
-
-  return removeDrafts;
+  return removeIndex.filter((data) => isPublished(data.data as any));
 };
 ---

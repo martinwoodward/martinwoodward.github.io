@@ -12,7 +12,6 @@ description: "Learn how to easily restore the Telnet client on Vista for effecti
 categories: ["technology", "maker", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/VistaTopTipHowtogetTelnetBack_952B/vista%5B6%5D.png)When debugging network issues, I tend to fallback to good old telnet as a way of opening a port to a machine. Being able to do "telnet myserver 80" to check if a web server is up, listening, resolvable and no firewalls getting in the way helps you figure out where the problem is.

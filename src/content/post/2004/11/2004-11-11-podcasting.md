@@ -12,7 +12,6 @@ description: "Discover how podcasting uses RSS technology to deliver downloadabl
 categories: ["git", "technology", "dotnet", "maker", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've recently come across Podcasting (or blogcasting as it is sometimes called). Basically it makes use of a feature in the [RSS spec](http://blogs.law.harvard.edu/tech/rss) called [enclosure](http://blogs.law.harvard.edu/tech/rss#ltenclosuregtSubelementOfLtitemgt) that allows links to downloadable content - in this case audio content. Tools such as [ipodder](http://www.ipodder.org/) have come out that allow a user to have the contents of the RSS feeds downloaded to their hard-drive for offline listening. Combine this with syncronisation with your [iPod](http://www.amazon.co.uk/exec/obidos/ASIN/B0002OXOZM/woodwardwebcom) or other MP3 player and you have the ability for automated pushing of subscribed audio feeds to your MP3 player for listening to at your convienience.

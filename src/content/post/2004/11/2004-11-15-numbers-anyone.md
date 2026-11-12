@@ -12,7 +12,6 @@ description: "Explore the enigmatic world of Numbers Stations, where mysterious 
 categories: ["technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Interesting article](http://www.wired.com/news/technology/0,1282,65698,00.html) in [Wired](http://www.wired.com/) about "Numbers Stations" that broadcast on Shortwave. These are high-powered transmitters across the planet are are broadcasting strings of numbers, letters, backwards music, or even the noise of a fruit machine.

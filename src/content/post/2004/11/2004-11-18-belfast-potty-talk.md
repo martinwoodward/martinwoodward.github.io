@@ -12,7 +12,6 @@ description: "Belfast will host the 2005 World Toilet Summit, promising a mix of
 categories: ["web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Fantastic news. Belfast is to host the [2005 World Toilet Summit](http://www.cleanpoint.com/articles/news_article.asp?news_unique_id=10557), very near to where I work.

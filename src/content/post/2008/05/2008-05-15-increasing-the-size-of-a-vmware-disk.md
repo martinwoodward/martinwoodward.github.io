@@ -12,7 +12,6 @@ description: "I am currently playing with SP1 of VSTS 2008 and TFS 2008 in a Win
 categories: ["git", "tfs", "technology", "gadgets", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I am currently playing with [SP1 of VSTS 2008 and TFS 2008](http://blogs.msdn.com/bharry/archive/2008/05/13/vs-vsts-tfs-2008-sp1-beta-is-now-available.aspx) in a Windows Server 2008 VMWare instance I have. Whenever I created this particular instance I kept the disk space at 16Gb which is normally plenty for these play instances but after installing the service pack of VSTS my disk space was getting low.

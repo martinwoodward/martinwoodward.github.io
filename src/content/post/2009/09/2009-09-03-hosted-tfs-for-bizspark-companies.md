@@ -12,7 +12,6 @@ description: "Discover how BizSpark companies can access hosted Team Foundation 
 categories: ["tfs", "technology", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.saasmadeeasy.com/Pages/default.aspx) Fellow MVP [Paul Hacker](http://phacker.wordpress.com/) just dropped me a line to share a great offer [his company](http://www.saasmadeeasy.com/) is making available for [BizSpark](http://www.microsoft.com/Bizspark/Default.aspx) companies. For companies that are in the BizSpark program you can get a hassle free, hosted Team Foundation Server service as a substantial discount (currently $10 per month, per user).

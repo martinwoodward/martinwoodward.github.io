@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "gadgets", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I just got delivery of my shiny new [Raspberry Pi](http://www.raspberrypi.org/). With-in a few minutes I had it all booted and running a [stock Debian “squeeze” image](http://www.raspberrypi.org/downloads), almost too easy and the performance of the diminutive Raspberry Pi was great. Previously my experiences with Embedded Linux has mostly been when running on hacked router firmwares so running on a chip as powerful as the ARM v11 Broadcoam chip in the Raspberry Pi is a real pleasure. As getting it up and running was so easy, what should be my first project on my latest (and least expensive ever) computer? I thought I’d see what it took to talk to TFS from the device :-)

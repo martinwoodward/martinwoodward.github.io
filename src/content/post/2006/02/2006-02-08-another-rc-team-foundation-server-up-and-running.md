@@ -12,7 +12,6 @@ description: "I've successfully set up the RC version of Team Foundation Server 
 categories: ["tfs", "technology", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 You'll probably be seeing a lot of these [type of posts](http://blogs.msdn.com/robcaron/archive/2006/02/07/527353.aspx) around the net, but I just wanted to say that I've got the RC version of Team Foundation Server up and running in a VPC. Apart from my only allocating the virtual server 384 Mb of memory for the first part - the installation went very smoothly. Honestly, they are really taking the fun out of it. I remember when getting a successful install of TFS was [cause for celebration](http://www.woodwardweb.com/vsts/000137.html).

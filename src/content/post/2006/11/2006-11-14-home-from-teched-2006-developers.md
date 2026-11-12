@@ -12,7 +12,6 @@ description: "Reflecting on a rewarding TechEd 2006 in Barcelona, I’m grateful
 categories: ["tfs", "technology", "dotnet", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/HomefromTechEd2006Developers_9F0A/booth%5B1%5D.jpg)I'm back home from sunny Barcelona, and just wanted to post a quick note to thank all the folks who stopped by. It was great to meet some old friends again, and also to make some new ones.

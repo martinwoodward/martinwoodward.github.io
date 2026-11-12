@@ -80,7 +80,6 @@ author: "Martin Woodward"
 description: "Description of the post"
 categories: ["technology"]
 tags: ["programming"]
-draft: false
 ---
 ```
 
@@ -93,7 +92,6 @@ author: "Martin Woodward"
 description: "Description of the post"
 categories: ["technology"]
 tags: ["programming"]
-draft: false
 blueskyPostURI: "at://did:plc:abc123.../app.bsky.feed.post/xyz789"
 ---
 ```

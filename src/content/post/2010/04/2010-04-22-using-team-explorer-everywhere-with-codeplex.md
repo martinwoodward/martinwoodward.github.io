@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "web", "programming", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.codeplex.com/) People using CodePlex can download [Visual Studio Team Explorer](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=fe4f9904-0480-4c9d-a264-02fedd78ab38) to access a CodePlex hosted TFS instance free of charge, but what if you want to be a project team member and access the code from Eclipse or a non-windows machine?

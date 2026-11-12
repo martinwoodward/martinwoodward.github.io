@@ -12,7 +12,6 @@ description: "Explore the intriguing Cold War battles behind Tetris and the poli
 categories: ["technology", "books", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 BBC Four recently broadcast an interesting documentary [Tetris: From Russia With Love](http://www.bbc.co.uk/bbcfour/documentaries/features/tetris.shtml) which was a very interesting account of the battles behind this simple but addictive game set against the backdrop of Cold War tensions. Rupert Murdoch's access into the Russian political system is also highlighted.

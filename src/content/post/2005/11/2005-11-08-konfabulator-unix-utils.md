@@ -12,7 +12,6 @@ description: "Discover how Konfabulator's Unix Utils bring familiar command-line
 categories: ["technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've been a keen user of [Konfabulator](http://www.konfabulator.com) for a while now. I even paid for a couple of licenses in the pre-Yahoo days. It's really easy to hack up your own widgets, and I have a strange self-distructive streak that means I enjoy writing in javascript every now and then.

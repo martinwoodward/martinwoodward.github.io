@@ -12,7 +12,6 @@ description: "Discover the significant changes in TFS 2010's version control, tr
 categories: ["git", "tfs", "technology", "maker", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In TFS 2010 quite a few things have been fundamentally changed for the better, but from an end user point of view people hopefully won't notice. Things like hierarchical work items will very quickly because just how work items should work and people will scratch their heads when they go look at a TFS 2008 or TFS 2005 server and wondered how we ever got by.

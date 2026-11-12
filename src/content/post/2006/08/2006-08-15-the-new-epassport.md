@@ -12,7 +12,6 @@ description: "Discover the exciting features of the new biometric ePassport, inc
 categories: ["technology", "gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Soon, we'll be going on holiday for the first time since my son was born. This means that we had to apply for a passport for my 2 year-old, which was a fun process. Anyway, the passport arrived this morning and much to my surprise it is a new biometric one, containing a little RFID Chip on the rear of the identification page. This is the first time that I have seen a new biometric passport. The notes that come along with it contain the following:-

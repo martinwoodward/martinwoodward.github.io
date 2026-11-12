@@ -12,7 +12,6 @@ description: "Dive into Scott Fullam's 'Hardware Hacking for Geeks' to explore f
 categories: ["technology", "books", "gadgets", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Ever wanted to connect your toaster to the internet, turn a skyscraper into a giant display, add a web server to your filter coffee machine or make a furby say things that will severely disturb the kids - then have a read of [Hardware Hacking Projects _for Geeks_](http://www.amazon.co.uk/exec/obidos/ASIN/0596003145/woodwardwebcom) by Scott Fullam.

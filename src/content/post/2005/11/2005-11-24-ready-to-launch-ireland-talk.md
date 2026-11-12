@@ -12,7 +12,6 @@ description: "Discover key resources from my Belfast launch talk on SQL 2005, Vi
 categories: ["tfs", "technology", "dotnet", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you had the mis-fortune of hearing me speak at the Belfast launch event for SQL 2005 / Visual Studio 2005 / Biztalk 2006 this morning then the following links may be of interest:-[Rob Caron's Blog](http://blogs.msdn.com/robcaron/default.aspx) - Best place for VSTS related information

@@ -12,7 +12,6 @@ description: "Discover how iGate enhanced software development efficiency and sa
 categories: ["tfs", "technology", "dotnet", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.igate.com/)

@@ -12,7 +12,6 @@ description: "Discover a simple iPod reset tip that revived my old Mini, ensurin
 categories: ["technology", "dotnet", "gadgets", "maker", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've used my old iPod Mini nearly every day for 2 years (since I [discovered Podcasting for the first time](http://www.woodwardweb.com/technology/000058.html)). Tomorrow I have a rather long car journey ahead of me and I have been saving up a few episodes of [.NET Rocks](http://www.dotnetrocks.com/), [Slacker Astronomy](http://www.slackerastronomy.org/wordpress/index.php), [In Business](http://www.bbc.co.uk/radio4/news/inbusiness/inbusiness.shtml) and a new episode of [Today in Parliament](http://downloads.bbc.co.uk/rmhttp/downloadtrial/radio4/todayinparliament/rss.xml) for the trip. However - when I tried to switch on my iPod for my evening walk last night it just wasn't playing. I figured that the battery had finally given up the ghost after all those recharge cycles - while a little annoyed that I was going to have to go back to the radio for my long car journey, I wasn't that unhappy as it meant I now had an excuse to get a brand new iPod.

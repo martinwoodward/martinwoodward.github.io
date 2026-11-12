@@ -12,7 +12,6 @@ description: "Discover the MSF Process Guidance Generator Tool, a temporary solu
 categories: ["technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A [new project has been released over on CodePlex](http://www.codeplex.com/process/Release/ProjectReleases.aspx?ReleaseId=5626) from the Patterns and Practices folks which attempts to improve the guidance generation process.

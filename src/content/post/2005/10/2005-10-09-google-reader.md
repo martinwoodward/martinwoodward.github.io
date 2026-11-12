@@ -12,7 +12,6 @@ description: "Google Reader offers a sleek RSS experience, but issues with subsc
 categories: ["technology", "books", "gadgets", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As you've probably discovered by now, Google has launched [Google Reader](http://www.google.com/reader/) - a web based RSS reader with all the fancy AJAX lovliness you'd expect.

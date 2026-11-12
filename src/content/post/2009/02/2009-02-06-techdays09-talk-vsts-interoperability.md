@@ -12,7 +12,6 @@ description: "Join me at TechDays09 in Paris to explore VSTS interoperability wi
 categories: ["tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://galilee.microsoft.fr/TechDays2009/Default.aspx)On Tuesday February 10th I’ll be popping over to Paris where I have the privaledge of being invited to speak at [TechDays 09](http://galilee.microsoft.fr/TechDays2009/Default.aspx) courtesy of [Microsoft France](http://galilee.microsoft.fr). Luckily it is a session close to my heart as the title is “Interopérabilité avec Visual Studio Team System” which I hopefully know something about :-)

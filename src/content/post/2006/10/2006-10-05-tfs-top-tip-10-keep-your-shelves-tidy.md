@@ -12,7 +12,6 @@ description: "Team Foundation Server source control has a great feature called S
 categories: ["git", "tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Team Foundation Server source control has a great feature called Shelving. Shelving lets you set store a batch of pending changes onto the server and optionally remove them from your local workspace. It comes in really handy for the times when you want to backup your code and store it on the server but don't want to commit it to source control. I also sometimes use it when I would like a remote colleague to take a look at some code I have written before I commit it into the code base. For more information about Shelving, see the [MSDN documentation](http://msdn2.microsoft.com/en-us/library/ms181403.aspx). A Shelveset is identified by developer and the name the developer gave it when shelving.

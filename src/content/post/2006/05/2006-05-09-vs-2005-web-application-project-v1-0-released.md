@@ -12,7 +12,6 @@ description: "The VS 2005 Web Application Project has officially launched its V1
 categories: ["tfs", "technology", "dotnet", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 OK, so the odds that you read my blog and not [Scott Guthrie](http://weblogs.asp.net/scottgu/)’s are pretty low, especially if you have any interest in this topic. However, [Scott](http://weblogs.asp.net/scottgu/) just [announced](http://weblogs.asp.net/scottgu/archive/2006/05/08/445742.aspx) that the [VS 2005 Web Application Project has gone V1.0](http://weblogs.asp.net/scottgu/archive/2006/05/08/445742.aspx). I had the pleasure of talking with Scott recently and to take a look at this – I have to say that I am incredibly impressed. It’s like all the goodness of a standard Visual Studio 2005 web project with all of the benefits of the old Visual Studio 2003 way and then some. For those of you with complicated automated build processes I would definitely go take a look at this way of doing web projects – if you are using Team Build in VSTS then I would definitely use it.

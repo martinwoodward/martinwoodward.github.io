@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In [a previous post](http://www.woodwardweb.com/teamprise/000413.html), I talked about how Windows file sharing sucks over the WAN. This is particularly annoying for me when trying to view the log of a TFS Build - especially if that build has failed and I want to know why in a hurry. On my computer (sitting on the end of a VPN nearly 4000 miles from my TFS instance), there is a delay of about 50-70 seconds to view the log file depending on the size and the speed of the link at that moment in time. During that time, Visual Studio is hanging waiting for the file to open. The issue is compounded by the fact that the rest of the Team Build UI - and in fact the whole of TFS access in general - is so speedy over the same VPN link, that I really notice the time delay accessing build logs.

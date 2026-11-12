@@ -12,7 +12,6 @@ description: "Orcas Beta 1 is set to launch soon for MSDN subscribers, with exci
 categories: ["tfs", "technology", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Those of you lucky enough to have an MSDN subscription can go download Beta 1 very shortly, according to the [announcement](http://msdn2.microsoft.com/en-us/vstudio/aa700831.aspx) it is available now (but it isn't showing up in my MSDN subscription yet) - I suspect that the lovely bits on on the way through the MSDN distribution pipe as we speak.

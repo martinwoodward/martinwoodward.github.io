@@ -12,7 +12,6 @@ description: "Join the Visual Studio Team System chat on April 9th to directly e
 categories: ["tfs", "technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The Team System Chat's are a great way for you to talk direct to very influential members of the product group - the people that actually write the code behind team system. If you have a query or there is a feature that you would really like then this is a great way of talking to the people direct and getting your feedback heard.

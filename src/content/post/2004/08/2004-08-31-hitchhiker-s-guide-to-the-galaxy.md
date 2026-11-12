@@ -12,7 +12,6 @@ description: "The Hitchhiker's Guide to the Galaxy is being revived with new rad
 categories: ["web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Fantastic news. The Hitchhiker's Guide to the Galaxy is set to be extended this year with [new editions of the radio series](http://www.bbc.co.uk/radio4/hitchhikers/newseries.shtml) and also (finally) the [movie](http://hitchhikers.movies.go.com/) that Douglas Adams tried so long and hard to get made.

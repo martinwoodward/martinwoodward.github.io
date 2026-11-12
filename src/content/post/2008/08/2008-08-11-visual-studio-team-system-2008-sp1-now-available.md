@@ -12,7 +12,6 @@ description: "Visual Studio Team System 2008 SP1 is now available for download, 
 categories: ["tfs", "technology", "maker", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 That's right folks, 2008 SP1 is now available for everyone to download. Get it while it's hot!

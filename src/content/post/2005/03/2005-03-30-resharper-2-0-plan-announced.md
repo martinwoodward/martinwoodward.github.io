@@ -12,7 +12,6 @@ description: "JetBrains announces the Resharper 2.0 plan, introducing support fo
 categories: ["dotnet", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Jetbrains](http://www.jetbrains.com/) have announced the [plan for Resharper 2.0](http://www.jetbrains.net/confluence/display/ReSharper/ReSharper+2.0+Plan), including the much awaited support for Visual Studio 2005!. Fantastic news as VS 2005 without resharper is worse than VS 2003 in my humble opinion. (I'd forgotton just how much Resharper does for you!) The full plan is posted [here](http://www.jetbrains.net/confluence/display/ReSharper/ReSharper+2.0+Plan).

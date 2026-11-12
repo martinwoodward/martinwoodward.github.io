@@ -13,7 +13,6 @@ categories:
   ["technology", "books", "dotnet", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If the recent announcements about Silverlight have your interest and you can get to Dublin on June 7th this year then I would urge you to take a look at this years [Irish community conference IMTC](http://imtc.firstport.ie/). It used to be called INDC but they had to drop the "D" because there is sooo much more to the event than just developer stuff.

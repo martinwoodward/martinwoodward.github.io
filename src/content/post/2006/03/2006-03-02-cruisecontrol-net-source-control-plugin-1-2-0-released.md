@@ -12,7 +12,6 @@ description: "The CruiseControl.NET Source Control Plugin 1.2.0 has been updated
 categories: ["tfs", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Tonight, I finally sat down and recompiled the [CruiseControl.NET plugin](http://vstsplugins.sourceforge.net/) to work with the RC version of the Team Foundation Server API.

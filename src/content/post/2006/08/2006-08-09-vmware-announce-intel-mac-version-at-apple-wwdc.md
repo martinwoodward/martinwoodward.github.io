@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I use [VMWare](http://www.vmware.com/) a lot. As we work on a cross-platform client to Team Foundation Server, I not only need to test our client on many operating systems, I also run Team Foundation Server in VMWare to talk to test our client against. [Teamprise](http://www.teamprise.com/)[ ](http://www.teamprise.com/)Explorer and the Eclipse plug-in use SWT for the UI Layer. This means that not only is performance great – the client takes on the native look and feel of the host operating system. However, you do need to test dialogs on those operating systems to make sure they all look ok and size correctly.

@@ -12,7 +12,6 @@ description: "As you have probably heard by now, Eclipse 3."
 categories: ["technology", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As you have probably heard by now, [Eclipse 3.7 shipped today](http://www.eclipse.org). Congratulations to everyone involved. From a personal point of view I’m secretly pleased to see that one of my own bug reports manage to sneak it’s way in to this release as well which I think means I have managed to do my bit and contribute a little something to every Eclipse since 3.4

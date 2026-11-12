@@ -12,7 +12,6 @@ description: "Join Brian Randall on .NET Rocks as he discusses Team System's evo
 categories: ["tfs", "dotnet", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.dotnetrocks.com/default.aspx?showNum=373) The other week [Brian Randall](http://www.mcwtech.com/cs/blogs/brianr) and I sat down with Carl and Richard [to record a .Net Rocks episode](http://www.dotnetrocks.com/default.aspx?showNum=373). Honestly, you wait years for a Brian Randall podcast and then [three](http://www.dotnetrocks.com/default.aspx?showNum=373) [come](http://www.dotnetrocks.com/default.aspx?showNum=359) [along](http://www.runasradio.com/default.aspx?showNum=69) at once!

@@ -24,7 +24,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In the days before I worked for [Teamprise](http://www.teamprise.com), I had a 3 hour, 120 mile commute. Luckily, at that time [a new thing called “podcasting” was starting to take off](http://www.woodwardweb.com/technology/podcasting.html) and so my travels were filled listening to the few podcasts that were available back then. We are talking pretty early in the history of podcasting. Back then [Dave Winer](http://www.scripting.com/) and [Adam Curry](http://www.curry.com/) were still on talking terms. [Rory Blyth](http://www.neopoleon.com/home/default.aspx) was taking over from [Mark Dunn](http://www.dunntraining.com/) as co-host of DotNetRocks with [Carl Franklin](http://www.intellectualhedonism.com/) and shows would be multiple hour epics, occasionally spilling over into .NET technology but with plenty of tangential discussions. Interestingly, I’ve actually been a [DotNetRocks](http://www.dotnetrocks.com/) listener longer than I have been into podcasts. Back when I strarted listening to the show I had to burn episodes onto a CD-R (sometimes 2) and it was listening to one of these shows that I heard Carl talking about putting the shows into an RSS feed for automatic delivery to an MP3 player. It was then I got my first iPod and my commute was much more enjoyable.

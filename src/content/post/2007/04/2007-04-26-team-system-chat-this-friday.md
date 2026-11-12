@@ -12,7 +12,6 @@ description: "Join the VSTS team this Friday for two interactive chat sessions t
 categories: ["tfs", "technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As you may have seen elsewhere, the VSTS team will be available for you to talk with on Friday. This is a great opportunity to talk directly with the team, get answers direct from from the folks that know as well as pass along any feedback you might have. Due to popular demand, there are two sessions scheduled to try and give everyone a chance to talk without having to get up in the middle of the night in their timezone.
