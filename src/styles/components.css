@@ -136,11 +136,18 @@ a {
 
   blockquote {
     @apply rounded border-0 bg-light m-0 pr-5 pl-16 py-5 relative;
+    &::before {
+      @apply px-5 content-[url('/images/quote.svg')] absolute left-0;
+    }
     p {
       @apply font-primary m-0;
-      &::before {
-        @apply px-5 content-[url('/images/quote.svg')] absolute left-0;
+      &::before,
+      &::after {
+        @apply content-none;
       }
+    }
+    p + p {
+      @apply mt-4;
     }
     cite {
       @apply block not-italic mt-4 text-primary;
