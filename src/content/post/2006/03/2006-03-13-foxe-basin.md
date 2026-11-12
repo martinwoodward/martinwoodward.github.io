@@ -12,7 +12,6 @@ description: "Explore the simplicity and effectiveness of Team System, a powerfu
 categories: ["tfs", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 According to the in flight map, I am currently 36000 feet above Baffin Bay, traveling at 550 Mph with mild amusement towards Foxe Bain. The temperature outside is a balmy -53 degrees Celsius. However, having watched the latest Harry Potter thriller and with 2987 miles to go until I reach San Francisco, I thought I'd better actually work on the [talk](http://www.woodwardweb.com/vsts/000193.html) I'm supposed to be giving in a couple of days time.

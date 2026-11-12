@@ -12,7 +12,6 @@ description: "Scott Guthrie introduces a new web project model for VS 2005, enha
 categories: ["technology", "dotnet", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Scott Guthrie has posted about a [new web project type](http://weblogs.asp.net/scottgu/archive/2005/12/07/432630.aspx) that will be available for VS 2005. I know quite a few people have been running into difficulties with the [shipped way](http://weblogs.asp.net/scottgu/archive/2005/08/21/423201.aspx) that web projects work in VS 2005 (especially when it comes to automating the build process outside of Visual Studio) and this new model sounds like an interesting hybrid.

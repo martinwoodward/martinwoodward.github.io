@@ -12,7 +12,6 @@ description: "This morning while I was preparing for a customer demo that I'll b
 categories: ["technology", "dotnet", "gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This morning while I was preparing for a customer demo that I'll be doing over LiveMeeting later today, my DSL connection stopped working. I have a reasonably complicated home office network arrangement - but it is most often my VPN connection or my unmanaged gigabit switch that are the problem. This morning however, my DSL was down. Not a surprise to a lot of people, but I am with [Nildram](http://www.nildram.net/) and this sort of thing hardly ever happens (BTW - I cannot say enough good things about Nildram as a broadband provider).

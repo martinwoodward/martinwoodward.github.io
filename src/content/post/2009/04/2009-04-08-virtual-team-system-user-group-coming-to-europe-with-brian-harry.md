@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The [Virtual Team System User Group](http://www.tsug-ve.com/) is great for people like me that live somewhat removed from a major population centre. In fact, as I look out my window I can’t even see the sheep that usually live outside. That’s one of the reasons why I love the [Virtual Team System User Group](http://www.tsug-ve.com/) as it allows me to meet up with people just like I would do at a normal user group session – without the risk of catching a cold or consuming cold pizza. The only problem with the user group so far is that it has been meeting in the evenings US time – which is in the middle of the night for me.

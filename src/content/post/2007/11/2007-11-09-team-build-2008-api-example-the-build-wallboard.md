@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As [promised](http://www.woodwardweb.com/000394.html), here is the code we created during the [TFS 2008 Build session at TechEd 2007 in Barcelona](http://www.woodwardweb.com/personal/000391.html).

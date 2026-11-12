@@ -12,7 +12,6 @@ description: "Discover the latest update of Team Foundation Sidekicks 2.4, featu
 categories: ["tfs", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In my inbox this morning I got news of another new version of the Team Foundation Sidekicks from Attrice. I recommended these tools to several people during the recent TechEd EMEA event in Berlin and so it is great to new tools being added all the time.

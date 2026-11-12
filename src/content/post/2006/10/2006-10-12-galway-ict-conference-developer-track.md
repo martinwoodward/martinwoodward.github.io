@@ -12,7 +12,6 @@ description: "The Galway ICT Conference's Developer Track brought together diver
 categories: ["tfs", "books", "dotnet", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Thanks to all the people who came along to the Developer Track of todays conference in Galway. It was great to see such a mix of people with different experience of .NET and Team System in General - but also nice to see some Java folks. Here are m y slides as promised:-

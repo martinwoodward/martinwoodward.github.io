@@ -12,7 +12,6 @@ description: "At the moment, we are going through a heavy testing phase on Versi
 categories: ["technology", "gadgets", "maker", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/MacVistawithFries_9450/TeampriseOnVistaOnMac2%5B12%5D.png) At the moment, we are going through a heavy testing phase on Version 2.0 of the [Teamprise](http://www.teamprise.com/) Client Suite. This happily coincided with the RTM of [Windows Vista](http://www.microsoft.com/windowsvista/), so - like any self-respecting Early Adopter, I figured I should go install the RTM edition of Vista and see how Teamprise performs.

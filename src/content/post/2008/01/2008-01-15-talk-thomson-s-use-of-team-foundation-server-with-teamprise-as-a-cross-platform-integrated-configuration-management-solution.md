@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I just noticed that on Wednesday January 16th at 5pm, the [Minnesota Visual Studio Team System User Group](http://vstsmn.net/) are having a [talk](http://team-foundation-server.blogspot.com/2008/01/vsts-meeting-on-wednesday-january-16th.html) by [Mac Noland](http://team-foundation-server.blogspot.com/).

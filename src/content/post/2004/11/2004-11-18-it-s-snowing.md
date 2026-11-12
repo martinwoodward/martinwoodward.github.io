@@ -12,7 +12,6 @@ description: "Snow falls heavily on 18th November, tempting thoughts of a snowma
 categories: ["maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/images/blog/20041118_snow.html)It's the 18th November and it's snowing!!! Really heaving. Looks cool - might go outside and build a snowman. Wouldn't mind but I have to drive across 3 countries tomorrow. Doh!

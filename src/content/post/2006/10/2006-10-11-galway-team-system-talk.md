@@ -12,7 +12,6 @@ description: "Join me at the ICT Conference in Galway on October 12th to hear Er
 categories: ["tfs", "dotnet", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Tomorrow (October 12th), I'll be talking at the first annual [ICT Conference in Galway](http://www.itag.ie/Conference2006/tabid/335/Default.aspx), Ireland. While having me attend is probably reason for you to stay away, [Eric Lee](http://blogs.msdn.com/ericlee/) (PM on Visual Studio Team System) is flying in from Redmond especially to talk.

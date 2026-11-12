@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The day that Intel Macs first started shipping I walked into an Apple store, downloaded [Teamprise](http://www.teamprise.com/) and tried to run it to see if it would work. It didn’t. I wasn’t that surprised, but I had kinda been hoping that the magic of Rosetta would just take over and automagically make it work. But sadly Rosetta (while clever) isn’t that clever.

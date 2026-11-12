@@ -12,7 +12,6 @@ description: "The arrival of my MSDN DVD for Visual Studio 2008 Team System brou
 categories: ["git", "tfs", "technology"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 It's funny, in these days of digital distribution, but seeing some physical media for a software project you have been closely involved with still means a great deal.

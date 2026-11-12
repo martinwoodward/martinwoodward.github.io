@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/WindowsLiveWriter/PintSizedTFSProxy_F31B/tfs_proxy%5B3%5D.jpg) I use Team Foundation Server over the end of a VPN connection to from my house in the UK over to Teamprise HQ back in Champaign, IL. Using Team Foundation Server the performance has been satisfactory, but I've always been jealous of the performance that the guys in the office get over their 1Gbs connection. We have gigabit networks both sides of the Atlantic, but the ADSL line to my house is a 2Mbs downstream and 256kps upstream connection which slows everything down. As an experiment, I've just installed a very small machine as a TFS Version Control Proxy Server and the performance increase is astounding - I wish I had done this earlier.

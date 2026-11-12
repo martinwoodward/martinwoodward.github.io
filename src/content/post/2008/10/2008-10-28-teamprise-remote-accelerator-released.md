@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.teamprise.com/products/accelerator/) At PDC last night [Ed Thomson](http://www.edwardthomson.com/blog/) announced our latest product, the [Teamprise Remote Accelerator](http://www.teamprise.com/products/accelerator/). This is a single user Team Foundation Server proxy designed for use by lone remote developers working off-site. The product was initially developed for internal use as we have quite a few developers that work off site most of the time, like myself. However when talking with a number of our customers we realised that other people would also get great benefit so we decided to release it as a product. #### **How Does it Work?**

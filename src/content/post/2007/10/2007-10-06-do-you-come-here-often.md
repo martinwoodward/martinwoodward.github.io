@@ -12,7 +12,6 @@ description: "Navigating US customs can be bewildering, especially when unexpect
 categories: ["technology", "gadgets", "maker", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 An odd smirk followed by "You come here a lot" is not what you want to hear when at the customs desk waiting to come into the US. Immediately I expected the worst - an armed SWAT team absailing from the ceiling to lead me off into a quiet room for interrogation while the snapping sounds of latex gloves ricochet out of the distant bowels of the customs hall.

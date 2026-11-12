@@ -12,7 +12,6 @@ description: "Discover the exciting potential of running Teamprise on a z/OS mai
 categories: ["tfs", "technology", "teamprise", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I’m playing with a lot of cool stuff at the moment as we get ready for Team Foundation Server 2010, but accessing TFS from the Mac or inside Eclipse doesn’t give me as many of those “it shouldn’t work that well” moments any more. But today I had big one of those moments while I was helping test an application we are playing with internally.

@@ -12,7 +12,6 @@ description: "Discover Microsoft's new tool for seamless migration and synchroni
 categories: ["git", "tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Brian Harry](http://blogs.msdn.com/bharry/) has posted some great news over on his blog - [Microsoft have release a new tool to allow users to migrate from ClearCase to Visual Studio Team Foundation Server](http://blogs.msdn.com/bharry/archive/2007/09/14/tfs-migration-synchronization-tool-for-clearcase-relased.aspx). From Brian's blog:-

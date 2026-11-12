@@ -21,7 +21,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The blogosphere today is buzzing with news of the [other launch](http://www.apple.com/iphone/) happening today, but there is one a bit closer to my own heart - [Eclipse 3.3 (Europa)](http://www.eclipse.org) has been released. I'm downloading it right now.

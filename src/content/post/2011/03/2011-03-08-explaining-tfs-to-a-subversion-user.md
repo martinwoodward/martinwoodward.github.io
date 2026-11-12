@@ -12,7 +12,6 @@ description: "Discover key differences between Team Foundation Server and Subver
 categories: ["tfs", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In my travels I often run into former Subversion users coming to Team Foundation Server and struggling to come to terms with the differences in the version control model employed by TFS. [Ed Hintz posted a recent blog post that is very good](http://tinyurl.com/svn2tfs), but as someone who’s used many version control systems in the past (including Subversion) I’ve put together the following deck over the years that I use when giving people advance warning about the differences between the two. I recently updated my deck based on the latest power tools release and including some of Ed’s points. Speaking with a few folks at the recent MVP Summit it seemed like this deck might be useful for others so sharing it here:

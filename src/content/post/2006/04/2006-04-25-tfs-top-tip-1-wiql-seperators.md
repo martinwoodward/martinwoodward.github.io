@@ -12,7 +12,6 @@ description: "I thought I’d try and post some quick Top Tips for Team Foundati
 categories: ["tfs", "technology", "dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I thought I’d try and post some quick Top Tips for Team Foundation Server – in no particular order apart from as I think of them. Today, this came up in the [forums](http://forums.microsoft.com/MSDN/ShowPost.aspx?PostID=366920&SiteID=1) so I thought I’d elaborate.

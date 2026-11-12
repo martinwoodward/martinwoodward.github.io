@@ -12,7 +12,6 @@ description: "Learn to easily rollback file states in VSTS by using the Get Spec
 categories: ["git", "tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 It's probably obvious this one, but it took me a minute to figure it out. In VSTS source control, file version numbers do not go 1,2,3,4.. but they are versioned by the changeset number that the change was in. For example, I am currently looking at a file in my repository that has the following versions in its history:-

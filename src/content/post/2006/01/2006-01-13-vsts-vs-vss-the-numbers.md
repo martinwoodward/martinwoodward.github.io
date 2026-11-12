@@ -12,7 +12,6 @@ description: "Explore key metrics from my VSTS migration from Visual Source Safe
 categories: ["tfs", "technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In my talk at the [Belfast Launch Event](http://www.microsoft.com/ireland/servers/launchtour/), I gave some numbers of the differences that we had found when migrating our source from Visual Source Safe to Team Foundation Server Source Control. Since then I've had a couple of emails asking for them again, so I'm including them in this blog post for posterity.

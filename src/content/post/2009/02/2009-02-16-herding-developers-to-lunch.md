@@ -12,7 +12,6 @@ description: "Discover effective strategies for rallying developers to lunch, in
 categories: ["technology", "books", "gadgets", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://icanhascheezburger.com/2008/06/22/funny-pictures-minion-return-wif-cheezburger/)Anyone who works in an office with other programmers will know the joys of trying to get a group together to go to lunch. The phrase "[like herding cats](http://en.wikipedia.org/wiki/Herding_Cats)" is often used. It must be a combination of the "just let me finish this one last thing" factor combined with something about the personality traits that make up a typical developer. What ever it is, in every organization I have worked, getting a group together to go to lunch is usually a delay prone and complex logistical exercise.

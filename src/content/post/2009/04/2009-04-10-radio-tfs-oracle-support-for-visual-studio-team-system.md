@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This month I called [Doug Seven](http://blogs.msdn.com/dseven/) and Daniel Norwood to talk about the work Quest are doing to provide Oracle support inside Visual Studio team System 2010. Doug Seven is a Senior Product Manager for Visual Studio Team System at Microsoft focused on technical advocacy of Team System as an ALM solution and Daniel Norwood is a Product Manager for Quest Software.

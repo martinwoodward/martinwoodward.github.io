@@ -12,7 +12,6 @@ description: "Discover GIMPShop for Windows, a user-friendly GIMP version tailor
 categories: ["technology", "dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've been playing with [GIMP](http://www.gimp.org/) lately. Coming from [Photoshop](http://www.adobe.com/products/photoshop/main.html), I find the interface really hard to use. Also, the number of windows that [GIMP](http://www.gimp.org/) generates it just plain annoying.

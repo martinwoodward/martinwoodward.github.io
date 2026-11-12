@@ -12,7 +12,6 @@ description: "Explore the benefits of incremental builds in TFS 2010, enhancing 
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 When you create a new build definition with TFS 2010 by default it does a clean build for you every time. That is to say that between builds all the source from the previous build is deleted along with the compiled outputs and then the source is downloaded fresh, built and you are good to go. There is a good reason for this to be the default – it is the safest option. If your build script messes around with the files in your source directory at all (perhaps baking in a build number into the AssemblyInfo files etc) then you want to get a clean workspace to ensure that you are back to a known good state.

@@ -2,7 +2,6 @@
 title: "Talk To Me Anytime :)"
 meta_title: ""
 description: "Contact me via email or social media"
-draft: false
 
 about:
   title: "Ask Us Anything <br> Or just Say Hi,"

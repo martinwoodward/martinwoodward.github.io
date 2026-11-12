@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "gadgets", "maker", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This morning we had a power cut which killed a particular tricky upgrade mid-way through trashing the machine I was attempting it on. Luckily the machine in question was a VM Ware image and I had recent taken a backup snap-shot so I only lost a few hours work.

@@ -12,7 +12,6 @@ description: "Discover NASA's Open Source World Wind, a stunning desktop app for
 categories: ["technology", "dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/moblog/world_wind.html)So, how about a desktop application that allows you to zoom in to any part of the world, move around and view in 3D? How about the appliation coming from NASA, which means you have a NASA directory in your Program Files, and a cool NASA icon on your desktop? How about the application in question being Open Source and written in C#?

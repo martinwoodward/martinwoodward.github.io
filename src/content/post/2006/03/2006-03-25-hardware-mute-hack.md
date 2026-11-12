@@ -12,7 +12,6 @@ description: "."
 categories: ["technology", "books", "gadgets", "maker", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I have a lovely Dell Precision M70 as my main development machine. It's a notebook so is great for when I am travelling around and has more than enough grunt to handle a few VMWare images running at once for cross-platform demos etc. The only complaint I have about it is a common one with laptops - there is no hardware volume control. There are buttons that control the volume but these link into a software volume control (which amazingly even work in Ubuntu Linux complete with a nice screen overlay showing you the current volume setting).

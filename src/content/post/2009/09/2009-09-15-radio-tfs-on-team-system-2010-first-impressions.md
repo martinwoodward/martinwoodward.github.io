@@ -12,7 +12,6 @@ description: "Join us for Radio TFS, where we share our first impressions of Tea
 categories: ["git", "tfs", "technology", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just released the latest Radio TFS episode. We got the whole gang together so decided to have a catch up and a chat about our first impression from using Beta 1 of Team System for a few weeks.

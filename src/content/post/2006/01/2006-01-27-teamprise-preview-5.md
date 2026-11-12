@@ -12,7 +12,6 @@ description: "Download Teamprise Preview 5 for seamless integration with Visual 
 categories: ["tfs", "technology", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.teamprise.com)Preview 5 of Teamprise is now available for registered users to [download](http://www.teamprise.com/preview-register.py) (registration is free). This release is compatible with Beta 3 and Beta 3 refresh of Visual Studio 2005 Team Foundation Server. We'll be releasing another preview release after Release Candidate comes out (due [any time soon](http://blogs.msdn.com/jeffbe/archive/2006/01/19/514801.aspx)).

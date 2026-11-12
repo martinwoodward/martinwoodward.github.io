@@ -12,7 +12,6 @@ description: "Discover how Sysinternals tools like Process Explorer and BgInfo c
 categories: ["technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've been a regular user of programs from [Sysinternals](http://www.sysinternals.com/ntw2k/utilities.shtml) for a while now - today they just saved me again.

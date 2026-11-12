@@ -12,7 +12,6 @@ description: "Discover JavaCoder.Net for quick access to Java design patterns an
 categories: ["dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just wanted to take the time to plug the [JavaCoder.Net](http://www.javacoder.net) web site - a handy site put together by one of my pals that is helping me stay in touch with the world of [Java](http://www.javacoder.net). If you get the time, please take a look. It's very fast and completely free of adverts.

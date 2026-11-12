@@ -12,7 +12,6 @@ description: "At TechEd EMEA 2009 in Berlin, I'm engaging with developers on Vis
 categories: ["git", "tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I’m at TechEd EMEA again this year after missing last year’s EMEA event due to illness. I’m busy working the Visual Studio area in the Technical Learning Centre as usual, but for the first time as Microsoft staff rather than an MVP. The show so far has been great. We’ve been getting a lot of traffic by the TLC and lots of very challenging questions.

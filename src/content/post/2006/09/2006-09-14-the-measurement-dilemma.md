@@ -12,7 +12,6 @@ description: "Explore the balance between insightful metrics and their impact on
 categories: ["tfs", "technology", "gadgets", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Visual Studio Team Foundation Server gives a fantastic ability to track and report on various facts about your software development process. It frees managers (and team members) from the chore of recording and collating data about the development process. Managers can now get on with managing the project - removing obstacles before they seriously impact the team, reporting on the progress of the project to its owners and organizing deliverables to maximize the productivity of the teams. With all new powers, there comes some danger and the need for responsibility (just ask [King Midas](http://www.primaryresources.co.uk/english/kingmidas.htm) or the scriptwriters of [countless](http://www.imdb.com/title/tt0315327/) [Hollywood](http://www.imdb.com/title/tt0207201/) [films](http://www.imdb.com/title/tt0086393/)). ### The Uncertainty Principle

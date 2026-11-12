@@ -12,7 +12,6 @@ description: "The Fujitsu ST5010 Tablet PC impresses with its handwriting recogn
 categories: ["technology", "books", "gadgets", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.fujitsu-siemens.com/products/mobile/tablet_pcs/stylistic_st5010.html)Just got my hands on a new [Fujitsu ST5010 Tablet PC](http://www.fujitsu-siemens.com/products/mobile/tablet_pcs/stylistic_st5010.html) for a demo and I really enjoyed working with it. I have been wanting to use a tablet PC in anger for a while now as the idea of the form-factor is one that I liked. The ST5010 can be yours for £1500 inc VAT. In combination with [Microsoft OneNote](http://office.microsoft.com/home/office.aspx?assetid=FX01085803) and Windows XP tablet edition I feel that I have a replacement for my trust A4 notebook. The machine had no problems recognising my handwriting (or speach) and the feel of writing on the surface is so close to writing with paper on pen that it takes no getting used to. However the screen can be difficult to read (especially when writing with it flat on a desk or when showing to somebody else).

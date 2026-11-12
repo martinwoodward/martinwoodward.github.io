@@ -12,7 +12,6 @@ description: "Discover how Network Research Belgium cut development costs by 10%
 categories: ["tfs", "technology", "books", "dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 \*\*\*\*A couple of weeks ago I was in Antwerp for a partner event and I also had the pleasure of meeting with a few customers from the Belgium and Luxembourg region. One of the customers I spoke with was Network Research Belgium (NRB) who were doing some very interesting work and using Team Foundation Server 2010 for their heterogeneous development efforts.

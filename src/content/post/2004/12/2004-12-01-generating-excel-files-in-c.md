@@ -12,7 +12,6 @@ description: "Learn a simple method to generate Excel-compatible files in C# usi
 categories: ["dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I have been investigating several ways of generating files suitable for use in Excel from a C# application.

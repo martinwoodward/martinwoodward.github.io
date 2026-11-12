@@ -13,7 +13,6 @@ categories:
   ["technology", "dotnet", "web", "programming", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A new version of [Snippy](http://www.gotdotnet.com/codegallery/codegallery.aspx?id=b0813ae7-466a-43c2-b2ad-f87e4ee6bc39) is out. For those of you not familiar - you'll be sorry to hear that Snippy is not a replacement to [Clippy](http://tastytronic.net/main/clippy.jpg) in Office 12, nor is it a [helpful marsupial that will rescue Timmy from down the well](http://www.nostalgiacentral.com/tv/kids/skippy.htm). Snippy is a handy little tool to help you edit code snippets in VS 2005.

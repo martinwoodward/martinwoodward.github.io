@@ -12,7 +12,6 @@ description: "Discover how to enhance the Eclipse Juno theme on Windows by switc
 categories: ["technology", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I’ve been running Eclipse Juno regularly since the M5 milestone. One of the things I’ve really noticed is that the default theme for Eclipse Juno on Mac OS X blends in better with other Cocoa applications than Juno looks on my Windows machines. Today I just realised that this is because Eclipse is picking up the Eclipse “Windows XP Blue” theme by default. Below is a picture of Juno RC3 with a Windows Explorer window over it for comparison.

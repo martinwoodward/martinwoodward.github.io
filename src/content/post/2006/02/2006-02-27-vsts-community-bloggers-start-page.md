@@ -12,7 +12,6 @@ description: "Discover how to customise your Visual Studio 2005 start page with 
 categories: ["tfs", "technology", "dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://feeds.feedburner.com/VstsBloggers) I have just added [Richard Hundhausen](http://blog.accentient.com/)’s excellent blog into the list of blogs that I slurp for the [VSTS Community Bloggers Google Toolbar button](http://www.woodwardweb.com/vsts/000188.html). While I was there I made the blog a bit more reader friendly. While not overly useful, it means that you can now customise your Visual Studio 2005 start page to show news from around the VSTS blogosphere.

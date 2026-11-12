@@ -12,7 +12,6 @@ description: "I've joined the broadband revolution with ADSL activation, and it'
 categories: ["maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've finally joined the broadband masses as my exchange has just been enabled and my [nildram](http://www.nildram.com) account has been activated.

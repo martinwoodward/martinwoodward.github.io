@@ -12,7 +12,6 @@ description: "Discover the nuances of C# inheritance and interfaces in Bill Capu
 categories: ["technology", "books", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Bill Caputo](http://www.williamcaputo.com/) has posted an interesting article discussing [inheritance in C#, especially when using interfaces](http://www.williamcaputo.com/archives/000138.html). I learned about OO while learning how to write Java, so I still struggle with the fact that methods in C# are not virtual by default. [Bill](http://www.williamcaputo.com/) explains why inheriting a class that implements an interface might not work as you expected.

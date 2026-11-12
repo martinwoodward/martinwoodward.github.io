@@ -12,7 +12,6 @@ description: "One of the questions that came up from one of our users was 'how d
 categories: ["tfs", "technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 One of the questions that came up from one of our users was "how do I delete the files from my local file system - and tell Team Foundation Server that I have done this".

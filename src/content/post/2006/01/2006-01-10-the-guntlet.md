@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Buck Hodges](http://blogs.msdn.com/buckh/) recently posted about a [problem with locks based on files types and shelving in VSTS Source Control](http://blogs.msdn.com/buckh/archive/2006/01/10/511188.aspx). In the post he mentions a system called Gauntlet that is used internally in some teams at Microsoft.

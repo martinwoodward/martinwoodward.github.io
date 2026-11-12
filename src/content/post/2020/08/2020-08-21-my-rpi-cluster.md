@@ -12,7 +12,6 @@ description: "Details about my Raspberry Pi cluster build including hardware com
 categories: ["maker", "technology"]
 tags: ["raspberry-pi", "cluster", "hardware", "maker"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 There are a bunch of really cool Raspberry Pi based clusters out there such as:

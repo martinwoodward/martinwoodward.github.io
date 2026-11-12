@@ -12,7 +12,6 @@ description: "Explore strategies to ensure Team Foundation Server availability w
 categories: ["git", "tfs", "technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 While even it's own mother would admit that VSS has some issues, the one thing in it's favour is it's simplicity. You only need a file server to keep a VSS repository available and organisations have a lot of experience keeping file systems up and running. Recently I've been talking to a lot of Architect types who are trying to figure out how Team Foundation Server will fit into their organisation and the issue of ensuring availability frequently crops up.

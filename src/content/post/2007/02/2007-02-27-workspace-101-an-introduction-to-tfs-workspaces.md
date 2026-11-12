@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 One of the concepts that people need to understand when they begin to work with Team Foundation Server Version Control is that of the Team Foundation Server (TFS) Workspace. So I thought I would write a series of blog-posts covering the basics of TFS workspaces, with this post being the first. This information may be a little basic to many of the people who read my blog (especially this first post) and it is just a write up of how I think about workspaces and how I explain the concept to others. If you have any additional information to add or comments to make then please do. Also, if you are new to TFS then you probably want to take a read of the help documentation over at [MSDN](<http://msdn2.microsoft.com/en-us/library/ms181383(VS.80).aspx>) and in the [Teamprise User Guide](http://help.teamprise.com/2.0/index.jsp?topic=/com.teamprise.help/plugindoc/gs_workspace_manage.html) as there is some great information there on this topic.

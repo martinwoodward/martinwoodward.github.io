@@ -12,7 +12,6 @@ description: "Discover how to easily install and set the Sun JRE on Ubuntu for s
 categories: ["teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Teamprise](http://www.teamprise.com/) currently requires a Java JRE with DES encryption available in the JVM for the magic of NTLM authentication to work correctly. Unfortunately, the GCJ that ships by default with Ubuntu and other Debian based distributions does not have one. The easiest way around this is to install a JRE from one of the other vendors (such as Sun, IBM or BEA) – all of which are free (as in beer).

@@ -12,7 +12,6 @@ description: "Excited to speak at the Test Manager Forum in Dublin on 20th May, 
 categories: ["technology", "books", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 On Thursday 20th May, I have the privilege of speaking at the [Test Manager Forum in Dublin](http://www.sqs-ire.com/testmanagerforum_dublin2010.php). I’ll update this post after the event with links to the slides, other resources and any other links that might come up that I end up promising to share to the audience.

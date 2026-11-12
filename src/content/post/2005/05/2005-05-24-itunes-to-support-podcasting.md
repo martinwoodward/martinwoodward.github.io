@@ -12,7 +12,6 @@ description: "Apple's iTunes is set to support podcasting through RSS enclosures
 categories: ["technology", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 According to [Steve Gilmor](http://blogs.zdnet.com/Gillmor/), [Apple's iTunes is to support enclosures in RSS feeds](http://blogs.zdnet.com/Gillmor/?p=101) (podcasting). I have been looking for more details on this and have not found any yet so I could have mis-read the article but it would be a sensible move for Apple. Podcast's were the reason I bought an iPod and so the reason I had to install the iTunes software (which I don't particularly like BTW) and therefore the reason why I started looking at the iTunes music store. Hopefully the inroduction of a podcast client in iTunes will mean I get a podcatching setup that works reliably....

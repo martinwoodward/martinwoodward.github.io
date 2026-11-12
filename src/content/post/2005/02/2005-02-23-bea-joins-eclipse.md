@@ -12,7 +12,6 @@ description: "BEA's announcement to join the Eclipse foundation aims to integrat
 categories: ["technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Interesting news from Javaworld. [BEA are to announce that they are to join the Eclipse foundation](http://www.javaworld.com/javaworld/jw-02-2005/jw-0221-iw-eclipse.html). Hopefully this signals that Weblogic Workshop will be integrated with Eclipse (just as IBM integrate at the moment for WSAD). This only leave Sun and Microsoft as the major vendors staying out of Eclipse. While SunONE Studio (or whatever it is called nowadays, ex Forte, ex NetBeans) deserves to die for being soo slow, I don't see Microsoft integrating Visual Studio 2005 anytime soon...

@@ -12,7 +12,6 @@ description: "Join us at NIMTUG tonight to explore the latest updates and future
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/talks/TFSWhatsNew2009Q1.pdf) Tonight at [NIMTUG](http://nimtug.org/) I'm going to be [giving a talk](http://nimtug.org/events/63/default.aspx) to get everyone up to speed with the latest developments in the Team Foundation Server world. We are going to review what came along in 2008, talk about the new bits in Service Pack 1 and the latest power tools release. We are then going to spend the second half of the talk looking into the future and playing with the latest CTP of Team Foundation Server 2010.

@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "books", "maker", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Four years ago this month, I joined a small start-up being created called [Teamprise](http://www.teamprise.com) after reading about it on [Eric Sink's](http://www.ericsink.com/) blog. Our mission was to bring the benefits of application lifecycle management (ALM) with Microsoft Team Foundation Server to everyone. After all, your customers and requirements do not care about the artificial technological borders inside your organisation - so why should your ALM tools?

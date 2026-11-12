@@ -12,7 +12,6 @@ description: "Excited for TechEd 2007 in Orlando, enjoying a smooth journey from
 categories: ["tfs", "technology", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I am currently sat in sunny Newark having sped through immigration in record time (there wasn't a single person in front of me in the queue - the first time that has ever happened. For anyone that it interested, I've fallen back into my [Chicken rut](http://www.woodwardweb.com/personal/000171.html).

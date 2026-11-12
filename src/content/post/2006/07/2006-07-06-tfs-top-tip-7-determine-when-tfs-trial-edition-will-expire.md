@@ -12,7 +12,6 @@ description: "**UPDATE**: Brian Harry has posted a new utility to help you deter
 categories: ["git", "tfs", "technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 **UPDATE**: [Brian Harry](http://blogs.msdn.com/bharry/) has [posted a new utility](http://blogs.msdn.com/bharry/archive/2006/08/23/714412.aspx) to help you determine the trial expiration dates on your server. View [Brian's post for more details](http://blogs.msdn.com/bharry/archive/2006/08/23/714412.aspx).

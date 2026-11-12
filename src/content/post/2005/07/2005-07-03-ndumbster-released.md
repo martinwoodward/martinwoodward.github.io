@@ -12,7 +12,6 @@ description: "Discover nDumbster, the new .Net SMTP server for xUnit tests, idea
 categories: ["dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Thanks to a load of great work from Alexis Kartmann, the [nDumbster](http://ndumbster.sourceforge.net/) project is now in a state that I would recommend it's use for real world projects.

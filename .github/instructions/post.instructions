@@ -26,6 +26,9 @@ Prefer existing categories (most used first):
 
 Tags are free-form, lowercase and hyphenated (e.g. `github-copilot`, `open-source`).
 
+## Publishing
+There are no drafts. A post goes live when its PR is merged. If `date` is in the future, the post stays out of the site, RSS and search until that time passes and the next scheduled build (06:07 and 18:07 UTC) picks it up.
+
 ## Frontmatter Template
 ```yaml
 ---
@@ -37,7 +40,6 @@ description: "One or two sentences, in Martin's voice."
 categories: ["maker", "github"]
 tags: ["relevant", "tags"]
 type: "regular"
-draft: false
 ---
 ```
 

@@ -12,7 +12,6 @@ description: "If (like me) you are using the tf."
 categories: ["tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If ([like me](http://www.woodwardweb.com/vsts/000273.html)) you are using the [tf.exe](<http://msdn2.microsoft.com/en-us/cc31bk2e(VS.80).aspx>) command line to access your Team Foundation Server via a Version Control Proxy from a remote office, then the following tip is extremely useful - much more so than my previous [registry hack](http://www.woodwardweb.com/vsts/000286.html).

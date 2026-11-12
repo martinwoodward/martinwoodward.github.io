@@ -12,7 +12,6 @@ description: "After tweaking my blog's template, I regained the No. 2 spot on Go
 categories: ["technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Well, for some reason I seem to be back at my No. 2 spot in Google when you search for "Martin Woodward". I changes my blog templates a little bit. The Martin Woodward header at the top of every page is a bit of text that has a screen stylesheet applied that hides the text and displays the ": Martin Woodward" graphic instead. If you are using a text based browser then you don't see the image but get the text.

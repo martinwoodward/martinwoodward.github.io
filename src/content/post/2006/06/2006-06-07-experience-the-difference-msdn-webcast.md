@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In a couple of weeks I’ll be presenting a [MSDN webcast on Team Foundation Server Source Control](http://www.microsoft.com/emea/msdn/visualstudio/webcasts.aspx) For those of you that have attended [one of the talks I did around Ireland](http://www.woodwardweb.com/vsts/000242.html) it is probably nothing new, but if you missed the talk then now is your opportunity to join in the fun from the comfort of your own computer. I’ll only briefly touch on [Teamprise](http://www.teamprise.com/) related material – most of the talk is regarding general concepts in TFS and also some little gotchas if you are coming from other source control systems such as VSS or Subversion.

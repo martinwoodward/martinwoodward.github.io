@@ -12,7 +12,6 @@ description: "Explore the VSTS Guidance project on CodePlex, a fascinating initi
 categories: ["tfs", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I just found out about the following project going on at CodePlex out of the patterns and practices project which find a very interesting idea that I am going to try and find out if I can contribute to:-

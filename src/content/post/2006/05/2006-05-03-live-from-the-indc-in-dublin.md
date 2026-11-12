@@ -12,7 +12,6 @@ description: "Experience the excitement of Scott Guthrie's insights on ASP.NET 2
 categories: ["dotnet", "web", "programming", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Tonight I had the pleasure of listening to [Scott Guthrie](http://weblogs.asp.net/scottgu/) talk about [ASP.NET 2.0, Atlas and IIS 7.0](http://indc.wordpress.com/2006/04/27/indc-keynote-by-scott-guthrie/) at the [Keynote](http://indc.wordpress.com/2006/04/27/indc-keynote-by-scott-guthrie/) for the 1st [Irish National Developers Conference](http://indc.wordpress.com/). I kinda new most of the content before from listening to [DotNetRocks](http://www.dotnetrocks.com/) and attending the VS2005 launch presentations, however seeing Scott use the stuff for real was awesome. The crowd in Dublin was great as well, asking in depth questions which Scott really seemed to enjoy and was not afraid to just show people how to do things even when it wasn’t something he had ever tried before himself. [Tomorrows session from Scott](http://indc.wordpress.com/2006/04/30/indc-session-atlas-by-scott-guthrie/) also promises to me a must see talk.

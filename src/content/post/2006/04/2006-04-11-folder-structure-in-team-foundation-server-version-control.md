@@ -13,7 +13,6 @@ categories:
   ["git", "tfs", "technology", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I’ve seen a few forum posts on this topic and talk about it a lot whenever meeting new users to Team Foundation Server so I thought it worthwhile posting on the subject.

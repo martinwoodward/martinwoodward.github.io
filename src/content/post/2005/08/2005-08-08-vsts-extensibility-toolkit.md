@@ -12,7 +12,6 @@ description: "Discover the essential VSTS Extensibility Toolkit for streamlining
 categories: ["tfs", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I always have trouble finding this, so I'm adding a link to the [VSTS Extensibility toolkit](http://www.vsipdev.com/downloads/vs2005tsekBeta2.aspx) to my blog and [my del.icio.us](http://del.icio.us/martinwoodward) links...

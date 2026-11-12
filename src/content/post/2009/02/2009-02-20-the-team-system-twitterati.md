@@ -13,7 +13,6 @@ categories:
   ["tfs", "dotnet", "maker", "web", "programming", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.platinumbay.com/blogs/dotneticated/archive/2009/02/18/team-system-on-twitter.aspx) Twitter seems to be going mainstream here in the UK. I know this because my wife asked me about it, so it must be pretty mainstream as I consider her my bellwether on normality. Anyway I’m not convinced that this trend will last (might be amusing to read that back to myself in a few years) but I’ve been [twittering for a while now](http://www.twitter.com/martinwoodward). Personally, working in an office on my own a long way from my peers and work friends, I find it a good replacement for popping my head over the cube wall or mentioning something while making a cup of tea in the kitchen. It is also like listening in to the background chatter of other people in the office and occasionally joining in a conversation. It’s not something I worry about keeping on top of, just like I wouldn’t record all the office banter and listen back to it in case I missed something. Now-a-days I tend to keep my blog long form – Twitter is where I would just type something that is in my head that I wanted to share.

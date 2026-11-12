@@ -12,7 +12,6 @@ description: "temp_placeholder"
 categories: ["git", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A neat (if not well known) feature of Windows Vista is the built in ability to do a "Command Prompt Here" by selecting a folder, keeping the shift key down and right clicking on the folder. While this is neat, I've sometimes found myself needing an Command Prompt with full administrative privileges.

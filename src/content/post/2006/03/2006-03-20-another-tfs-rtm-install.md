@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Quick post to say that I got an RTM version of Team Foundation Server installed inside a VPC over the weekend and it worked seamlessly (as we've come to expect - kudos to those involved). Once little caveat: don't attempt to install from media over a network share.

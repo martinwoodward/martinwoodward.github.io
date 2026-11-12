@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I had the pleasure of travelling to New Orleans for the first time to speak at TechEd 2010 North America. New Orleans is now my favourite city to go to for a big conference like this. While there were plenty of hotels that you could walk to (if you can stand the humidity), there was also plenty of things to see and do.

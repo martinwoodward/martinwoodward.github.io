@@ -12,7 +12,6 @@ description: "Discover how Google Analytics transformed my understanding of site
 categories: ["tfs", "technology", "books", "dotnet", "gadgets", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](/images/blog/geomap.html)Well, despite the massive load that Google Analytics took, they have done me proud and are now happily tracking the data from 3 of the sites I look after that I'm most interested in. This blog, [VSTSPlugins](http://vstsplugins.sourceforge.net) and [VSTSEclipse](http://www.vstseclipse.org).

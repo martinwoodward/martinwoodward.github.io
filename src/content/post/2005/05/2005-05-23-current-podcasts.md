@@ -12,7 +12,6 @@ description: "Discover my current favourite podcasts for daily commutes, featuri
 categories: ["dotnet", "gadgets", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A few people have asked me this recently, so this is the current list of podcasts that I subscribe to and enjoy on my daily commute.

@@ -4,7 +4,6 @@ meta_title: "About"
 description: "This is the personal blog of Martin Woodward"
 email: "hello@woodwardweb.com"
 image: "/images/martinwoodward-sign.jpg"
-draft: false
 
 social:
   - name: github

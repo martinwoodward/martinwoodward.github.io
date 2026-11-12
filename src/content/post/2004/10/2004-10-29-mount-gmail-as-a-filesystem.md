@@ -12,7 +12,6 @@ description: "Transform your Gmail invites into a practical storage solution by 
 categories: ["technology", "dotnet", "gadgets", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Been wondering what to do with all those GMail invites? Well thanks to a couple of new developments you can now mount a gmail account as an external file system.

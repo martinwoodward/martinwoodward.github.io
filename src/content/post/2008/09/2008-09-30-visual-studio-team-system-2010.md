@@ -23,7 +23,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you haven’t heard the news already, Microsoft have [officially announced](http://www.microsoft.com/presspass/press/2008/sep08/09-29VS10PR.mspx) the name of the next version of Team System, previously known by the codename of “Rosario”. For Microsoft developers, this will be delivered on top of Visual Studio 2010. While Team Foundation Server is already very mature, there will be a new version of TFS in the 2010 release with [significant improvements and enhancements](http://blogs.msdn.com/bharry/archive/2008/09/29/shining-the-light-on-rosario.aspx).

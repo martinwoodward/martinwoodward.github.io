@@ -12,7 +12,6 @@ description: "Discover the newly launched website for the VSTS plugin for Eclips
 categories: ["tfs", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Apologies for the lack of posts recently. We are due a new release of my latest project at work in a couple of weeks and in my spare moments I have been investigating my new play project, a [VSTS plugin for Eclipse](http://www.vstseclipse.org). Anyway, I have just uploaded the website for the [VSTSEclipse](http://www.vstseclipse.org) project to sourceforge.

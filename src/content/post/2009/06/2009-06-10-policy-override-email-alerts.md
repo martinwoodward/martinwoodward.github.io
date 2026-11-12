@@ -12,7 +12,6 @@ description: "Discover the nuances of check-in policies in Team Foundation Serve
 categories: ["tfs", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 A guiding principle with Team Foundation Server is that all the flexibility of configuration and all the control should not get in the way of getting work done. For example, if you try to do a check-in that fails a defined check-in policy, you get the following warning.

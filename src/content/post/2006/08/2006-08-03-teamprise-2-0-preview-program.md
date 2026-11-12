@@ -24,7 +24,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I know it only seems like a few moments have past since we [released](http://www.woodwardweb.com/vsts/000261.html) version 1.1 onto the unsuspecting public, but today we opened the doors a little on Version 2.0 as we start our [2.0 Preview Program](http://www.teamprise.com/preview/preview-register.py). The word “preview” is deliberately chosen – this is to allow you to take a peek at the current state of development on our 2.0 branch, take some of the many new features out for a bit of a drive and kick the tires around. If you think it’ll be something you’d like to use when it’s finished then [let us know](http://support.teamprise.com/viewforum.php?f=6) – equally please [let us know](http://support.teamprise.com/viewforum.php?f=6) what you really don’t like, what you would really want or what just blatantly doesn’t work in your environment. There are bugs in this release, so I wouldn’t recommend you use this in production – our [current V1.1 release](http://www.teamprise.com/download/) is the most stable one and you should use that if you plan to be using [Teamprise](http://www.teamprise.com/) in anger. Additionally, if you purchase V1.1 right now then you get a free upgrade to V2.0 when it is released later in the year.

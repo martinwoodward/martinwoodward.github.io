@@ -12,7 +12,6 @@ description: "Join the VSTS product group on 6th September to discuss features a
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Next week you can have the opportunity to join the VSTS product group to discuss the features available in the different editions and Team Foundation Server. If you have some feedback that you have been dying to give about the product then this is a great opportunity to influence the team directly.

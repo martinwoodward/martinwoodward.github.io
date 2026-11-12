@@ -12,7 +12,6 @@ description: "Join the DDD community in Belfast on April 4th for a free, collabo
 categories: ["technology", "dotnet", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://developerdeveloperdeveloper.com/belfast/) After the highly successful [Developer Developer Developer event in Galway last year](http://www.woodwardweb.com/dotnet/ddd_is_coming_t.html), this time it is moving north to my neck of the woods – [Belfast](http://developerdeveloperdeveloper.com/belfast/). For those not familiar with the DDD events they are run on a Saturday and everyone gets together in this great free event run for the community, by the community. Session submissions are an [open process](http://developerdeveloperdeveloper.com/belfast/Speaker/AddSession.aspx) – and session can be submitted by anyone and the sessions that are held are the ones with most community interest.

@@ -12,7 +12,6 @@ description: "Learn how to pre-cache files with TFS Proxy using a straightforwar
 categories: ["tfs", "technology", "maker", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The Team Foundation Server Version Control Proxy is a wonderful thing - despite the not so catchy name. It sits between a remote office and your Team Foundation Server Application Tier and caches requests for file downloads from that remote office so that the second person to request that version of that file will get it from the local network and not have to download it over a slow WAN link again. This is great - helps to make sure that the files cached locally are the files wanted locally and generally makes the proxy self-managing, but the only problem here is that the first person to download that file always takes the hit to download it.

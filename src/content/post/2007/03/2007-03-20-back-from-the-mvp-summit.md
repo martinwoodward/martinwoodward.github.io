@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "gadgets", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I'm safely back from a fantastic week at the MVP Summit in Seattle / Redmond. The week itself was very enjoyable and packed with tons of useful information - thanks to [Noah](http://blogs.msdn.com/noahc/) and the VSTS team for being our hosts for the week. While I knew several of my fellow [Team System MVP's](https://mvp.support.microsoft.com/communities/mvp.aspx?product=1&competency=Visual+Developer+-+Team+System) from previous brief meetings, I've come away from the week with several new friends. For some photos of the event see [Noah's](http://blogs.msdn.com/noahc/archive/2007/03/14/team-system-mvps-on-campus.aspx) and [Willy](http://dotnet.org.za/willy/) blogs.

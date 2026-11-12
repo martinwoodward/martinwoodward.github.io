@@ -12,7 +12,6 @@ description: "Discover how to enhance your Eclipse experience by integrating the
 categories: ["tfs", "technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As Brian Harry announced earlier today, it’s been a busy week already here. Not only was Visual Studio 2010 SP1 released but so was Team Foundation Server 2010 SP1 and also the topic of this post, the Project Server Feature Pack.

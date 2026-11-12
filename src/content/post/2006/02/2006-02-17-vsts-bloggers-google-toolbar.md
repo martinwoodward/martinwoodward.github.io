@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/blog/vsts_google_toolbar.jpg)Well, having tried new new beta of [Google Toolbar](http://www.google.com/tools/toolbar/T4/) I just had to try implementing my own toolbar button. Here is one that will give you the top previous posts from folks around the VSTS blogosphere. Clicking on the button will take you to the excellent [Team System Rocks](http://teamsystemrocks.com/) website.

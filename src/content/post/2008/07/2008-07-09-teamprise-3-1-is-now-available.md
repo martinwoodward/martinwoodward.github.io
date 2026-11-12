@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 At the Microsoft [Worldwide Partner Conference](https://partner.microsoft.com/global/40018508) in Houston today, Corey Steffen (General Manager of Teamprise and the guy that pays my wages) announced the [public availability of Teamprise 3.1](http://www.teamprise.com/).

@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Yesterday I sat down with my freshly downloaded Orcas Beta 2 media (thanks to the [Secure Content Downloader](http://www.microsoft.com/downloads/details.aspx?familyid=9a927cf6-16e4-4e21-9608-77f06d2156bb&displaylang=en) from the good folks at Microsoft Research in Cambridge) and upgraded our production TFS instance. The good news is that the set-up process in Beta 2 is miles better than it was in earlier versions of TFS - it even handled the upgrade of my database for me. As someone who has been through manual database upgrades from TFS 2005 Beta 2 -> Beta 3 -> Beta 3R -> RC -> RTM -> TFS 2008 Beta 1, having it all done for me was just fantastic.

@@ -12,7 +12,6 @@ description: "Join me on my London adventure as I explore amusing WiFi names and
 categories: ["dotnet", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today I had the pleasure of visiting London for the day. It's always a pleasure to visit London because I am so very grateful that I don't live there. (If you haven't heard the [London Underground](http://www.geofftech.co.uk/adb/january05_files/goingunderground.mp3) song then take a listen - NOT work safe!!)

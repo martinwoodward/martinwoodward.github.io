@@ -12,7 +12,6 @@ description: "Join Scott Hanselman and Jamie Cansdale on Hanselminutes as they e
 categories: ["tfs", "dotnet", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Scott Hanselman's](http://www.hanselman.com/blog/) [Hanselminutes](http://www.hanselminutes.com/) podcast continues with [this weeks episode](http://weblogs.asp.net/nunitaddin/archive/2006/02/01/437051.aspx) about Continuous Integration. Jamie Cansdale (the genius behind TestDriven.NET) has [posted](http://weblogs.asp.net/nunitaddin/archive/2006/02/01/437051.aspx) about the tool Scott was on the way to mentioning when Karl interrupted him.

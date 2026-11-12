@@ -21,7 +21,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If I were clever like [Eric Sink](http://software.ericsink.com/) or [Bill Caputo](http://www.williamcaputo.com/), I'd be able to turn that catchy title in to a witty and insightful post about the software industry. But sadly for you, I'm not and (as witnessed in this blog) my writing skills are pretty awful. My headmaster once wrote in a school report "Martin has invented a whole new way of spelling the English language - sadly I don't think it will catch on".

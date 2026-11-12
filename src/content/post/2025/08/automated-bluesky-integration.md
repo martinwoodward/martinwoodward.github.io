@@ -23,7 +23,6 @@ tags:
   ]
 type: "regular"
 blueskyPostURI: "3lvrk6viyag2t"
-draft: false
 ---
 
 Thanks to the power of GitHub Copilot's Agent mode, I've recently created a new blog using Astro and ported all 521 of my old blog posts from a HTML archive into the new site.

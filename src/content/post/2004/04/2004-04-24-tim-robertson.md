@@ -12,7 +12,6 @@ description: "Tim Robertson has traded his home for Australia, sharing thrilling
 categories: ["dotnet", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Tim Robertson](http://www.teemo.net) has now upped and gone to Australia to be an excellent surf dude. We miss him, however the regular updates on his [blog](http://www.teemo.net) keep us up to date with all the things that can kill you down under.

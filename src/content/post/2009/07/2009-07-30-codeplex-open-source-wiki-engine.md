@@ -12,7 +12,6 @@ description: "Discover CodePlex's newly released open-source wiki engine, availa
 categories: ["web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The clever folks over at CodePlex have recently released the code to the sites excellent wiki. As you would expect from CodePlex team, the code is available as a project on CodePlex at [http://wikiplex.codeplex.com](http://wikiplex.codeplex.com). Even better news is that the code has been released under the permissive MS-PL open source license.

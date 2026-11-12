@@ -12,7 +12,6 @@ description: "Discover how a new Team Build plug-in for CruiseControl.NET enhanc
 categories: ["tfs", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I had the pleasure of meeting [James Dawson](http://blogs.conchango.com/jamesdawson) at TechEd in Barcelona this year, and recently he dropped me a note to let me know about a [Team Build plug-in for CruiseControl.NET that folks still on TFS 2005 might find interesting](http://blogs.conchango.com/jamesdawson/archive/2007/11/24/TeamBuild-Plug_2D00_in-for-CruiseControl.NET-now-on-CodePlex.aspx). It basically allows you to use CruiseControl.NET to subscribe to TFS to detect changes (via the [TFS plug-in to CC.NET](http://www.codeplex.com/TFSCCNetPlugin/) that I look after) but call Team Build to perform the actual build - which has the benefit of feeding back all the build data etc into TFS.

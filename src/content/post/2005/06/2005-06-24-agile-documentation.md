@@ -12,7 +12,6 @@ description: "Just found this interesting article on documentation in Agile proj
 categories: ["technology", "maker", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just found this [interesting article on documentation in Agile projects](http://www.agilemodeling.com/essays/agileDocumentation.htm) by [Scott Ambler](http://www.ambysoft.com/). As with everything in the Agile world, we must strive to do _just enough_ to meet the business objectives - this includes documentation. One point which Scott makes very well is that "Your team's primary goal is to develop software, its secondary goal is to enable your next effort."

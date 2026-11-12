@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This morning I got an email from HR congratulating me on completing my three month probationary period at Microsoft. I hadn’t realised I had a probation period (in fact I’m pretty sure I don’t, but as I passed I’m not going to rock the boat). Getting it did make me think that I was well over-due a blog post on how things are going.

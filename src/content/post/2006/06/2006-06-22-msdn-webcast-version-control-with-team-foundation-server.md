@@ -12,7 +12,6 @@ description: "Join my live webcast on Team Foundation Server Version Control tod
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Later today I’m presenting a webcast for Microsoft EMEA on Team Foundation Server Version Control. The registration process to sign up for it was a little complicated but apparently I’m allowed to give people the direct URL to log into the live meeting account as a participant.

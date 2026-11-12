@@ -12,7 +12,6 @@ description: "temp_placeholder"
 categories: ["tfs", "technology", "maker"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Microsoft Team Foundation Server 2008 has a great new improved build system (often referred to as "Team Build"). An advantage of running your build from Team Build is that (by default) all changes between your current build and the last good one are reported in the build report and any work items that were associated with those changesets are automatically updated with the build number they were fixed in.

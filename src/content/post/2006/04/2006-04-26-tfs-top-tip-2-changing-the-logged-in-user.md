@@ -12,7 +12,6 @@ description: "When you connect to a Team Foundation Server, the Microsoft client
 categories: ["tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/blog/username_cache.gif)[](http://www.woodwardweb.com/blog/username_cache.gif)[](http://www.woodwardweb.com/blog/username_cache.gif)[](http://www.woodwardweb.com/blog/username_cache.gif)[](http://www.woodwardweb.com/blog/username_cache.gif)When you connect to a Team Foundation Server, the Microsoft client API attempts to connect with your current credentials that the process is running with under Windows. If you are on a different domain than your TFS server or the user that you are logged in with does not have access, then you will be prompted to enter your login credentials using the standard login dialog box that you will be familiar with from Internet Explorer.

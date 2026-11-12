@@ -25,7 +25,6 @@ const postCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     type: z.enum(["regular", "featured"]).optional(),
     search_keyword: z.string().optional(),
-    draft: z.boolean(),
     blueskyPostURI: z.string().optional(),
   }),
 });
@@ -39,7 +38,6 @@ const aboutPageSchema = defineCollection({
     description: z.string(),
     email: z.string().email(),
     image: z.string(),
-    draft: z.boolean(),
     social: z.array(
       z.object({
         name: z.string(),
@@ -57,7 +55,6 @@ const contactPageSchema = defineCollection({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string(),
-    draft: z.boolean(),
     about: z.object({
       title: z.string(),
       content: z.string(),
@@ -89,7 +86,6 @@ const authorCollection = defineCollection({
           .optional(),
       )
       .optional(),
-    draft: z.boolean().optional(),
   }),
 });
 
@@ -101,7 +97,6 @@ const pagesCollection = defineCollection({
     meta_title: z.string().optional(),
     description: z.string().optional(),
     image: z.string().optional(),
-    draft: z.boolean().optional(),
   }),
 });
 

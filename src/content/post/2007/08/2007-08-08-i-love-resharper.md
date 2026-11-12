@@ -13,7 +13,6 @@ categories:
   ["technology", "dotnet", "gadgets", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As I've [mentioned before](http://www.woodwardweb.com/dotnet/000120.html), I love [Resharper](http://www.jetbrains.com/resharper/index.html) from those crazily clever folks at [JetBrains](http://www.jetbrains.com/). Today I installed an [Early Access version of 3.0.2](http://www.jetbrains.net/confluence/display/ReSharper/Download) into Visual Studio 2008 and all the goodness has returned. No need to write a Using statement again, error highlighting in C# without needing a build, the good old Ctrl-Shift-N keyboard shortcut among others. The 3.0.2 release has come a long way since the 2.5 release that I had been previously using, there are increased coding best practises and some nicer inline static anaylsis. The plug-in is also much more friendly in how it takes over any Visual Studio shortcuts and means that I don't have to re-train the old muscle memory when switching between keyboard shortcuts for actions in Eclipse and Visual Studio.

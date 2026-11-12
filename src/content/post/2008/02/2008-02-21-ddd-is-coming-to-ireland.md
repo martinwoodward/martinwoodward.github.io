@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "dotnet", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.dddireland.com/) Developer Developer Developer is coming to the beautiful west of Ireland in May with [GAMTUG](http://gamtug.spaces.live.com/) hosting the event on Saturday May 3rd. If you are in or around Ireland at that time then I would encourage you sign up. My good friend, and fellow Team System MVP, [Mike Azocar](http://www.michaelazocar.com/blog/) will be doing a session on Scrum which should be well worth sitting in on.

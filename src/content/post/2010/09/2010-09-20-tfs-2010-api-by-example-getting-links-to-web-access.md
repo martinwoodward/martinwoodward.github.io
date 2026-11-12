@@ -12,7 +12,6 @@ description: "Discover how to easily create links to Team Foundation Server 2010
 categories: ["tfs", "technology", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 In Team Foundation Server 2010 web access is installed by default. Therefore you can now happily create links to web access resources and know that there is somewhere that you can point a web browser to to find more information. However what is less well known is that there is a handy service available in the TFS 2010 object model to help you create the links – the [TswaClientHyperlinkService](http://msdn.microsoft.com/en-us/library/ff734705.aspx).

@@ -12,7 +12,6 @@ description: "With Team Build in Team Foundation Server, you can have multiple b
 categories: ["git", "tfs", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 With Team Build in Team Foundation Server, you can have multiple build types for multiple projects. For example, we have a build that runs fast that we can have running [Continuous Integration](http://en.wikipedia.org/wiki/Continuous_Integration) on, and a slower build (that does obfuscation, release packaging etc) that is run on demand when we want to perform a release to QA (some of which later go on to become public releases).

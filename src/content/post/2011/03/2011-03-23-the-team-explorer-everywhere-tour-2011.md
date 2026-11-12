@@ -12,7 +12,6 @@ description: "Join Ed Thomson from Team Explorer Everywhere on his April 2011 to
 categories: ["tfs", "technology", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/Windows-Live-Writer/f15622a5b7ac_8071/TEE_World_Tour_2.jpg)[Ed Thomson](http://www.edwardthomson.com/) from the Team Explorer Everywhere team is going to be doing a tour of the mid-west and central United States in early April. For those of you who don’t know Ed, he is one of the original Teamprise developers that came over to Microsoft after the acquisition and now one of the core developers on Team Explorer Everywhere. He knows more about the inner workings of our Eclipse integration than anyone else on the planet.

@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 When the Teamprise technology was acquired by Microsoft, one of the first non-TFS 2010 feature things that we knew we needed to do was change the name. You’d think re-branding would be simple, just do a global search and replace for “Teamprise” and replace with the official Microsoft name – and then reformat everything because the Microsoft name is obviously going to be longer :-) Obviously nothing is that simple. It took a while before we decided on a name, at the moment we are _Microsoft Team Explorer 2010 codename “Eaglestone”_ – which in the team we sometimes abbreviate to “TEE” (because it is shorter, but it is also handily a slight homage to the Teamprise logo which is the T power button).

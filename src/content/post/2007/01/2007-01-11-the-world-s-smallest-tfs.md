@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Dave Glover](http://blogs.msdn.com/dglover/default.aspx) has held onto the title of [world's smallest Team Foundation Server](http://blogs.msdn.com/dglover/archive/2006/08/07/690479.aspx) instance since August 2006. However, I have a confession to make.

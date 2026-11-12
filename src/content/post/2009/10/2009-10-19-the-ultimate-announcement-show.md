@@ -12,7 +12,6 @@ description: "Join us as we discuss Microsoft's exciting announcements for Visua
 categories: ["tfs", "technology", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Today, Microsoft made some important announcements regarding the future of Visual Studio 2010 along with the availability of Visual Studio 2010 Beta 2 and Team Foundation Server 2010 Beta 2. Paul, Mickey and I were lucky enough to grab a few minutes to record a show with Doug Seven, Product Manager with Visual Studio, where he took us through the announcements and we got chance to quiz him on some of the details.

@@ -12,7 +12,6 @@ description: "Learn to create custom workflow activities in TFS Build 2010 to au
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Fellow Microsoft TFS Program Manager [Jim Lamb](http://blogs.msdn.com/jimlamb) has a good post detailing how to create a custom workflow activity in Team Foundation Build 2010 using the first of what I am sure will be many activities to stamp your assemblies with the build number.

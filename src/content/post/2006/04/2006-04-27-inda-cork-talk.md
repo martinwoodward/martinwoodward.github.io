@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "books", "dotnet", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Tonight I [spoke at the Cork INDA group](http://www.developers.ie/session.aspx?s=47). Despite the excellent weather outside loads of people turned up and sat in on a talk on Source Control, which shows true dedication (especially from the folks standing at the back). I particularly enjoyed it that the audience asked loads of questions that got us off onto interesting tangents. Thanks again to [Joe](http://developers.ie/blogs/joegill/) for organising everything.

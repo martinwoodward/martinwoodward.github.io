@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 For a while now, we’ve been helping our Java customers by providing the [Teamprise Build Extensions](http://www.teamprise.com/products/build/) to allow people to easily build Ant based projects using Team Foundation Build and publish JUnit test results into TFS for inclusion in the reports etc. With the release of Teamprise 3.2 we also released a new version of the Teamprise Build Extensions which enables Maven based builds to be performed under Team Foundation Build with the same ease. We’ve been using this with a few different customers this year and it has proven to be very successful so I wanted to spread the word a little.

@@ -41,10 +41,11 @@ const getData = (folder, groupDepth) => {
     }
   });
 
-  const publishedPages = getPaths.filter(
-    (page) => !page.frontmatter?.draft && page,
+  // Future-dated posts stay out of search until their date has passed.
+  const now = Date.now();
+  return getPaths.filter(
+    (page) => !page.frontmatter?.date || new Date(page.frontmatter.date).getTime() <= now,
   );
-  return publishedPages;
 };
 
 try {

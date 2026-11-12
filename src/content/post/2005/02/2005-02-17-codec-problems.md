@@ -12,7 +12,6 @@ description: "Struggling with Microsoft webcasts on your PC? Learn how to manual
 categories: ["technology", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Recently, I've been trying to access some Microsoft webcasts but they just have not been working on my work PC. I got an error when media player tried to download the codec. Eventually tracked this down to needing the VoiceAge codec and not being able to find it.

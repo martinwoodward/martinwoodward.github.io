@@ -12,7 +12,6 @@ description: "Google Analytics is here, and I'm excited to explore its insights 
 categories: ["technology", "dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Google has recently announced it's new [Analytics](http://www.google.com/analytics/) service. I've just added the tracker to this site so we'll see what the data looks like in a few hours. From all the screen shots it looks pretty nice, will post an update when I see what it thinks to my small site traffic...

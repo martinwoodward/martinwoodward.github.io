@@ -1,12 +1,11 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import config from "@/config/config.json";
+import { isPublished } from "@/lib/utils/isPublished";
 
 export async function getStaticPaths() {
   // Get all published posts
-  const posts = await getCollection("post", ({ data }) => {
-    return data.draft !== true;
-  });
+  const posts = await getCollection("post", ({ data }) => isPublished(data));
 
   // Extract all unique categories
   const categories = [
@@ -30,7 +29,7 @@ export async function GET(context) {
   // Get posts for this specific category
   const posts = await getCollection("post", ({ data }) => {
     return (
-      data.draft !== true &&
+      isPublished(data) &&
       data.categories &&
       data.categories.some(
         (cat) => cat.toLowerCase() === category.toLowerCase(),

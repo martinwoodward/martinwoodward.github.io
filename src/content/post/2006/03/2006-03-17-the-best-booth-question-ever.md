@@ -12,7 +12,6 @@ description: "Discover the best question to ask at a booth that can lead to insi
 categories: ["technology", "dotnet", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 So, I was manning the booth yesterday in a freakishly tired state that I was almost hallucinating (I swear I saw another [high ranking Microsoft person using Linux in a keynote](http://www.theserverside.net/news/thread.tss?thread_id=39496)). I'd got to the point where I'd said the same things so many times I couldn't remember if I was repeating myself to the same person or not. Then, a guy asked me the best question I have ever been asked at a booth.

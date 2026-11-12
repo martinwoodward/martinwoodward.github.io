@@ -12,7 +12,6 @@ description: "This tip is a follow up from my rather less helpful post “Don’
 categories: ["git", "tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This tip is a follow up from my rather less helpful post “[Don’t Do That](http://www.woodwardweb.com/vsts/000158.html)” where I discussed the “Inherit security settings” option in the security settings tab for the Source Control Explorer when talking to Team Foundation Server. The issue with this check-box is that if you un-tick it then all the settings for every group on that folder are removed meaning that you have to go through every group and make sure that they have the correct permissions before you press the OK button. Even if you are a project administrator and you un-tick this box and press OK without giving project administrators rights to the folder or file you will not be able to go back and adjust the permissions.

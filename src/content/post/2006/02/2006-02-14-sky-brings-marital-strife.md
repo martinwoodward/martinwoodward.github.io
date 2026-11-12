@@ -12,7 +12,6 @@ description: "Sky+ transforms viewing habits but invites marital tension when a 
 categories: ["books", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Sky+](http://www.sky.com/ordersky/equipment/skyplus) has been the saviour of our television viewing since it arrived shortly after my son did (not a coincidence). For those non-UK citizens reading this blog Sky+ similar to the [Tivo](http://www.tivo.com/) but more locked down as it comes from the main satellite TV company here. Anyway, it’s great and has totally changed my viewing habits to the point that I very rarely watch live TV anymore – and watch adverts less often. I keep meaning to upgrade the internal hard-drive but that would mean catching up on the viewing – which is just never going to happen. I’ll probably just get the [HD version](http://hd.sky.com/) a few months after it comes out which has had a hard-drive upgrade to cope with the additional storage capacity HD broadcasts take.

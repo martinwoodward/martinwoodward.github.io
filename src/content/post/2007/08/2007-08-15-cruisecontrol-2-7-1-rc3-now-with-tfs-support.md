@@ -12,7 +12,6 @@ description: "CruiseControl 2.7.1 RC3 now integrates seamlessly with TFS, simpli
 categories: ["git", "tfs", "technology", "dotnet", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Paul Julius just announced](http://www.pauljulius.com/blog/?p=6) that RC3 of CruiseControl 2.7.1 has been released from the [Agile 2007 conference](http://www.agile2007.org). From my point of view this is fantastic news, because it includes a patch I submitted to the project to include integration between CruiseControl and Team Foundation Server. Previously this was available from our website but from 2.7.1 onwards it will be included in the base CruiseControl distribution.

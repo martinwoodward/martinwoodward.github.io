@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "maker", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Now that TFS 2008 SP1 is here, time to create a version of the TFS installer media that just contains the bits with SP1 applied. This is essential for installations targeting SQL Server 2008, but also makes the installation process onto Windows Server 2008 much easier and any installation faster (otherwise you have to install TFS 2008, then apply the service pack). Note that this is only required for new TFS installations - if you already have TFS installed then you are best of simply running the excellent service pack installer and it will do the business. Hopefully in a few weeks Microsoft will make a TFS 2008 with SP1 ISO image available, but in the meantime I thought I would write up the process of creating your own as I did mine.

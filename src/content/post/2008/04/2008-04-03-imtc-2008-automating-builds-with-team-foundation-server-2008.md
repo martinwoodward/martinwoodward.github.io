@@ -12,7 +12,6 @@ description: "Explore key insights from my IMTC 2008 session on automating build
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Thanks to everyone who attended my session this afternoon at IMTC 2008 in Dublin. As promised, here is a copy of the slide deck. [Automating Builds with Team Foundation Server 2008 (pdf - 1.26 MB)](http://www.woodwardweb.com/talks/imtc2008.pdf)

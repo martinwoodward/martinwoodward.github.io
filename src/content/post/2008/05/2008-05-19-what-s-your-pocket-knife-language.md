@@ -12,7 +12,6 @@ description: "temp_placeholder"
 categories: ["technology", "dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 As a professional programmer, the languages I code in during the day are very much dependant on the particular project I am working on. Also as a programmer I have a very low threshold for repetitive or complex tasks - basically if I have to do something more than twice then I'll probably write a quick program to do it for me (sometimes taking longer than the repetitive task would have done, but I have a lot more fun along the way :-) ). These little programs are throwaway pieces of code. I'll probably never run them more than once - I'll almost certainly never come back to them and I'm certain that no-one else will see them.

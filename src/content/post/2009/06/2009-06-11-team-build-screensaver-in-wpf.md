@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "dotnet", "gadgets", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I recently stumbled across a handy [Team Foundation Build screensaver](http://teambuildscreensaver.codeplex.com/) created by Jim Liddell and wanted to share it as it seems very good. For my team build talks I created a [Team Build Wallboard](http://code.msdn.microsoft.com/buildwallboard) as a code sample, however Jim has created his own as a WPF based screensaver and it looks very nice.

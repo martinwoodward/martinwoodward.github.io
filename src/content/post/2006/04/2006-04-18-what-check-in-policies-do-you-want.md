@@ -12,7 +12,6 @@ description: "Join the discussion on preferred check-in policies for Teampriseâ€
 categories: ["tfs", "dotnet", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Now V1.0 of [Teamprise](http://www.teamprise.com/) is out the door, we have started on the next release and are looking at the features that people want. One of these is Check-in policy support. Due to the way check-in policies are implemented in Team Foundation Server it presents us with several architectural challenges.

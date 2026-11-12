@@ -12,7 +12,6 @@ description: "The VSTS 2008 Beta 2 VPC downloaded post-November 1st is set to ex
 categories: ["tfs", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you are/were planning on using that Beta 2 VPC of Team System or TFS that you downloaded after November 1st, then think again. [Jeff Beehler](http://blogs.msdn.com/jeffbe) has posted to warn folks that the group have recently discovered that the VPC will expire early due to the timeout in the operating system. See [Jeff's post](http://blogs.msdn.com/jeffbe/archive/2007/10/25/vs2008-beta2-vpcs-expiring-prematurely.aspx) for more details.

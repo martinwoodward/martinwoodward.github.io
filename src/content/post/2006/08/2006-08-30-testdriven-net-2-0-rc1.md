@@ -12,7 +12,6 @@ description: "Jamie Cansdale announces the release of TestDriven.NET 2.0 RC1, a 
 categories: ["tfs", "technology", "dotnet", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [ Jamie Cansdale](http://www.testdriven.net/) has [released RC1](http://weblogs.asp.net/nunitaddin/archive/2006/08/30/TestDriven.NET-2.0.1761-_2D00_-RC1.aspx) of the new version of [TestDriven.NET](http://www.testdriven.net/). For those of you that don't know it TestDriven.NET is an excellent unit test integration plug-in for Visual Studio 2005 and 2003. [Scott Hanselman](http://www.hanselman.com/blog/) recently voted it number 11 in his [Big Ten Life and Work-Changing Utilities](http://www.hanselman.com/blog/ScottHanselmans2006UltimateDeveloperAndPowerUsersToolListForWindows.aspx). Not only does it work with your old NUnit and MBUnit tests it will also work with the new MS Unit Tests in Visual Studio Team System. Also the test runner is lightening fast (must faster than the one that comes with Visual Studio Team System). TestDriven.NET includes some lovely value add features. My favorite is to be able to debug into .NET System calls using the Reflector integration (who needs Symbol servers :-) ). Anyway, if you haven't tried it then I urge you to take it for a spin.

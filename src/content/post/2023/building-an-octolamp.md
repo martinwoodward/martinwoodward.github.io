@@ -23,7 +23,6 @@ tags:
   ]
 type: "regular"
 blueskyPostURI: "3juk7ac3rb42u"
-draft: false
 ---
 
 Ever wanted to bring some GitHub flair to your workspace? The Octolamp is a 3D printable, GitHub-themed smart light that combines the iconic invertocat silhouette with modern smart home technology. Powered by [WLED](https://kno.wled.ge/) and built around an inexpensive ESP8266 microcontroller, this lamp can be controlled from anywhere and integrated with home automation systems like [Home Assistant](https://www.home-assistant.io/).

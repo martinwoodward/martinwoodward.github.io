@@ -12,7 +12,6 @@ description: "Join our growing Teamprise group at Microsoft as we seek a talente
 categories: ["git", "tfs", "technology", "teamprise", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Since joining Microsoft it has been fantastic to see how committed everyone is to the technology that was acquired from Teamprise. When Microsoft purchased the Teamprise technology, they also hired all the developers (including me) and are investing heavily not just in the 2010 release but more importantly the long-term future of heterogeneous development using Team Foundation Server. Since joining Microsoft we’ve grown the team with some fantastic developers (both Software Development Engineers and Software Development Engineers in Test) who we poached from others parts of the company.

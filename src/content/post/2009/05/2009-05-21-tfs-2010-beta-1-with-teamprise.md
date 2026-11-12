@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Now that [TFS 2010 Beta 1 is publically available](http://msdn.microsoft.com/en-us/vstudio/dd582936.aspx), I thought it would make sense to share our plans with everyone. Teamprise has been working closely with Microsoft on the TFS 2010 release. First of all, can I quickly thank all the people at Microsoft who have been helping us so far. All the way from the individual developers working on features all the way up to the very highest leadership, we have had nothing put fantastic support and rapid responses to our questions.

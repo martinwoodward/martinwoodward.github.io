@@ -12,7 +12,6 @@ description: "Learn how to effectively configure NTP on Windows Server 2003 usin
 categories: ["technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Recently, a colleague and I were struggling to get a Windows 2003 domain controller configured to use an external NTP time source. We were doing all the old registry hacks that you used to have to do to no affect.

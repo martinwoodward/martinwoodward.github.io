@@ -12,7 +12,6 @@ description: "Join the new Team System User Group - Virtual Edition for global d
 categories: ["tfs", "dotnet", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.tsug-ve.com/)

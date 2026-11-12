@@ -12,7 +12,6 @@ description: "A humorous look at search queries revealing insights about me and 
 categories: ["personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I was have a quick trawl through some of my logs, and found this funny set of search queries...

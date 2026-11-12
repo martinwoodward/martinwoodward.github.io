@@ -12,7 +12,6 @@ description: "Unlock essential Hatteras command line tips, from passing login cr
 categories: ["tfs", "technology", "maker", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I couldn't find this with a quick google, so guessed the answer. If you want to pass login credentials to the Hatteras command line client (h.exe or soon to be renamed tf.exe) then you can use the /login command line parameter.

@@ -12,7 +12,6 @@ description: "Discover the quirkiest and most memorable freebies, from rucksacks
 categories: ["books", "gadgets", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [The Register](http://www.theregister.co.uk) have published the results of an important benchmark test - what is the best [free rucksack](http://go.theregister.com/feed/2004/11/18/rucksacks_evaluation/). No matter how boring the presentation, everyones eyes always light up when the contents of the marketing cupboard are raided.

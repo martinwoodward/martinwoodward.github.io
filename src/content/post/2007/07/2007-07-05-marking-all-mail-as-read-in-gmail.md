@@ -12,7 +12,6 @@ description: "Learn how to efficiently mark all unread emails as read in Gmail w
 categories: ["books"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This took me a while to figure out, so I am writing down here to help me remember later. It may also be useful if you are playing with Gmail at all (BTW, the spam filtering on Gmail is very good).

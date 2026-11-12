@@ -12,7 +12,6 @@ description: "CruiseControl 2.7.2 is now available, featuring key bug fixes and 
 categories: ["tfs", "technology", "dotnet", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [Jeffrey Fredrick](http://www.developertesting.com/archives/individual_weblogs-jeffrey_fredrick-index.html) just announced that [CruiseControl](http://cruisecontrol.sourceforge.net/) 2.7.2 is now available for download: [http://tinyurl.com/2zm9mz](http://tinyurl.com/2zm9mz).

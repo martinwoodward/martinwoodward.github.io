@@ -12,7 +12,6 @@ description: "Discover how to effortlessly visualise data using the Virtual Eart
 categories: ["technology", "gadgets", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 At the recent MVP summit, I attended a Mash-up lounge event. It was a bit Web 2.0-ey, but basically they had a bunch of bean bags, fake palm trees, and members of the Windows Live team and some Virtual Earth MVP's around to help folks get up to speed with the [Windows Live API's](http://dev.live.com/). (Thanks to [Tyler](http://home.infusionblogs.com/tdavey/default.aspx) and [Robert](http://www.infusionblogs.com/blogs/rob_mcgoverns_weblog/default.aspx), Virtual Earth MVP's from [InFusion Development](http://www.infusiondev.com/) for helping me with some sample code to grok). This is a whole area that I've not really been paying attention to in the past year, so I dropped by to see what the deal was and have a play.

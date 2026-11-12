@@ -12,7 +12,6 @@ description: "Explore the integration gap between Expression tools and TFS, and 
 categories: ["git", "tfs", "technology", "web", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Recently I've been playing more and more with the [Expression](http://www.microsoft.com/expression/) suite of tools. I especially enjoy playing with [Blend 2](http://www.microsoft.com/expression/products/features.aspx?key=blend2preview) and pretending that I can draw.

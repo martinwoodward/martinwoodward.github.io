@@ -13,7 +13,6 @@ categories:
   ["git", "technology", "gadgets", "teamprise", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 People go on about iPod + iTunes + Store being this all time great combination. I'll admit that I love my iPod, and if/when one comes out with similar capabilities to the iPhone player I'll be buying it. However, I don't think I'm being controversial here when I say that iTunes on Windows really sucks.

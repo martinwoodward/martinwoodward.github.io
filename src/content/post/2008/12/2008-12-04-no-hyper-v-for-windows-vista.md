@@ -12,7 +12,6 @@ description: "Windows Vista SP2 won't include Hyper-V support, clarifying earlie
 categories: ["technology", "gadgets", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 When I saw the news about the upcoming Windows Vista SP2, there was a little note right down at the bottom that got me quite excited.

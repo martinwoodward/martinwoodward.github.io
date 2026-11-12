@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Thanks to everyone that came along to my talk in Belfast last night. It was great to catch up with some old friends and good fun to stand up in front of my home crowd.

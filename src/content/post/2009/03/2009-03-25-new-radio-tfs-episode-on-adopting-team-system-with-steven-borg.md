@@ -12,7 +12,6 @@ description: "Join Steven Borg on Radio TFS as he shares insights on effectively
 categories: ["tfs", "technology", "web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.radiotfs.com/2009/03/25/AdoptingTeamSystemWithStevenBorg.aspx) Earlier this month I spent a very pleasant evening at the beautiful home of [Steven Borg](http://blog.nwcadence.com/) and recorded the chat we had about adopting Team System in the real world for this months episode of [Radio TFS](http://www.radiotfs.com).

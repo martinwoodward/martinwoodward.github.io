@@ -12,7 +12,6 @@ description: "Often when doing some build integration work with the TFS2008 Buil
 categories: ["tfs", "technology", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Often when doing some build integration work with the [TFS2008 Build API](http://msdn.microsoft.com/en-us/library/ms400688.aspx), you will want to get the latest build for a particular definition – for example to show the latest status of the build etc. To do that use the following code snippet: TeamFoundationServer tfs = new TeamFoundationServer("http://tfsserver:8080");  

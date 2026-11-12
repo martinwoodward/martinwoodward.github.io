@@ -12,7 +12,6 @@ description: "Discover the exciting features of Teamprise Preview 6, now availab
 categories: ["tfs", "technology", "maker", "teamprise", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.teamprise.com/)Preview 6 of Teamprise is now available for registered users to [download](http://www.teamprise.com/preview-register.py) (registration is free). This release is compatible with the RC version of Team Foundation Server only - Beta 3 and Beta 3 refresh users should stick with Preview 5 or [upgrade TFS now to claim your free T-shirt](http://blogs.msdn.com/robcaron/archive/2006/02/17/534416.aspx).

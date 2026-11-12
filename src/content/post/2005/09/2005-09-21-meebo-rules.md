@@ -12,7 +12,6 @@ description: "Discover Meebo, an exceptional web-based chat platform that rivals
 categories: ["technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Occassionally, I come across something that is soo good I think twice about recommending it to people because I don't want the site to get so busy that it becomes un-useable. But this thing is just too good to be quiet about.

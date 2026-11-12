@@ -12,7 +12,6 @@ description: "temp_placeholder"
 categories: ["technology", "books", "gadgets", "maker", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just reading Ben's blog. He has been playing with 2D Fractal Terrains (as you do).

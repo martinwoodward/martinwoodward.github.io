@@ -12,7 +12,6 @@ description: "temp_placeholder"
 categories: ["tfs", "technology", "maker", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.woodwardweb.com/blog/CIMG3334.JPG)Back in February Microsoft were [asking for feedback](http://blogs.msdn.com/robcaron/archive/2006/02/17/534416.aspx) on the installation for Team Foundation Server Release Candidate. During the early betas TFS got a lot of flack for being hard to install. The team listened and the install was much more fool-proof by the time it got to RC (most of the trouble was in getting the pre-requisites correctly set up and so the pre-requisite checker was beefed up). Anyway, the sweetener in the deal was the offer of a free t-shirt for the first 300 people to submit the feedback. I’m a sucker for swag so I sent off my form and promptly forgot all about it.

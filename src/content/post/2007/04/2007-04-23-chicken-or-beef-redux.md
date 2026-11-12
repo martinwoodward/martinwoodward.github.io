@@ -12,7 +12,6 @@ description: "This is a follow-up to a post I made over a year ago."
 categories: ["web", "podcast", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 This is a follow-up to a [post](http://www.woodwardweb.com/personal/000171.html) I made [over a year ago](http://www.woodwardweb.com/personal/000171.html). I'm popping over to the US for a couple of days this week and I am currently sat in Newark airport with the New York skyline out one window, and Ikea out the other. Since making that post, I must have been back to the US 7 or 8 times and flown on a few dozen flights with several different carriers. On the flight over this morning, I finally broke with form and actually went for the beef option. Crazy times :-)

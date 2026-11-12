@@ -12,7 +12,6 @@ description: "BBC Podcasts are currently down, causing 404 errors, just as I pre
 categories: ["technology", "web", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 **Update: **17.15 Fixed now, nothing to see here. Move along.

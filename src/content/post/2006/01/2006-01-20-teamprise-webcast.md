@@ -12,7 +12,6 @@ description: "Join the MSDN Webcast to learn how to harness the Teamprise Plug-I
 categories: ["tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 If you've been wondering what I have been up to lately, then make sure you sign up for the following MSDN Webcast:-

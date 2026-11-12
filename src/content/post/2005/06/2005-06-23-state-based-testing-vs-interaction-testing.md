@@ -12,7 +12,6 @@ description: "Explore the differences between State Based Testing and Interactio
 categories: ["git", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I'm currently thinking a lot about different testing strategies. [Martin Fowler](http://www.martinfowler.com) has an intesting post entitled [Mock Aren't Stubs](http://www.martinfowler.com/articles/mocksArentStubs.html) in which he also discusses the differences between State testing and Interaction testing. In summary state based testing is when you set up your test conditions and say that when you do _x_ the result in the data or from your method is _y_. Iteraction testing is when you say that when I call the method it should call _a_, _b_ and _c_ passing the appropriate parameters.

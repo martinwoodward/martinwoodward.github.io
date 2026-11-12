@@ -12,7 +12,6 @@ description: "Check out the new official Team Foundation Server FAQ page, featur
 categories: ["tfs", "technology", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Just noticed there is now an [official Team Foundaion Server FAQ page](http://msdn.microsoft.com/vstudio/teamsystem/support/faqs/foundation_techfaq/default.aspx). Nice to see four of my projects have made it on to the interoperability list :-)

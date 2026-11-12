@@ -12,7 +12,6 @@ description: "By default, the maximum attachment size for attachments to work it
 categories: ["tfs", "technology", "web", "programming", "podcast"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 By default, the maximum attachment size for attachments to work items in Team Foundation Server is 4Mb. It is handy that this feature exists because people may accidentally attach massive files when they should really be attaching something a little smaller. However – for some people 4Mb is just not enough and they want more (or even less).

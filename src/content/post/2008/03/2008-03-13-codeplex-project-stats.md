@@ -12,7 +12,6 @@ description: "CodePlex's new project stats reveal impressive download numbers, r
 categories: ["tfs", "dotnet", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 The fantastic team at [CodePlex](http://www.codeplex.com/) have just rolled out yet another great feature - this time it is statistics for your CodePlex project. I dropped by my TFS [Plug-in for CruiseControl.NET](http://www.codeplex.com/TFSCCNetPlugin) to take a look...

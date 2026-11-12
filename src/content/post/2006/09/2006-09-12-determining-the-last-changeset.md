@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 We've just been having a discussion internally about ways of numbering our builds. It seems a sensible idea to qualify a build with the changeset number in our TFS repository, that way we are able to easily identify the exact status of all the files included in that build without the need to add a label into TFS. My thought process when figuring out how to get the data was a typical one so I thought I'd post it here...

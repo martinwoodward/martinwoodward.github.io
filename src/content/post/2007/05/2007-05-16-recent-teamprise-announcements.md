@@ -13,7 +13,6 @@ categories:
   ["tfs", "technology", "maker", "teamprise", "web", "programming", "personal"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 I've just got back into the office after a week and a bit on vacation and was pleased to see a few announcements have been made while I was off sunning myself. We will be making our [Java API for TFS](http://www.teamprise.com/news/2007/05/teamprise_announces_java_sdk_f.html) available for license later in the year We released [2.1.2 of Teamprise Client Suite](http://www.teamprise.com/download/index.html)

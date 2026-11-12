@@ -12,7 +12,6 @@ description: "Join Corey Steffen at EclipseCon 2007 to explore seamless Eclipse 
 categories: ["tfs", "technology", "teamprise", "web"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 [](http://www.eclipsecon.org/2007/)Just wanted to mention that Corey (my boss) will be presenting at [EclipseCon 2007](http://www.eclipsecon.org/2007/) in Santa Clara on March 6th. Usually when I do my Teamprise demo's people there have seen the Team Explorer interface inside Visual Studio before and they are usually convinced of the benefits of TFS so they just tend to be super impressed to see it all implemented seamlessly inside Eclipse. I suspect that Corey's audience will be learning more about about TFS and the fact that we provide the Eclipse view into TFS will kinda be transparent to most folks.

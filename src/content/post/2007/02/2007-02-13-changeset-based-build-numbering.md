@@ -22,7 +22,6 @@ categories:
   ]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Here at Teamprise we've recently changed our build numbering scheme. We use the traditional Major.Minor.Revision.Build approach with Major.Minor.Revision being the only thing an end user should care about and Major.Minor the only thing we would every do any marketing for. The build number used to be an integer that incremented everytime we did a build. On day one it started at 1 (i.e. 1.0.0.1) and when we got to the final 2.0 build it was 2058 (i.e. 2.0.0.2058).

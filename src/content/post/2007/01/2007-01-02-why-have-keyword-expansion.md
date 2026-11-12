@@ -12,7 +12,6 @@ description: "Explore the challenges and benefits of keyword expansion in source
 categories: ["tfs", "technology", "books", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 Every source control system I have worked with until recently supported keyword expansion. My code comment blocks have always tended to be something like (in Java):-

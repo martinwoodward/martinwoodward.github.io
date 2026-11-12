@@ -12,7 +12,6 @@ description: "We have some friends staying with us from out of town at the momen
 categories: ["git", "technology", "gadgets", "maker", "web", "programming"]
 tags: ["blog", "archive"]
 type: "regular" # available type (regular or featured)
-draft: false
 ---
 
 We have some friends staying with us from out of town at the moment. They are actually friends of my parents - the type of people that were always around when I was growing up and I called my Aunt and Uncle even though they are not blood-relatives. Anyway, they have recently retired and have decided to buy a computer and get on the Internet.
