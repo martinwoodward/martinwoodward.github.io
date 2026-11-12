@@ -9,7 +9,6 @@ categories: ["ai", "maker", "programming", "github", "technology"]
 tags: ["raspberry-pi", "hailo", "copilot-cli", "local-llm", "qwen", "ai-hat"]
 type: "regular"
 blueskyPostURI: ""
-draft: true
 ---
 
 Running Copilot with local models is cool, and with Copilot Fusion we've shown how it's possible to seemlessly mix and match local models with cloud models for the best of all worlds.
