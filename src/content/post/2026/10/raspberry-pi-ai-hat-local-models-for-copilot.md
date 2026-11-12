@@ -11,7 +11,7 @@ type: "regular"
 blueskyPostURI: ""
 ---
 
-Running Copilot with local models is cool, and with Copilot Fusion we've shown how it's possible to seemlessly mix and match local models with cloud models for the best of all worlds.
+Running Copilot with local models is cool, and with Copilot Fusion we've shown how it's possible to seamlessly mix and match local models with cloud models for the best of all worlds.
 
 This is cool on a fancy Surface Ultra with all the shiney hardware. But what's the smallest thing you can run local models in Copilot on? This evening I found out it's a Raspberry Pi 5 wearing the new AI hat.
 
