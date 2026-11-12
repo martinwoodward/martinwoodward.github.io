@@ -114,6 +114,20 @@ check('search index matches built posts', () => {
   assert(missing.length === 0, `${missing.length} search entries have no built page, e.g. ${missing[0]?.slug}`);
 });
 
+check('sitemap generated and includes posts', () => {
+  const index = read('sitemap-index.xml');
+  const sitemaps = [...index.matchAll(/<loc>[^<]*\/(sitemap-\d+\.xml)<\/loc>/g)].map((m) => m[1]);
+  assert(sitemaps.length > 0, 'sitemap-index.xml lists no sitemaps');
+  const urls = sitemaps.flatMap((f) => [...read(f).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
+  const posts = urls.filter((u) => /\/post\/\d{4}\//.test(u));
+  assert(posts.length >= 400, `only ${posts.length} post URLs in sitemap`);
+  const sample = SAMPLE_POST.replace(/index\.html$/, '');
+  assert(urls.some((u) => u.endsWith('/' + sample)), `sitemap missing ${sample}`);
+  const excluded = urls.filter((u) => /\/(og-preview|author)\/$/.test(u));
+  assert(excluded.length === 0, `sitemap includes excluded pages: ${excluded.join(', ')}`);
+  assert(/^Sitemap: \S+\/sitemap-index\.xml$/m.test(read('robots.txt')), 'robots.txt does not reference sitemap');
+});
+
 check('og:image meta tag present', () => {
   const html = read(SAMPLE_POST);
   assert(/<meta[^>]+property="og:image"[^>]+content="https?:\/\/[^"]+\.png"/.test(html), 'og:image meta missing');

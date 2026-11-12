@@ -7,3 +7,5 @@ User-agent: *
 Allow: /
 Allow: /api/og/
 Disallow: /api/
+
+Sitemap: https://www.woodwardweb.com/sitemap-index.xml
