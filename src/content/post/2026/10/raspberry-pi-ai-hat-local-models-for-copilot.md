@@ -1,8 +1,8 @@
 ---
-title: "Copilot CLI on a Raspberry Pi, with the Model Running on the Pi Too (Yes, really)"
-date: 2026-06-25T16:40:00.000Z
+title: "Local model support in the Copilot CLI on a Raspberry Pi"
+date: 2026-10-29T16:40:00.000Z
 images:
-  - "/images/post/2026/06/raspi-ai-hat-plus-2.jpg"
+  - "/images/post/2026/10/raspi-ai-hat-plus-2.jpg"
 author: "Martin Woodward"
 description: "I strapped a Raspberry Pi AI HAT+ 2 to a Pi 5, ran qwen2.5-coder on it, and pointed GitHub Copilot CLI at it. Everything on a board smaller than a cuppa coaster."
 categories: ["ai", "maker", "programming", "github", "technology"]
@@ -12,21 +12,23 @@ blueskyPostURI: ""
 draft: true
 ---
 
-What's the smallest thing you can run Copilot on? This evening I found out it's a Raspberry Pi 5 wearing a heatsink hat. And I don't just mean the CLI. The _model_ is running on there too.
+Running Copilot with local models is cool, and with Copilot Fusion we've shown how it's possible to seemlessly mix and match local models with cloud models for the best of all worlds.
 
-![Raspberry Pi 5 with the AI HAT+ 2 fitted, sitting on a wooden desk](/images/post/2026/06/raspi-ai-hat-plus-2.jpg)
+This is cool on a fancy Surface Ultra with all the shiney hardware. But what's the smallest thing you can run local models in Copilot on? This evening I found out it's a Raspberry Pi 5 wearing the new AI hat.
+
+![Raspberry Pi 5 with the AI HAT+ 2 fitted, sitting on a wooden desk](/images/post/2026/10/raspi-ai-hat-plus-2.jpg)
 
 That little black hedgehog of a heatsink is sitting on the [Raspberry Pi AI HAT+ 2](https://www.raspberrypi.com/products/ai-hat-plus-2/). Underneath is a Hailo-10H accelerator with 40 TOPS (INT4) and 8GB of its own RAM, which is enough to run small language models without bothering the Pi's CPU much at all.
 
 The bit that made me grin: [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) runs natively on the Pi's ARM Linux. So with Copilot's bring-your-own-model support, the whole stack lives on one board. No jump box, no cloud model, no premium requests ticking away.
 
-TODO(Martin): a line on how it actually feels to use – tokens/sec, or a quick "I asked it to X and it did Y". A terminal screenshot of Copilot CLI on the Pi would go nicely here too.
-
 ## Is it as good as the big models?
 
 No, obviously. `qwen2.5-coder:1.5b` is a 1.5 billion parameter model, and for trickier prompts you need to be a lot more explicit than you would with a frontier model.
 
-That's fine, though. I use the Pi for the quick stuff (summaries, planning, first-pass drafts) and switch to the big cloud models when I need some proper thinking done. Same Copilot, just a different brain behind it.
+Using it with Qwen isn't going to have the same throughput as rocking the latest cloud models, but it works suprisinly well for such a small box.
+
+However, for the quick stuff (summaries, first-pass text drafts) works great and switch to the big cloud models when I need some proper thinking done. Same Copilot, just a different brain behind it.
 
 And the power numbers are lovely. The official [Pi 27W PSU](https://www.raspberrypi.com/products/27w-power-supply/) tops out at 25.5W of output for the whole lot. For context, Apple lists a [Mac mini M4 at 65W max](https://support.apple.com/en-in/103253). Not a like-for-like comparison, but it's the sort of thing you can leave humming on a shelf without feeling guilty.
 
@@ -167,4 +169,4 @@ systemctl --user enable --now hailo-ollama.service litellm-hailo.service
 
 Now the Pi boots, the model loads, and Copilot's ready by the time you've found an SSH window.
 
-If you build one, let me know what you get it doing. Just don't ask it to refactor your monolith.
+If you build one, let me know what you get it doing. Might even be able to center your div's.
