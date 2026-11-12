@@ -103,6 +103,31 @@ check('MDX shortcodes render (Notice)', () => {
   assert(/class="notice [a-z]+"/.test(html) && /class="notice-body"/.test(html), 'Notice shortcode not rendered');
 });
 
+check('search index matches built posts', () => {
+  const file = path.resolve('.json/search.json');
+  assert(fs.existsSync(file), '.json/search.json missing (run yarn generate-json)');
+  const entries = JSON.parse(fs.readFileSync(file, 'utf8'));
+  assert(entries.length >= 400, `only ${entries.length} search entries`);
+  const bad = entries.filter((e) => !e.slug || !e.frontmatter?.title || !e.content);
+  assert(bad.length === 0, `${bad.length} entries missing slug/title/content, e.g. ${bad[0]?.slug}`);
+  const missing = entries.filter((e) => !fs.existsSync(path.join(dist, e.slug, 'index.html')));
+  assert(missing.length === 0, `${missing.length} search entries have no built page, e.g. ${missing[0]?.slug}`);
+});
+
+check('sitemap generated and includes posts', () => {
+  const index = read('sitemap-index.xml');
+  const sitemaps = [...index.matchAll(/<loc>[^<]*\/(sitemap-\d+\.xml)<\/loc>/g)].map((m) => m[1]);
+  assert(sitemaps.length > 0, 'sitemap-index.xml lists no sitemaps');
+  const urls = sitemaps.flatMap((f) => [...read(f).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
+  const posts = urls.filter((u) => /\/post\/\d{4}\//.test(u));
+  assert(posts.length >= 400, `only ${posts.length} post URLs in sitemap`);
+  const sample = SAMPLE_POST.replace(/index\.html$/, '');
+  assert(urls.some((u) => u.endsWith('/' + sample)), `sitemap missing ${sample}`);
+  const excluded = urls.filter((u) => /\/(og-preview|author|elements|full-right)\/$/.test(u));
+  assert(excluded.length === 0, `sitemap includes excluded pages: ${excluded.join(', ')}`);
+  assert(/^Sitemap: \S+\/sitemap-index\.xml$/m.test(read('robots.txt')), 'robots.txt does not reference sitemap');
+});
+
 check('og:image meta tag present', () => {
   const html = read(SAMPLE_POST);
   assert(/<meta[^>]+property="og:image"[^>]+content="https?:\/\/[^"]+\.png"/.test(html), 'og:image meta missing');
