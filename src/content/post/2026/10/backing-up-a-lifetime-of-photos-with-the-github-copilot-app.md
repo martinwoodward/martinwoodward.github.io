@@ -3,136 +3,185 @@ title: "Backing up a Lifetime of Photos with the GitHub Copilot App"
 date: 2026-10-05T12:00:00.000Z
 images: ["/images/post/2026/10/lifetime-photo-backup-hero.webp"]
 author: "Martin Woodward"
-description: "Getting my Google Photos export onto an external SSD with the GitHub Copilot App, and the checks, interruptions and storage tradeoffs along the way."
+description: "190 Google Takeout parts, a Mac with no free space and an ExFAT SSD. The Chrome DevTools trick, the hashing and the macOS date hacks that got my photos home."
 categories: ["personal", "technology", "ai", "github"]
-tags: ["github-copilot", "google-photos", "backup", "python", "macos"]
+tags: ["github-copilot", "google-photos", "backup", "python", "macos", "playwright"]
 type: "regular"
 draft: true
 ---
 
-I was running low on Google Photos storage. That prompted a slightly more important question than whether I should buy another chunk of cloud storage: where was my independent copy of all those originals?
+Google Takeout gave me 190 download links, each one a ZIP of about 2.15 GB. My Mac had nowhere near enough free space for even a handful of them.
 
-Photos are one of those things that accumulate quietly until the thought of losing them becomes rather uncomfortable. I wanted a copy I could hold in my hand, read without signing into an account, and move between my Mac and a Windows machine. Downloading an export sounded like a fairly dull evening's work.
+I'd been running low on Google Photos storage, and that made me ask a more awkward question: where was my copy of all those originals? I wanted something I could hold in my hand and read without signing into anything, so I bought an [external SSD](https://link.amazon/B07kuibwP), formatted it as ExFAT so it works on both my Mac and Windows machines, and sat down with the [GitHub Copilot App](https://github.com/features/copilot) to get roughly 379 GB of photos onto it.
 
-Google Takeout gave me 190 download parts.
+That took four days, two Python scripts, a chunk of JavaScript running inside a browser, and quite a lot of me typing my Google password. Here's what we built and the bits I'd steal if you're doing the same thing.
 
-This is the story of how I used the GitHub Copilot App to help get those parts onto an external SSD, check what we had extracted, and work through the inevitable surprises. It was not a case of typing "back up my life" and wandering off. Quite a lot of the useful work was in the conversation, especially when I needed to change the plan.
+## The shape of it
 
-## A disk, an export, and not much room to manoeuvre
+![Architecture diagram. Inside the MacBook, the Copilot App drives a signed-in Chromium via Playwright MCP. A CDP session redirects downloads to a staging folder on the SSD, and Playwright's own download listener is removed so no second copy lands on the internal disk. The browser polls a Python stdlib HTTP worker on 127.0.0.1 for permission to download, gated on free space and a 15-second pause. An extraction thread in the same worker writes media, receipts and progress state to the ExFAT SSD.](/images/post/2026/10/photo-backup-architecture.webp)
 
-I chose an [external SSD](https://link.amazon/B07kuibwP), formatted as ExFAT so I could read it on both Windows and Mac. For this job, being able to plug it into either machine mattered more to me than using a filesystem specific to one platform.
+There are two moving parts:
 
-Takeout reported about 378.89 GB. I described that as the uncompressed size during the job, but I wouldn't treat the display as a precise specification of Google's GB/GiB accounting, or as a guarantee of the peak space the process would need. Downloaded archives and extracted files can occupy the disk at the same time.
+- **`takeout_browser.js`** runs inside a Chromium window I'd signed into myself, driven by Copilot through the [Playwright MCP server](https://github.com/microsoft/playwright-mcp). It clicks "Download part N of 190" one at a time, with a 15-second pause between parts.
+- **`takeout_worker.py`** is a little HTTP server on `127.0.0.1`, written with nothing but the Python standard library. The browser asks it `GET /state` before every download and tells it what happened with `POST /event`. A separate thread inside it extracts and verifies whatever has landed.
 
-The SSD initially had 663 GB free. My Mac's internal disk had very little room. That made the download destination a requirement, not a preference.
+The first version did download, extract, download, extract. Safe, but slow, and the export links expire. I asked Copilot to split them so the browser could keep pulling parts while extraction caught up. That turned out to matter a lot more than I expected (more on part 147 later).
 
-The plan for physical storage is to keep one copy in a [document box intended to offer protection from fire and water](https://link.amazon/B018mYpAg) at home, and a second copy in a similar box at my parents' house. **Those are future plans.** Copilot has not made that second physical copy or put anything in a box.
+## Trick 1: make Chrome download where you want
 
-I also haven't established independently verified protection ratings for that box, particularly for electronic media. A product described as protecting documents isn't a promise that an SSD inside it will survive a house fire or a flood. I'm treating the boxes as an additional precaution, not a substitute for separate copies.
+The obvious approach is "download, then move to the SSD". That doesn't work when the download itself won't fit on the internal disk. Chrome's temporary `.crdownload` file needs to be on the SSD too.
 
-## The downloads had to land on the SSD
+The fix is a Chrome DevTools Protocol call that tells the browser where to put downloads and to name them by GUID:
 
-Copilot used a logged-in browser through the Playwright MCP server, alongside scripts written using Python's standard library. The browser handled the authenticated download flow. Python did the file handling, extraction and verification.
+```js
+const session = await browser.newBrowserCDPSession();
+await session.send("Browser.setDownloadBehavior", {
+  behavior: "allowAndName",
+  downloadPath: initial.staging, // a folder on /Volumes/PortableSSD
+  eventsEnabled: true,
+  browserContextId,
+});
+// Playwright MCP's own listener would otherwise save a second copy on the internal disk.
+page.removeAllListeners("download");
+```
 
-The first important lesson was that changing the final destination wasn't enough. If the browser downloaded hundreds of gigabytes to the Mac and we moved them afterwards, we would still run out of internal storage before the move.
+That last line caught us out. The Playwright MCP server has its own download handler that helpfully saves a copy of each download somewhere local. Helpful, unless you're downloading 190 two-gigabyte files to a Mac with a few gigabytes free.
 
-We needed the browser's temporary and download paths to point directly to the SSD. There was also a default secondary download-copy listener in the MCP setup, which we disabled so it wouldn't create another copy on the internal disk. All the large files stayed on the external drive.
+With `eventsEnabled`, you also get `Browser.downloadWillBegin` (which hands you the GUID) and `Browser.downloadProgress` events. The script forwards progress to the worker every 10 seconds, so I could watch it in a terminal rather than staring at the browser.
 
-That's a fairly unglamorous detail, but it was the difference between a workable pipeline and one that would fill my laptop. When using an agent for a storage job, "save it over there" needs to include the temporary files too.
+## Trick 2: backpressure on disk space, not queue length
 
-## Two workers, not 190 simultaneous downloads
+I deliberately asked for no cap on how many ZIPs could pile up waiting for extraction. Getting the downloads before the export expired was the priority. That doesn't mean unlimited though. The worker refuses the next download unless there's room for it:
 
-Initially, each download waited for extraction to finish before the next one started. Safe and easy to follow, but it coupled two jobs that didn't need to wait for each other.
+```python
+blocked = None
+if self.state["phase"] != "running" or self.state["downloads_finished"]:
+    blocked = "not-running"
+elif self.state["download_part"] is not None:
+    blocked = "download-active"
+elif free < RESERVE + DOWNLOAD_RESERVE:   # 8 GiB + 3 GiB
+    blocked = "space"
+elif remaining_pause:                     # 15 s since the last part
+    blocked = "cooldown"
+```
 
-I asked Copilot to separate them:
+The browser loop just polls `/state` until `can_download` is true. Extraction also checks that there's room for a part's full uncompressed size plus the 8 GiB reserve before it starts. The SSD started with 663 GB free, which is a comfortable margin over 379 GB, but archives and extracted files sit on the disk at the same time, so it's not as generous as it sounds.
 
-1. One browser worker downloaded parts sequentially, with a 15-second pause between requests.
-2. One extraction worker processed downloaded parts separately, verifying the results before cleaning up verified ZIPs.
+A couple of other small things in the worker that I liked:
 
-This wasn't 190 concurrent browser downloads. It was one download stream and one extraction stream running alongside each other.
+- It only accepts requests where the `Host` header is `127.0.0.1:18761` and there's no `Origin` header, so some random web page can't post events to it.
+- `fcntl.flock` on a lock file means you can't accidentally start two workers.
+- Every write checks the SSD's `st_dev`. If the drive is unplugged or something else gets mounted at the same path, it stops rather than happily writing to the wrong disk.
 
-![Workflow illustration showing a sequential browser download worker and a separate extraction worker, with temporary files, media and receipts kept on the external SSD.](/images/post/2026/10/photo-backup-workflow.webp)
+## Trick 3: don't delete anything until you've proved it
 
-*The two-worker workflow: keep downloads moving while extraction and verification work through the files already on the SSD.*
+This is the bit I cared about most. "Downloaded" isn't the same as "backed up", and I didn't want to throw away a ZIP until I knew its contents were safely on the SSD.
 
-I deliberately asked for no artificial cap on the number of ZIPs waiting for extraction. The priority was to secure the downloads before the export expired, rather than leave parts on Google's side while local extraction caught up.
+![Lifecycle diagram for one Takeout part: downloading, sniffed, queued, extracting, verified, complete. The sniff step checks whether the file is really a ZIP or a bare video by reading header bytes. Extraction streams each member to a .partial file while hashing, fsyncs, re-reads it to compare SHA-256, handles name collisions by keeping both, re-hashes every destination at the end, writes an atomic receipt and only then deletes the ZIP. A failure lane shows part 147: verification failed on one JPEG, extraction paused with the ZIP kept, downloads of parts 154 to 164 continued, and a retry verified 1,285 files.](/images/post/2026/10/photo-backup-part-lifecycle.webp)
 
-That decision doesn't make storage unlimited. A growing queue still consumes real disk space, so the overlap between archives and extracted content was a tradeoff we had to keep in mind. It was a choice for this job, not a general recommendation to ignore free space.
+For each file inside a ZIP, the worker streams it out in 1 MiB blocks, hashing as it goes. Python's `zipfile` checks the CRC-32 while reading. Then it reads the file *back* from the SSD and compares hashes:
 
-## Downloaded is not the same as backed up
+```python
+with bundle.open(member) as source, temporary.open("wb") as output:
+    while block := source.read(1024 * 1024):
+        output.write(block)
+        content_hash.update(block)
+        written += len(block)
+    output.flush()
+    os.fsync(output.fileno())
+# ZipFile checks CRC while reading; rereading also verifies the SSD write.
+expected_hash = content_hash.hexdigest()
+if written != member.file_size or digest(temporary) != expected_hash:
+    raise OSError(f"Verification failed for {member.filename!r}")
+```
 
-The useful part of the scripts wasn't just unzipping things. It was making the work checkable and resumable.
+When every file in the part is out, it re-hashes all of them again, writes a receipt (`receipts/part-NNN.json`, listing source path, destination, size and SHA-256) using write-to-temp, `fsync`, rename, and only *then* deletes the ZIP.
 
-ZIP reads checked CRCs. Extracted media were then read back from the SSD and SHA-256 verified against their archive content before a verified ZIP could be removed. Per-part receipts recorded the work, and the JSON sidecars were retained alongside the export.
+Name clashes are common in a Takeout export. If a file with the same name already exists and has the same hash, the new copy is dropped. If the hash is different, both are kept, with the new one renamed to something like `name.takeout-part-147-entry-000123.jpg`. That rename is why the receipts matter later.
 
-Filename conflicts needed care too. Two files with the same name aren't necessarily the same photo. Distinct content was preserved rather than overwritten to make the folder look tidy.
-
-The receipts became particularly handy when the browser connection changed. Reconnecting could lose an in-memory job loop. The state written to disk gave us something to inspect before resuming, instead of trusting that the browser remembered exactly where it had got to.
-
-These checks establish something specific: the extracted files match the downloaded source content we checked. They don't independently prove that Google included every original in my account, that every historical upload was an original-resolution file, or that a photo was already healthy before export. Those are different questions.
+The receipts and a `progress.json` file are the source of truth for resuming. Which is handy, because the browser loop lives in memory and every time the browser disconnected, it was gone. A `POST /event {"event": "resume"}` re-queues any saved ZIPs and skips anything with a receipt. Nothing gets downloaded twice.
 
 ## The bits that didn't go to plan
 
-Part 28 looked like an extraction problem until we looked at what it actually was. It was a standalone large QuickTime MOV, not a damaged ZIP.
+**Part 28 wasn't a ZIP.** The worker threw `BadZipFile: File is not a zip file`, and my first thought was a corrupt download. It turned out Google had served one large QuickTime `.MOV` as a part on its own. Part 179 did the same thing later. So now the worker checks what it's actually got rather than trusting the file name:
 
-We extended the handler to recognise, verify and relocate raw large videos as well as process archives. The lesson was pretty simple: don't let the assumptions in your script decide what kind of file you've received.
+```python
+def recognized_media(path, filename):
+    with path.open("rb") as stream:
+        header = stream.read(16)
+    extension = Path(filename).suffix.lower()
+    if extension in (".mov", ".mp4", ".m4v", ".3gp", ".heic", ".heif"):
+        return header[4:8] == b"ftyp"
+    if extension in (".mkv", ".webm"):
+        return header.startswith(b"\x1a\x45\xdf\xa3")
+    if extension == ".avi":
+        return header.startswith(b"RIFF") and header[8:12] == b"AVI "
+    return False
+```
 
-There were also several password and reauthentication prompts, and manual resumptions. This was interactive work. I authorised a one-time clipboard paste, but that didn't work through the browser path. No password or clipboard data was stored.
+A bare video gets hashed, moved into a `Standalone files` folder and hashed again at its new home. Anything that's neither a ZIP nor recognised media stays where it is and the worker stops to let me look.
 
-I experimented with simulated pointer movement and scrolling too. I have no evidence that it prevented logout, and no basis for saying bot detection caused the prompts. It certainly wasn't a way to bypass authentication. When the session needed my attention, it needed my attention.
+**Part 147 failed verification.** The final re-hash didn't match for one JPEG from 2017. Extraction paused, the ZIP stayed on the SSD, and (this is where splitting the workers paid for itself) the browser carried on downloading parts 154 to 164 in the meantime. When we looked, the file on disk matched the ZIP exactly. A retry verified all 1,285 files. I don't know what caused the original mismatch and I'm not going to guess. The point is that because the source was still there, I could find out it was fine instead of wondering.
 
-The most sobering interruption came at part 147. A final verification mismatch paused extraction. That's exactly the sort of situation where I want the process to stop rather than produce a reassuring green tick.
+**Restarting the worker mid-download is a bad idea.** At one point we restarted the HTTP server while the browser was halfway through a part. The server's bookkeeping reset, and the browser's next progress event was rejected with `Unexpected download progress`. The README Copilot wrote for the scripts now says not to do that.
 
-Investigation found that the photo on disk exactly matched its ZIP. The earlier mismatch wasn't reproducible, so I can't honestly tell you what caused it. We kept the original ZIP and retried the verification, which succeeded. I'm not going to turn that into a story about faulty hardware or a Google bug without evidence.
+**Google wanted my password. A lot.** Every so often the download wouldn't start because the page had bounced to a sign-in screen. The script spots that after two minutes, marks the worker as waiting for authentication, and I type my password. I tried authorising a one-off clipboard paste to save some effort – it didn't work through the automation path, and nothing was stored. I also tried some simulated mouse movement and scrolling to see if it kept the session alive. I have no evidence it made any difference. This was very much an interactive job, not something I kicked off and walked away from.
 
-The important design decision was preserving the source until the checks passed. That gave us a way to investigate rather than a mystery and an already-deleted archive.
+## Putting the dates back
 
-![Verification review illustration summarising 190 handled and verified parts, 274,625 receipt records rather than unique photos, and the recovery checks for parts 28 and 147. Date application is not yet confirmed.](/images/post/2026/10/photo-backup-verification.webp)
+Once everything was out, the files on the SSD had the dates they were extracted, not the dates the photos were taken. Google puts the real dates in JSON sidecar files next to each photo. Applying them sounds like a five-minute job. It was not.
 
-*An illustrated review of the checks and recovery decisions. Verified extraction and completed date restoration are separate milestones.*
+![Date restoration pipeline. 274,625 receipt records are indexed into SQLite with NFC-normalised, casefolded keys. Sidecar filenames like IMG_0001.jpg.supplemental-metadata(1).json are mapped to IMG_0001(1).jpg, then through receipts to the actual destination. photoTakenTime is preferred over creationTime. Dates before 1980 get their year replaced with 1985 because ExFAT cannot store them, with 29 February flagged. 123,478 files were matched into a plan table that stores the original nanosecond timestamps. apply_dates calls fsetattrlist through ctypes to set creation and modification time, verifies with fstat and restores the originals on mismatch. Parent folders only move earlier.](/images/post/2026/10/photo-backup-dates.webp)
 
-## Getting the dates back is a separate job
+A few of the things that made it interesting:
 
-Once the files were extracted, there was another wrinkle: filesystem dates.
+**Finding which photo a sidecar belongs to.** Google's naming is creative. `IMG_0001.jpg.supplemental-metadata(1).json` belongs to `IMG_0001(1).jpg`, not `IMG_0001.jpg`. And if our extraction renamed a clashing file, the receipts are the only record of where it actually ended up. Everything went into a SQLite database first, with keys normalised to Unicode NFC and case-folded, before a single date was touched. Where names were still ambiguous, the script compared hashes with exact copies in albums. Anything still uncertain was logged, not guessed.
 
-An export can leave you looking at files whose creation or modification dates describe the export rather than when the picture was taken. Google supplies dates in JSON sidecars, but applying those dates safely isn't just a case of matching a filename and calling `os.utime`.
+**Which date?** `photoTakenTime` first, then `creationTime`. The fallback can be when the photo was uploaded to Google rather than when it was taken, so it's not perfect.
 
-For example, a generic `example.jpg.supplemental-metadata.json` sidecar needs to be matched to the actual destination of `example.jpg`. The receipts matter because a filename conflict may have changed where the extracted file ended up. We handled per-file `.supplemental-metadata.json` and `.json` sidecars through that mapping.
+**macOS creation dates.** Python's `os.utime` sets access and modification time but can't touch a file's birth time on macOS. So Copilot called `fsetattrlist` from libc via `ctypes`:
 
-The preferred source is `photoTakenTime.timestamp`. If that's unavailable, `creationTime.timestamp` is the fallback, with the important caveat that Google's upload or import time may not be the camera capture time.
+```python
+class AttributeList(ctypes.Structure):
+    _fields_ = [("count", ctypes.c_uint16), ("reserved", ctypes.c_uint16),
+                ("common", ctypes.c_uint32), ("volume", ctypes.c_uint32),
+                ("directory", ctypes.c_uint32), ("file", ctypes.c_uint32),
+                ("fork", ctypes.c_uint32)]
 
-On macOS, `os.utime` alone can't restore a file's birth/creation date. The date-restoration code uses native `fsetattrlist` to set filesystem creation and modification times. It doesn't alter the photo or video contents, embedded EXIF, or the original JSON.
+ATTR_CMN_CRTIME, ATTR_CMN_MODTIME = 0x200, 0x400
+attributes = AttributeList(5, 0, ATTR_CMN_CRTIME | ATTR_CMN_MODTIME, 0, 0, 0, 0)
+buffer = (TimeSpec * 2)(TimeSpec(*divmod(created_ns, 10**9)),
+                        TimeSpec(*divmod(modified_ns, 10**9)))
+libc.fsetattrlist(fd, ctypes.byref(attributes), ctypes.byref(buffer),
+                  ctypes.sizeof(buffer), 0)
+```
 
-Duplicate names add another complication. Where possible, verified exact-content copies from albums help resolve the mapping. Where the evidence conflicts, the scripts log it rather than guess. An SQLite audit records original filesystem dates and the planned changes.
+After every call it `fstat`s the file to check the exact nanosecond values stuck. If they didn't, it puts the originals back and raises. The originals are also saved in the SQLite audit before anything changes. Only filesystem metadata is touched. The photo bytes, the EXIF and the JSON sidecars are left alone.
 
-I also wanted parent folders to move only earlier. The rule uses the earliest successfully matched immediate child date, preserving an already-older creation or modification field independently. There's no reason to make an old folder appear newer just because we're fixing one of its children.
+**ExFAT can't do dates before 1980.** I have scanned photos older than that. The filesystem simply can't represent them, so I chose to keep the month, day and time but replace the year with 1985. That's a compromise, not a restoration, and the real date is still in the JSON. It also means 29 February is a problem, since 1985 wasn't a leap year. Those get flagged instead of quietly becoming 1 March.
 
-Then there is ExFAT's date limit: it can't store dates before 1980. I explicitly chose **1985** as the replacement year for those older dates, keeping the month, day and time in UTC. That is a compromise, not a restoration of the true year. The original JSON remains unchanged, and February 29 needs flagging because 1985 isn't a leap year.
+**Folders only go backwards.** Each folder takes the date of its earliest matched child, but only if that's older than the date it already has. Creation and modification are compared separately so nothing gets accidentally pushed forward.
 
-It's the sort of edge case that makes "just fix the dates" rather more interesting than it sounds.
+The matching found 123,478 files with a usable date, with 8 conflicts left untouched. By that point I'd had enough of edge cases, so I told Copilot to stop trying to match the rest and just apply what it had (`--matched-only`). TODO(Martin): final count of dates applied, and whether it finished with zero errors – it was at ~20,700 with no errors when the logs end.
 
 ## Where I've got to
 
-As of 5 October, **all 190 download parts have been downloaded and extracted or handled as raw media, with verification completed**.
+All 190 parts are downloaded, extracted and verified. The receipts hold 274,625 records, but that includes the JSON sidecars and the same photo appearing in several albums, so it's definitely not 274,625 unique photos.
 
-The receipts contain 274,625 records. That includes metadata and repeated album copies. It is not a count of 274,625 unique photos.
+The scripts, tests (which use temporary fixtures and a mocked browser, not my actual Google account) and a README for doing it again are on the SSD in `/src`, with a `SHA256SUMS` file. Browser profiles, cookies, passwords and signed download URLs were deliberately left out.
 
-Filesystem timestamp matching has yielded approximately 124,000 matches. **Date application is not yet confirmed complete.** I've now asked for a best-efforts pass: apply dates only to files already matched, and don't spend more time trying to resolve the others. That pass is being arranged, so I'm not claiming that every photo has had its filesystem dates restored.
+If you're thinking of doing the same, here's what I'd take away:
 
-The scripts, tests and repeatable instructions have been checksum-verified under `/Volumes/PortableSSD/src`, alongside the work on the SSD. I cancelled automatic disk ejection and asked for the backup background services to stop. The SSD will remain mounted.
+- Point the browser's download directory at the destination disk with CDP, and check nothing else (like an MCP server) is saving a copy behind your back.
+- Decouple downloading from extraction, and throttle on free space rather than an arbitrary queue length.
+- Hash while you write, read it back, and keep the source until you have a durable receipt.
+- Sniff file headers. Your export isn't necessarily all ZIPs.
+- Write state to disk, not to the browser. Browsers disconnect.
 
-That's a useful milestone, but not the end of the backup plan. I still need the second independently verified physical copy and the offsite storage.
+## What's next
 
-## A backup needs a future, not just a finish line
+One disk is a copy, not a backup plan. The plan is a second, separately verified SSD in a [document box](https://link.amazon/B018mYpAg) at my parents' house, alongside one at home. I haven't done that yet. I also haven't found verified ratings for how well that box protects an SSD, as opposed to paper, so I'm treating it as an extra precaution rather than a guarantee.
 
-I don't intend to put a disk in a box and assume I've solved this forever. Offline storage still needs periodic integrity checks, sample restores, and refreshing or migration to other media over time. A checksum comparison is useful, but I also want to open representative photos and videos and make sure I can actually use the backup.
+The Google originals stay where they are until both copies are verified, and I'll need to plug the disks in now and then to re-check the hashes and actually open a few photos. A backup you've never restored from is really just a hopeful thought.
 
-The second disk needs its own verification. Until the independent copies are verified, I wouldn't delete the Google originals to reclaim space. Even then, local checks are not proof of full cloud export completeness, so comparing the export with what I expect to have matters too.
-
-What I liked about using the Copilot App was being able to steer a real job as we learnt more about it. "Put everything on the SSD." "Separate downloading from extraction." "Keep the archive until verification passes." "Stop trying to solve every unmatched date."
-
-Those weren't cosmetic changes to a prompt. They were decisions about scarce storage, expiring downloads, uncertain metadata and irreplaceable files.
-
-Copilot was pretty handy at turning those decisions into scripts and helping investigate problems. It didn't remove my responsibility to decide what was safe, respond to authentication prompts, or be honest about what the checks did and didn't prove.
-
-The result is rather satisfying: a verified local copy of the export, a record of how it got there, and a much clearer plan for keeping it useful. Not magic. Just a lot less repetitive clicking, and considerably more checking than I would want to do by hand.
+Now, about that Google Photos storage warning...
