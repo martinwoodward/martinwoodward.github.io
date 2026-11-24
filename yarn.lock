@@ -2145,9 +2145,9 @@ detect-libc@^2.0.3, detect-libc@^2.1.2:
   integrity sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==
 
 devalue@^6.0.2, devalue@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/devalue/-/devalue-6.0.3.tgz#60dd3006924f8743b6275772f9707af652463f13"
-  integrity sha512-3woMEITftG1wKeO/4d/QXH1DVKctTSZg3jNGPpjp9hNr5Hos8MCFF5McTML5ZtgKDObm2R591B0spRp2IVernA==
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/devalue/-/devalue-6.0.4.tgz#9843a39e2a1ec7df5af1f205790a5a768ec82c19"
+  integrity sha512-8L3d5HaKt6/wnWKRtwmJu7qrLM6YiGb6mxktIFfgjQzQzIAR5vAZdHioZv/252Pp4SN/xu47oxe7RlwoZzWTTA==
 
 devlop@^1.0.0, devlop@^1.1.0:
   version "1.1.0"
